@@ -1,0 +1,60 @@
+\documentclass[]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage[vmargin=4cm,tmargin=3cm,hmargin=2cm,letterpaper]{geometry}%
+
+
+
+
+}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fancyhead [LO,LE]{\includegraphics[scale=.9]{UCR.png}}
+\fancyhead [CO,CE]{Universidad de Costa Rica\\ Escuela de Indenieria Electrica\\ Propuesta #1 Visualizacion de Estructuras Abstractas en Latex Beamer \\ Grupo FoxHound \\Francisco Mata-Marco Torres-Juan Carlos Montero}
+\fancyhead [RO,RE]{\includegraphics[scale=.4]{logoeie.jpeg}}
+
+
+\entitle{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\section{Vision}
+ 
+El usuario programara estructuras abstractas en un lenguaje de C++, la libreria tiene como objetivo principal, facilitar al usuario a visualizar lo que el algortimos de la estructura abstracta utilizanda, sus cambios (push y pull de nodos) dentro de esta, de una manera sencilla. La libreria se encargara de facilitar el uso de las estructuras,  de una manera mas sencilla y natural, al igual que crear el beamer al ser compilado. En resumen se pretende crear una libraria, estilo doxygen, pero de visualizacion de las estructuras principalmente, asi como la manipulacion de esta visualizacion.
+
+\section{Importancia}
+
+La documentacion para un programador es la herramienta de mayor importancia, la comprension del codigo es la prioridad de un programador. El crear documentacion ordenada y visual de manera automatica es una gran ventaja a la hora de programar. Quitarle el peso, de la documentacion, al programador y poder desplegarla de una manera visual, sin duda alguna es una idea innovadora, y de suma importancia para comprender los procesos computacionales, con un lenguaje de peso para los humanos como es el visual.
+
+
+\section{Objetivos}
+
+\subsection{Objetivo General} 
+
+Crear una libreria la cual se encargue de crear un beamer (Latex) con la visualizacion de ciertas estructuras abstactas vistas en el curso, desde un codigo de C++
+
+
+\subsection{Objetivos Especificos}
+
+
+\begin{enumerate}
+\item Facilitar la creacion y uso de las estructuras abstractas implementadas dentro de la libreria (principalmente vectores, listas y arboles) 
+\item Crear las animaciones de "Push" y "Pull" nodos de las estructuras, y hacer los cambios adecuados que estos generan en la estructura de una manera visual
+\item Construir herramientas que faciliten al usuario al manejo del beamer dentro del codigo de C++, ejemplos: zoom, seleccion de nodos, animaciones con temporales, entre otros
+\item Implementar la libreria de manera generica, para que soporte cambios y combinacion de estructuras, asi como el redblack tree ** (Opcional: dado el tiempo, se implementara)
+\end{enumerate}
+
+
+
+
+\end{document}
