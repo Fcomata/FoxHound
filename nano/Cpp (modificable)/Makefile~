@@ -1,0 +1,23 @@
+all: main
+
+hello: latex.o nodo.o lista.o arreglo.o ejemplo.o
+	g++ latex.o nodo.o lista.o arreglo.o ejemplo.o -o main
+
+latex.o: Latex.cpp
+	g++ -c Latex.cpp
+
+nodo.o: Nodo.cpp
+	g++ -c Nodo.cpp
+
+lista.o: Lista.cpp
+	g++ -c Lista.cpp
+
+arreglo.o: Arreglo.cpp
+	g++ -c Arreglo.cpp
+
+ejemplo.o: EjemploArreglo.cpp
+	g++ -c EjemploArreglo.cpp
+
+clean:
+	rm -rf *o main
+

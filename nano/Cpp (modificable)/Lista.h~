@@ -1,9 +1,8 @@
-#pragma once
+
 #include "Latex.h"
 #include "Nodo.h"
 
 class Lista:public Latex{
-
 public:
 	Lista();
 	~Lista();

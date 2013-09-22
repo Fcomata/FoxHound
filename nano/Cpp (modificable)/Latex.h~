@@ -1,10 +1,9 @@
-#include<string>
 
+#include<string>
 using namespace std;
 
 class Latex
 {
-
 protected:
 	string cadena;
 public:
