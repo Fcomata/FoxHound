@@ -1,4 +1,3 @@
-
 #include "Latex.h"
 #include "Nodo.h"
 

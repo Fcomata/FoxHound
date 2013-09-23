@@ -1,8 +1,7 @@
 #include <iostream>
-
 #include "Arreglo.h"
-
 #include "Lista.h"
+
 
 using namespace std;
 
@@ -22,12 +21,13 @@ int main(){
 
     cout<<"Prueba de Arreglos"<<endl;
 
-    Arreglo * a= new Arreglo(5);
-    a->ingresarElemento(45);
-    a->ingresarElemento(3);
-    a->ingresarElemento(1);
-    a->ingresarElemento(8);
-    a->ingresarElemento(9);
+    	Arreglo * a= new Arreglo(5);
+    	a->ingresarElemento(45);
+    	a->ingresarElemento(3);
+    	a->ingresarElemento(1);
+    	a->ingresarElemento(8);
+    	a->ingresarElemento(9);
+
     cout<<"El suma es: " << a->sumaVector()<<endl;
     cout<<a->getCadena();
     cin.get();
