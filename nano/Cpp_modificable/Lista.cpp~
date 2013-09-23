@@ -66,12 +66,13 @@ delete actual;
 
 //----------------------------------------------------------------------------------------------------------------
 void Lista::mostrar(){
+
 elPrimero();
 cout<<"Contenido de la lista:"<<endl;
 while(actual!=NULL){
 cout<<actual->getV()<<endl;
 actual=actual->getS();
-this->cadena += "\ node  ";
+this->cadena += "Hola";
 }
 cout<<endl;
 }

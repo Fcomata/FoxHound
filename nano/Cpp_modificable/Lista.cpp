@@ -23,6 +23,9 @@ void Lista::insertar(int v){
 //Lista Vacia
 	if(primero==NULL || primero->getV()>v){
 primero=new Nodo(v,primero);
+
+cadena+="bla";
+
 }
 else
 {
@@ -66,6 +69,7 @@ delete actual;
 
 //----------------------------------------------------------------------------------------------------------------
 void Lista::mostrar(){
+
 elPrimero();
 cout<<"Contenido de la lista:"<<endl;
 while(actual!=NULL){

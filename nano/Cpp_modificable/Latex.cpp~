@@ -1,4 +1,4 @@
-#include "StdAfx.h"
+
 #include "Latex.h"
 
 Latex::Latex(void)

@@ -16,6 +16,7 @@ int main(){
 	l->insertar(90);
     	l->insertar(60);
 	l->insertar(-5);
+	l->insertar(15);
 	l->mostrar();
 	cout<<"Los datos de la cadena son: "<< l->getCadena()<<endl;
 

@@ -1,5 +1,5 @@
 
-//#include "Latex.h"
+#include "Latex.h"
 #include "Nodo.h"
 
 class Lista:public Latex{
