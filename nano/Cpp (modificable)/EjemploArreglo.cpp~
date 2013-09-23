@@ -33,7 +33,7 @@ int main()//int main
 	a->ingresarElemento(9);
 	cout<<"El suma es: " << a->sumaVector()<<endl;
 	cout<<a->getCadena();
-	cin.get();
+	system("pause");// no se puede usar cambiar por cin.get()
 	return 0;
 }
 
