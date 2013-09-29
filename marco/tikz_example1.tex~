@@ -9,13 +9,12 @@
 
 \begin{tikzpicture}[scale=2]
 
-    \node (rectangle) at (0,2) [draw,thick,minimum width=2cm,minimum height=5mm] {Hello1}; 
+   \node (rectangle) at (0,2) [draw,thick,minimum width=2cm,minimum height=5mm] {Hello1}; 
     \node (rectangle) at (1,2) [draw,thick,minimum width=2cm,minimum height=5mm] {Hello2};
     \node (rectangle) at (2,2) [draw,thick,minimum width=2cm,minimum height=5mm] {Hello3};
     \node (rectangle) at (3,2) [draw,thick,minimum width=2cm,minimum height=5mm] {Hello4};
-    \node (rectangle) at (3,2) [draw,thick,minimum width=2cm,minimum height=5mm] {Hello5};
-    \node (rectangle) at (5,2) [draw,thick,minimum width=2cm,minimum height=5mm] {Hello6};    
-    \node (rectangle) at (3,2) [draw,thick,minimum width=2cm,minimum height=5mm] {Hello4};
+    \node (rectangle) at (4,2) [draw,thick,minimum width=2cm,minimum height=5mm] {Hello5};
+    \node (rectangle) at (5,2) [draw,thick,minimum width=2cm,minimum height=5mm] {Hello6};    \node (rectangle) at (3,2) [draw,thick,minimum width=2cm,minimum height=5mm] {Hello4};
     \node (rectangle) at (6,2) [draw,thick,minimum width=2cm,minimum height=5mm] {Hello7};
     \node (rectangle) at (7,2) [draw,thick,minimum width=2cm,minimum height=5mm] {Hello8};
 

@@ -6,6 +6,11 @@ private:
 	int *vector;
 	int tamano;
 	int cantidad;
+	int altura;
+	void Latex(int,int,int);
+	void LatexTodo();
+	void LatexResaltar(int,int,int,string);
+	string Convertir(int);
 public:
 	int eliminaElemento();
 	void eliminaElementoEnPosicion(int);
@@ -26,7 +31,6 @@ public:
 	int Max();
 	int min();
 	bool buscarElemento(int);
-	void buscarElementos();
 	void ordenar();
 	virtual ~Arreglo(void);
 	string getCadena();

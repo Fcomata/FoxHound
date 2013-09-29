@@ -1,5 +1,10 @@
 #include <string>
 
+#pragma once
+#ifndef LATEX
+#define LATEX
+#endif
+
 using namespace std;
 
 class Latex
