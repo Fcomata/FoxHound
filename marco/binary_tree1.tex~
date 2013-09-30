@@ -1,0 +1,31 @@
+\documentclass{article} 
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\begin{document}
+\begin{tikzpicture}[level distance=2cm,%distancia entre nodos verticales.
+%distancia entre nodos del primer nivel.
+  level 1/.style={sibling distance=7cm},
+%distancia entre nodos del segundo nivel.
+  level 2/.style={sibling distance=3.5cm},
+%distancia entre nodos del tercer nivel.
+  level 3/.style={sibling distance=2cm}]
+%Aqui los parentesis establecen el grado de cada nodo.
+  \node {/}
+    child { node {home}
+      		child {node {root}
+			child {node {images}}
+			child {node {music}}}
+      		child {node {user}
+			child {node {desktop}}
+			child {node {documents}}}
+    }
+    child {node {usr}
+    		child {node {bin}
+			child {node {g++}}
+			child {node {gcc}}}
+    		child {node {lib}
+			child[missing] {node {}}
+			child {node {php5}}}
+    };
+\end{tikzpicture}
+\end{document}
