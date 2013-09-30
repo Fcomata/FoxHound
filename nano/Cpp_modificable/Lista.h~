@@ -20,4 +20,4 @@ private:
 	Nodo* primero;
 	Nodo* actual;
 	int cant;
-};
+};;
