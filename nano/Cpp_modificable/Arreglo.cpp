@@ -11,15 +11,26 @@ Arreglo::Arreglo(int n){
 	tamano=n;
 	vector= new int[tamano];
 
-	this->cadena+= "\\begin{tikzpicture}[scale=2]";
-
 	for(int i=0;i< tamano;i++){
 
 		vector[i]=0;
 
    }
 
-LatexTodo();
+begin();
+
+	for(int i=0; i<tamano; i++){
+
+		this->cadena += "\n \\node (rectangle) at (";
+		this->cadena += Convertir(2*i);
+		this->cadena += ",";
+		this->cadena += Convertir(altura);
+		this->cadena += ") [draw,thick,minimum width=2cm,minimum height=5mm] {";
+		this->cadena += Convertir(0); 
+		this->cadena += "};";
+
+	}
+end();
 
 }
 
@@ -32,30 +43,35 @@ LatexTodo();
 
 int Arreglo::eliminaElemento(){
 
-Latex(cantidad,altura,0);
+
 
 	vector[cantidad]=0;
 	cantidad--;
+	LatexTodo();
+end();
 	return (vector[cantidad]);
 
 }
 
 void Arreglo::eliminaElementoEnPosicion(int pos){
 
-Latex(pos,altura,0);
+
 
 	vector[pos]=0;
 	cantidad--;
-	
+	LatexTodo();
+end();
 }
 
 void Arreglo::ingresarElemento(int elem){
 
-Latex(cantidad,altura,elem);
+
 
 
 		vector[cantidad]=elem;
 		cantidad++;
+		LatexTodo();
+end();
 }
 
 
@@ -66,21 +82,21 @@ void Arreglo::ingresarElementoEnPosicion(int elem,int pos){
 
 	if (pos<cantidad){
 
-Latex(pos,altura,elem);
-
 		vector[pos]=elem;
 		cantidad++;
+		LatexTodo();
+		LatexResaltar(pos,altura,elem,"red");
 	}
 }
 
 int Arreglo::sumaVector(){
 
 	int acum=0;
-		for(int i=0;i< tamano;i++){
+
+	for(int i=0;i< tamano;i++){
+
 		acum=vector[i]+acum;
    }
-
-
 
 		return acum;
 }
@@ -96,7 +112,7 @@ void Arreglo::invierteVector(){
 		}
 
 LatexTodo();
-
+end();
 
 
 }
@@ -104,6 +120,7 @@ LatexTodo();
 	void Arreglo::imprimeVector(){
 
 	for(int i=0;i< cantidad;i++){
+
 		cout<<vector[i]<<endl;
   	 }
 }
@@ -127,10 +144,10 @@ LatexTodo();
 			vector[pos1]=vector[pos2];
 			vector[pos2]=aux;
 
-
-Latex(pos1,altura,vector[pos1]);
-
-Latex(pos2,altura,vector[pos2]);
+//LatexTodo(); FORRRR
+//Latex(pos1,altura,vector[pos1]);
+//LatexTodo();
+//Latex(pos2,altura,vector[pos2]);
 
 		}	
 	}
@@ -167,7 +184,7 @@ void Arreglo:: llenarVector(int cantidad){
 
 
 LatexTodo();
-
+end();
 }
 
  int Arreglo:: calculaPromedio() {
@@ -190,7 +207,7 @@ LatexTodo();
 			aux=i;
 		}
 	}
-
+LatexTodo();
 LatexResaltar(aux,altura,vector[aux],"red");
 
 
@@ -222,8 +239,8 @@ LatexResaltar(aux,altura,vector[aux],"green");
   for(int i=0;i<getCantidad()-1;i++)
 
 	  if(obtenerObjeto(i)==elemento){
-
-Latex(i,altura,vector[i]);	
+LatexTodo();
+LatexResaltar(i,altura,vector[i],"green");	
 
 
 	return true;
@@ -234,7 +251,6 @@ Latex(i,altura,vector[i]);
 
 
 void Arreglo:: ordenar(){
-
 
 	int  posMinimo;
 
@@ -255,6 +271,7 @@ void Arreglo:: ordenar(){
 		
 
 LatexTodo();
+end();
 
 }
 
@@ -265,6 +282,7 @@ void Arreglo::limpiaVector(){
    }
 
 LatexTodo();
+end();
 
 
 }
@@ -272,7 +290,7 @@ LatexTodo();
 string Arreglo::getCadena(){
 
 	cout<<"Los datos del arreglo son: "<<endl;
-this->cadena+="\n \\end{tikzpicture}";
+	
 	return this->cadena;
 
 }
@@ -288,15 +306,35 @@ void Arreglo::Latex(int posx, int posy, int valor){
 		this->cadena += Convertir(valor); 
 		this->cadena += "};";
 
-
+end();
 }
 
 void Arreglo::LatexTodo(){
 
+begin();
+
+	for(int i=0; i<tamano; i++){
+
+		this->cadena += "\n \\node (rectangle) at (";
+		this->cadena += Convertir(2*i);
+		this->cadena += ",";
+		this->cadena += Convertir(altura);
+		this->cadena += ") [draw,thick,minimum width=2cm,minimum height=5mm] {";
+		this->cadena += Convertir(vector[i]); 
+		this->cadena += "};";
+
+	}
+
+}
+
+void Arreglo::LatexCantidad(){
+
+begin();
+
 	for(int i=0; i<cantidad; i++){
 
 		this->cadena += "\n \\node (rectangle) at (";
-		this->cadena += Convertir(i);
+		this->cadena += Convertir(2*i);
 		this->cadena += ",";
 		this->cadena += Convertir(altura);
 		this->cadena += ") [draw,thick,minimum width=2cm,minimum height=5mm] {";
@@ -311,7 +349,7 @@ void Arreglo::LatexResaltar(int posx, int posy, int valor, string color){
 
 
 		this->cadena += "\n \\node (rectangle) at (";
-		this->cadena += Convertir(posx);
+		this->cadena += Convertir(2*posx);
 		this->cadena += ",";
 		this->cadena += Convertir(posy);
 		this->cadena += ") [draw,thick,fill=";
@@ -320,7 +358,7 @@ void Arreglo::LatexResaltar(int posx, int posy, int valor, string color){
 		this->cadena += Convertir(valor); 
 		this->cadena += "};";
 
-
+end();
 }
 
 string Arreglo::Convertir(int valor){
@@ -331,5 +369,18 @@ return s1.str();
 
 }
 
+void Arreglo::begin (){
+
+this->cadena += "\n \\begin{frame}";
+this->cadena+="\n \\begin{tikzpicture} \n";
+
+}
+
+void Arreglo::end(){
+
+this->cadena+="\n\n \\end{tikzpicture} \n";
+this->cadena += " \\end{frame} \n";
+
+}
 
 

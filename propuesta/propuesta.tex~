@@ -2,12 +2,10 @@
 \mode <presentation>
 \usetheme{Warsaw}
 \usecolortheme{lily}
-
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{tikz}
-
-
+\graphicspath{{../multimedia/}}
 \begin{document}%  
 
 \begin{frame}

@@ -10,8 +10,6 @@ private:
 	void Latex(int,int,int);
 	void LatexTodo();
 	void LatexResaltar(int,int,int,string);
-	void begin();
-	void end();
 	string Convertir(int);
 public:
 	int eliminaElemento();
