@@ -1,7 +1,7 @@
 #include "node.h"
 
-class tree
-{
+class tree{
+	
     public:
         tree();
         ~tree();
