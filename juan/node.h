@@ -1,4 +1,4 @@
-//#include "Latex.h"
+#include "Latex.h"
 
 struct node{
 	

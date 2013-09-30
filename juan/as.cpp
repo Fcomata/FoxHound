@@ -1,6 +1,6 @@
 #include "tree.h"
 
 int main(){
-	int a=1;
+	tree *a = new tree();
 	return 0;
 }

@@ -1,7 +1,7 @@
 #include "node.h"
 
 class tree{
-	
+
     public:
         tree();
         ~tree();
@@ -14,6 +14,6 @@ class tree{
         void destroy_tree(node *leaf);
         void insert(int key, node *leaf);
         node *search(int key, node *leaf);
-        
+
         node *root;
 };
