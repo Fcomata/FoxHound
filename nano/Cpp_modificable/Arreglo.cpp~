@@ -82,10 +82,11 @@ void Arreglo::ingresarElementoEnPosicion(int elem,int pos){
 
 	if (pos<cantidad){
 
+		LatexTodo();
 		vector[pos]=elem;
 		cantidad++;
-		LatexTodo();
-		LatexResaltar(pos,altura,elem,"red");
+		
+		LatexResaltar(pos,altura+1,elem,"red");
 	}
 }
 
@@ -316,7 +317,7 @@ begin();
 	for(int i=0; i<tamano; i++){
 
 		this->cadena += "\n \\node (rectangle) at (";
-		this->cadena += Convertir(i);
+		this->cadena += Convertir(2*i);
 		this->cadena += ",";
 		this->cadena += Convertir(altura);
 		this->cadena += ") [draw,thick,minimum width=2cm,minimum height=5mm] {";
@@ -334,7 +335,7 @@ begin();
 	for(int i=0; i<cantidad; i++){
 
 		this->cadena += "\n \\node (rectangle) at (";
-		this->cadena += Convertir(i);
+		this->cadena += Convertir(2*i);
 		this->cadena += ",";
 		this->cadena += Convertir(altura);
 		this->cadena += ") [draw,thick,minimum width=2cm,minimum height=5mm] {";
@@ -349,7 +350,7 @@ void Arreglo::LatexResaltar(int posx, int posy, int valor, string color){
 
 
 		this->cadena += "\n \\node (rectangle) at (";
-		this->cadena += Convertir(posx);
+		this->cadena += Convertir(2*posx);
 		this->cadena += ",";
 		this->cadena += Convertir(posy);
 		this->cadena += ") [draw,thick,fill=";

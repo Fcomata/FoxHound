@@ -22,15 +22,15 @@ int main(){
     cout<<"Prueba de Arreglos"<<endl;
 
     	Arreglo * a= new Arreglo(5);
-    	a->ingresarElemento(5);
-    	a->ingresarElemento(4);
+    	a->ingresarElemento(45);
     	a->ingresarElemento(3);
-    	a->ingresarElemento(2);
     	a->ingresarElemento(1);
-	a->buscarElemento(3);
+    	a->ingresarElemento(8);
+    	a->ingresarElemento(9);
+	a->buscarElemento(8);
 	a->eliminaElementoEnPosicion(2);
-	a->ingresarElementoEnPosicion(14,4);
-	a->buscarElemento(14);
+	a->ingresarElementoEnPosicion(5,1);
+	a->buscarElemento(2);
 	a->ordenar();
 	a->limpiaVector();
 

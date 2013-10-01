@@ -12,13 +12,12 @@
 
 %Definicion de los nodos, ancho fijo, color fijo, forma, etc.
 \tikzset{
-
-  treenode/.style = {align=center, inner sep=0pt, text centered,font=\sffamily}, 
-  black_node/.style = {treenode, circle, white, font=\sffamily\bfseries, draw=black,fill=black, text width=1.5cm},% Nodos negros
+  treenode/.style = {align=center, inner sep=0pt, text centered,
+    font=\sffamily}, 
+  black_node/.style = {treenode, circle, white, font=\sffamily\bfseries, draw=black,
+    fill=black, text width=1.5cm},% Nodos negros
   red_node/.style = {treenode, circle, red, draw=red, text width=1.5cm, very thick},% Nodos rojos
-  white_node/.style = {treenode, circle, black, draw=black, fill=white, text width=1.5cm, very thick},% 
   NIL/.style = {treenode, rectangle, white, fill=black,font=\sffamily\bfseries, draw=black, minimum width=2em, minimum height=1em}%NIL
-
 }
 
 
