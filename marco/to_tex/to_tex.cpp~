@@ -17,7 +17,8 @@ myfile << "\\documentclass{beamer} \\usetheme[pageofpages=of, alternativetitlepa
 myfile << cadena;
 myfile << "\n\\end{document}";
 myfile.close();
-system("pdflatex -output-directory Latex ./Latex/*.tex");
+system("cd Latex");
+system("pdflatex *.tex");
 }
 
 

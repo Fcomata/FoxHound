@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.5.30)  1 OCT 2013 23:44
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.5.30)  2 OCT 2013 15:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**arreglos.tex
-(./arreglos.tex
+**./Latex/arreglos.tex ./Latex/listas.tex
+(./Latex/arreglos.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
 aded.
@@ -1445,21 +1445,15 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 124.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
- (./arreglos.aux
+ (Latex/arreglos.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 124.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 124.
+Package rerunfilecheck Info: File `arreglos.out' has not changed.
+(rerunfilecheck)             Checksum: <no file>.
 
-
-Package rerunfilecheck Warning: File `arreglos.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `arreglos.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -1467,16 +1461,16 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 124.
  ) 
 Here is how much of TeX's memory you used:
- 18960 strings out of 495059
- 355577 string characters out of 3182030
+ 18962 strings out of 495059
+ 355627 string characters out of 3182030
  452335 words of memory out of 3000000
  21660 multiletter control sequences out of 15000+200000
  4845 words of font info for 18 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 49i,17n,53p,872b,554s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,17n,53p,899b,554s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on arreglos.pdf (10 pages, 25220 bytes).
+Output written on Latex/arreglos.pdf (10 pages, 25220 bytes).
 PDF statistics:
  80 PDF objects out of 1000 (max. 8388607)
  61 compressed objects within 1 object stream

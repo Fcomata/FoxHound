@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.5.30)  1 OCT 2013 23:44
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.5.30)  2 OCT 2013 15:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**listas.tex
-(./listas.tex
+**./Latex/Hello_Mundo.tex
+(./Latex/Hello_Mundo.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
 aded.
@@ -655,21 +655,45 @@ Package: beamerinnerthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
 (/usr/share/texmf/tex/latex/beamer/base/themes/outer/beamerouterthemedefault.st
 y
 Package: beamerouterthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
-))) (./beamerthemeTorino.sty (./beamerinnerthemefancy.sty
-\beamer@fancy@lineup=\skip57
-\beamer@fancy@linemid=\skip58
-\beamer@fancy@linebottom=\skip59
-\beamer@fancy@normalmargin=\skip60
-)
-(./beamerouterthemedecolines.sty
-\headerheight=\skip61
-\beamer@decolines@lineup=\skip62
-\beamer@decolines@linemid=\skip63
-\beamer@decolines@linebottom=\skip64
-\beamer@decolines@watermarkheightbottom=\skip65
-\beamer@decolines@watermarkheightupperorig=\skip66
-) (./beamercolorthemechameleon.sty))
-(./beamercolorthemenouvelle.sty)
+)))
+
+! LaTeX Error: File `beamerthemeTorino.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+
+! LaTeX Error: Unknown option `pageofpages=of' for package `beamerthemeTorino'.
+
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...ages=of, alternativetitlepage=true]{Torino}
+                                                  \usecolortheme{nouvelle} \...
+
+? 
+
+! LaTeX Error: Unknown option `alternativetitlepage=true' for package `beamerth
+emeTorino'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...ages=of, alternativetitlepage=true]{Torino}
+                                                  \usecolortheme{nouvelle} \...
+
+? 
+
+! LaTeX Error: File `beamercolorthemenouvelle.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2008/07/08 v3.8m The Babel package
 
@@ -702,7 +726,7 @@ Package: thumbpdf 2012/04/18 v3.15 Inclusion of thumbnails (HO)
 Package thumbpdf Warning: Compressed PDF objects of PDF 1.5 are not supported.
 
 
-Package thumbpdf Warning: Thumbnail data file `listas.tpt' not found.
+Package thumbpdf Warning: Thumbnail data file `Hello_Mundo.tpt' not found.
 
 ) (/usr/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
@@ -1083,8 +1107,8 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \page@free=\dimen216
 \premulticols=\dimen217
 \postmulticols=\dimen218
-\multicolsep=\skip67
-\multicolbaselineskip=\skip68
+\multicolsep=\skip57
+\multicolbaselineskip=\skip58
 \partial@page=\box57
 \last@line=\box58
 \mult@rightbox=\box59
@@ -1117,8 +1141,8 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \colbreak@box=\box81
 \multicol@sort@counter=\count178
 )
-No file listas.aux.
-\openout1 = `listas.aux'.
+No file Hello_Mundo.aux.
+\openout1 = `Hello_Mundo.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 1.
 LaTeX Font Info:    ... okay on input line 1.
@@ -1142,14 +1166,14 @@ LaTeX Font Info:    ... okay on input line 1.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(21.85083pt, 320.4937pt, 21.85083pt)
+* h-part:(L,W,R)=(28.45274pt, 307.28987pt, 28.45274pt)
 * v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
 * \paperwidth=364.19536pt
 * \paperheight=273.14662pt
-* \textwidth=320.4937pt
+* \textwidth=307.28987pt
 * \textheight=244.6939pt
-* \oddsidemargin=-50.41916pt
-* \evensidemargin=-50.41916pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
 * \topmargin=-72.26999pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
@@ -1212,7 +1236,7 @@ LaTeX Info: Redefining \ref on input line 1.
 LaTeX Info: Redefining \pageref on input line 1.
 LaTeX Info: Redefining \nameref on input line 1.
 \@outlinefile=\write5
-\openout5 = `listas.out'.
+\openout5 = `Hello_Mundo.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 1.
@@ -1308,70 +1332,53 @@ Package ucs Warning: ***************************
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
-No file listas.nav.
+No file Hello_Mundo.nav.
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 22.
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
+(Font)              size <5> substituted on input line 3.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 \tf@nav=\write6
-\openout6 = `listas.nav'.
+\openout6 = `Hello_Mundo.nav'.
 
 \tf@toc=\write7
-\openout7 = `listas.toc'.
+\openout7 = `Hello_Mundo.toc'.
 
 \tf@snm=\write8
-\openout8 = `listas.snm'.
+\openout8 = `Hello_Mundo.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 24.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 24.
- (./listas.aux
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3.
+ (Latex/Hello_Mundo.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 24.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 24.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3.
+Package rerunfilecheck Info: File `Hello_Mundo.out' has not changed.
+(rerunfilecheck)             Checksum: <no file>.
 
-
-Package rerunfilecheck Warning: File `listas.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `listas.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3.
  ) 
 Here is how much of TeX's memory you used:
- 18973 strings out of 495059
- 355736 string characters out of 3182030
- 451335 words of memory out of 3000000
- 21691 multiletter control sequences out of 15000+200000
- 5150 words of font info for 19 fonts, out of 3000000 for 9000
+ 18735 strings out of 495059
+ 349663 string characters out of 3182030
+ 441443 words of memory out of 3000000
+ 21464 multiletter control sequences out of 15000+200000
+ 4845 words of font info for 18 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 49i,17n,62p,870b,726s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on listas.pdf (1 page, 18307 bytes).
+ 49i,14n,53p,883b,554s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb>
+Output written on Latex/Hello_Mundo.pdf (1 page, 10783 bytes).
 PDF statistics:
- 29 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 45 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  3 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
