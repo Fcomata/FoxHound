@@ -4,8 +4,9 @@ using namespace std;
 int main()
 {
 cout<<"Prueba de to_tex"<<endl;
-//Aqui es donde va el getCadena()
 string cadena="Hola Mundo!!!";
-	create_tex(cadena);
+string name="press.tex";
+	create_tex(name, cadena);
 cout<<"Fin"<<endl;
 }
+
