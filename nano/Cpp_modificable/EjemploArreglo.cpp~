@@ -7,7 +7,7 @@ using namespace std;
 
 int main(){
    
-/*
+
     cout<<"Prueba de Listas"<<endl;
 
 	Lista * l = new Lista();
@@ -18,7 +18,8 @@ int main(){
 	l->insertar(15);
 	l->mostrar();
 	cout<<"Los datos de la cadena son: "<< l->getCadena()<<endl;
-*/
+	create_tex("listas.tex",l->getCadena());
+
     cout<<"Prueba de Arreglos"<<endl;
 
     	Arreglo * a= new Arreglo(5);
@@ -29,7 +30,7 @@ int main(){
     	a->ingresarElemento(1);
 	a->buscarElemento(3);
 	a->eliminaElementoEnPosicion(2);
-	a->ingresarElementoEnPosicion(14,4);
+	a->ingresarElementoEnPosicion(4,14);
 	a->buscarElemento(14);
 	a->ordenar();
 	a->limpiaVector();
@@ -37,6 +38,7 @@ int main(){
 
     cout<<"El suma es: " << a->sumaVector()<<endl;
     cout<<a->getCadena();
+    create_tex("arreglos.tex",a->getCadena());
     cin.get();
     return 0;
 }

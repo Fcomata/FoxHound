@@ -1,13 +1,13 @@
 #include <iostream>
 #include "Arreglo.h"
 #include "Lista.h"
-
+#include "to_tex.h"
 
 using namespace std;
 
 int main(){
    
-/*
+
     cout<<"Prueba de Listas"<<endl;
 
 	Lista * l = new Lista();
@@ -18,7 +18,8 @@ int main(){
 	l->insertar(15);
 	l->mostrar();
 	cout<<"Los datos de la cadena son: "<< l->getCadena()<<endl;
-*/
+	create_tex("listas.tex",l->getCadena());
+
     cout<<"Prueba de Arreglos"<<endl;
 
     	Arreglo * a= new Arreglo(5);
@@ -37,6 +38,7 @@ int main(){
 
     cout<<"El suma es: " << a->sumaVector()<<endl;
     cout<<a->getCadena();
+    create_tex("arreglos.tex",a->getCadena());
     cin.get();
     return 0;
 }

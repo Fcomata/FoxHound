@@ -1,5 +1,6 @@
 #include "Lista.h"
 #include <iostream>
+#include <sstream>
 
 using namespace std;
 
@@ -8,6 +9,7 @@ using namespace std;
 
 	primero=actual=NULL;
 	cant=0;
+ 	begin();
     }
 
    Lista::~Lista(){
@@ -31,8 +33,6 @@ void Lista::insertar(int v){
 
 	if(primero==NULL || primero->getV()>v){
 	primero=new Nodo(v,primero);
-
-	cadena+="bla";
 
 	}
 	else {
@@ -63,7 +63,7 @@ void Lista::borrar(int v){//Busca y elimina un nodo determinado
 	Nodo* anterior=NULL;
 	elPrimero();
 	while(actual && actual->getV()!=v){
-	anterior=actual;
+	anterior	=actual;
 	actual=actual->getS();
    }
 	if(!actual || actual->getV() !=v)//Si no lo encontro
@@ -82,12 +82,43 @@ void Lista::mostrar(){
 
 	elPrimero();
 	cout<<"Contenido de la lista:"<<endl;
-	while(actual!=NULL){
-	cout<<actual->getV()<<endl;
+	for(int i=1; i<=cant;i++){
+	int v=actual->getV();
+	cout<<v<<endl;
 	actual=actual->getS();
-	this->cadena += "Hola";
-    }
 
+	cadena+="\\node[main_node] (";
+	cadena+=Convertir(i);
+	cadena+=")";
+	if(i>1){
+	cadena+="[right of=";
+	cadena+=Convertir(i-1);
+	cadena+="]";}
+	cadena+=" {";
+	cadena+=Convertir(v);
+	cadena+="}; \n";	
+    }
+//Nodo null, siempre al final
+	this->cadena+="\\node[main_node] (null) [right of=";
+	this->cadena+=Convertir(cant);
+	this->cadena+="] {Null};\n\n";
+	this->cadena+="\\path[every node/.style={font=\\sffamily\\small}]\n";
+	for(int i=1; i<cant;i++){
+//Flechas, se dibujan todas menos la que apunta a null
+	this->cadena+="(";
+	this->cadena+=Convertir(i);
+	this->cadena+=") edge [left] node [left] {} (";
+	this->cadena+=Convertir(i+1);
+	this->cadena+=")\n";
+	}
+//Flecha de el ultimo nodo a null
+this->cadena+="(";
+	this->cadena+=Convertir(cant);
+	this->cadena+=") edge [left] node [left] {} (";
+	this->cadena+="null";
+	this->cadena+=");\n";
+
+end();
 cout<<endl;
 
 }
@@ -130,3 +161,26 @@ string Lista::getCadena(){
 	return this->cadena;
 
 }
+//----------------------------------------------------
+void Lista::begin (){
+
+this->cadena += "\n \\begin{frame}";
+this->cadena+="\n \\begin{tikzpicture}[shorten >=1pt,->]";
+this->cadena+="\n \\tikzstyle{main_node}=[rectangle,fill=black!25,minimum size=20pt,inner sep=0pt] \n";
+
+}
+
+void Lista::end(){
+this->cadena+="\n\n \\end{tikzpicture} \n";
+this->cadena += " \\end{frame} \n";
+
+}
+
+string Lista::Convertir(int valor){
+stringstream s1;
+s1<<valor;
+return s1.str();
+}
+
+
+

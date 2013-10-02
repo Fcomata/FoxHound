@@ -5,7 +5,7 @@ using namespace std;
 void create_tex (string file_name, string cadena)
 {
 ofstream myfile;
-myfile.open (file_name.c_str());
+myfile.open (file_name);
 myfile << "\\documentclass{beamer} \\usetheme[pageofpages=of, alternativetitlepage=true]{Torino}\\usecolortheme{nouvelle} \\usepackage[spanish]{babel} \\usepackage{thumbpdf} \\usepackage{tikz} \\usetikzlibrary{arrows} \\usepackage{ucs} \\usepackage[utf8]{inputenc} \\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade} \\usepackage{verbatim} \\usepackage{booktabs} \\usepackage{multicol} \\usepackage{url} \\beamersetuncovermixins{\\opaqueness<1>{25}}{\\opaqueness<2->{15}} \\begin{document}\n";
 myfile << cadena;
 myfile << "\n\\end{document}";

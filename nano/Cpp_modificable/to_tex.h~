@@ -5,5 +5,5 @@
 #include <string>
 using namespace std;
 
-void create_tex(string, string);
+void create_tex(string);
 //void delete_tex(string file);
