@@ -16,6 +16,9 @@ public:
 	bool elActual();
 	int valorActual();
 	string getCadena();
+	void begin();
+	void end();
+	string Convertir(int v);
 private:
 	Nodo* primero;
 	Nodo* actual;

@@ -1,6 +1,6 @@
 #include <iostream>
-#include "Arreglo.h"
 #include "Lista.h"
+#include "to_tex.h"
 
 using namespace std;
 
@@ -18,27 +18,10 @@ int main(){
 	l->insertar(120);
 	l->insertar(170);
 	l->insertar(220);
-	l->insertar(-813);
 	l->mostrar();
+	string cadena = l->getCadena();
+	create_tex(cadena);
 	cout<<"Los datos de la cadena son: "<< l->getCadena()<<endl;
-/*
-    cout<<"Prueba de Arreglos"<<endl;
-
-    	Arreglo * a= new Arreglo(5);
-    	a->ingresarElemento(45);
-    	a->ingresarElemento(3);
-    	a->ingresarElemento(1);
-    	a->ingresarElemento(8);
-    	a->ingresarElemento(9);
-	a->buscarElemento(8);
-	a->buscarElemento(2);
-	a->ordenar();
-	a->limpiaVector();
-
-
-    cout<<"El suma es: " << a->sumaVector()<<endl;
-    cout<<a->getCadena();
-    cin.get();*/
     return 0;
 }
 
