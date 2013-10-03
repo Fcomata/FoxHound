@@ -117,7 +117,8 @@
 \node[main_node] (4)[right of=3] {3}; 
 \node[main_node] (5)[right of=4] {2}; 
 \node[main_node] (6)[right of=5] {1}; 
-\node[main_node] (null) [right of=6] {Null};
+\node[main_node] (7)[right of=6] {6}; 
+\node[main_node] (null) [right of=7] {Null};
 
 \path[every node/.style={font=\sffamily\small}]
 (1) edge [left] node [left] {} (2)
@@ -125,7 +126,8 @@
 (3) edge [left] node [left] {} (4)
 (4) edge [left] node [left] {} (5)
 (5) edge [left] node [left] {} (6)
-(6) edge [left] node [left] {} (null);
+(6) edge [left] node [left] {} (7)
+(7) edge [left] node [left] {} (null);
 
 
  \end{tikzpicture} 
@@ -140,7 +142,9 @@
 \node[main_node] (4)[right of=3] {7}; 
 \node[main_node] (5)[right of=4] {3}; 
 \node[main_node] (6)[right of=5] {2}; 
-\node[main_node] (null) [right of=6] {Null};
+\node[main_node] (7)[right of=6] {1}; 
+\node[main_node] (8)[right of=7] {6}; 
+\node[main_node] (null) [right of=8] {Null};
 
 \path[every node/.style={font=\sffamily\small}]
 (1) edge [left] node [left] {} (2)
@@ -148,7 +152,9 @@
 (3) edge [left] node [left] {} (4)
 (4) edge [left] node [left] {} (5)
 (5) edge [left] node [left] {} (6)
-(6) edge [left] node [left] {} (null);
+(6) edge [left] node [left] {} (7)
+(7) edge [left] node [left] {} (8)
+(8) edge [left] node [left] {} (null);
 
 
  \end{tikzpicture} 

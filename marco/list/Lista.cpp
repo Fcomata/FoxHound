@@ -47,13 +47,14 @@ void Lista::insertar_en_medio(int v,int pos){
 	for (int i=pos-1; i>0;i--)
 	{
 		actual=actual->getS();
-	}		
-	Nodo* nodo_a_insertar= new Nodo(v,actual->getS());
+	}
+	Nodo* nodo_a_insertar= new Nodo(v,(actual->getS()));
 	actual->setS(nodo_a_insertar);
+	cant++;
 	mostrar();
 }
 
-bool Lista::buscar(int v){
+/*bool Lista::buscar(int v){
 	Nodo* anterior=NULL;
 	elPrimero();
 	while(actual!=NULL){
@@ -83,7 +84,7 @@ void Lista::borrar(int v){//Busca y elimina un nodo determinado
 	anterior->setS( actual->getS());
 	delete actual;
     }
-}
+}*/
 
 //----------------------------------------------------------------------------------------------------------------
 void Lista::mostrar(){
