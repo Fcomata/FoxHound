@@ -10,15 +10,15 @@ Nodo::Nodo(int v, Nodo *sig=NULL){
 Nodo::~Nodo(){
 }
 void Nodo::setV (int v) { 
-	this->valor= v;
+	this->valor= v; 
 }
 void Nodo::setS (Nodo *s) { 
-	this->siguiente=s;
+	this->siguiente=s; 
 }
 
 int Nodo::getV (){ 
-	return this->valor;
+	return this->valor; 
 }
 Nodo * Nodo::getS (){ 
-	return this->siguiente;
+	return this->siguiente; 
 }

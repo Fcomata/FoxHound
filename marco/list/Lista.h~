@@ -7,9 +7,10 @@ public:
 	Lista();
 	~Lista();
 	bool buscar(int v);
-	void insertar(int v);
+	void insertar_al_inicio(int v);
+	void insertar_al_final(int v);
+	void insertar_en_medio(int v, int pos);
 	void borrar(int v);
-	void mostrar();
 	void elSiguiente();
 	void elPrimero();
 	void elUltimo();
@@ -23,4 +24,5 @@ private:
 	Nodo* primero;
 	Nodo* actual;
 	int cant;
+	void mostrar();
 };
