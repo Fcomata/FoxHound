@@ -1,4 +1,6 @@
 #include "Latex.h"
+#include <iostream>
+using namespace std;
 
 struct node{
 	
