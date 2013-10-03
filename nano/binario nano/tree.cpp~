@@ -65,8 +65,13 @@ node *tree::search(int key, node *leaf){
 	if(leaf!=NULL){
 
 		if(key==leaf->key_value){
-
+		//highlight nodo RED
 			return leaf;
+		}
+
+		else{
+		//highliht nodo green
+
 		}
 
 		if(key<leaf->key_value){
@@ -76,6 +81,7 @@ node *tree::search(int key, node *leaf){
 		}
 
 		else{
+			//highlight nodo RED
 			return search(key, leaf->right);
 		}
 
@@ -93,6 +99,7 @@ void tree::insert(int key){
 	if(root!=NULL){
 
 		insert(key, root);
+		
 
 	}
 
@@ -101,6 +108,8 @@ void tree::insert(int key){
 		root->key_value=key;
 		root->left=NULL;
 		root->right=NULL;
+		
+		
 	}
 }
 
@@ -116,16 +125,34 @@ void tree::destroy_tree(){
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-void tree::create (){
+void tree::create (node *leaf){
 
-	begin();
-	LatexNode();
-	for(int i=1; i<tamaño, ++i){
+	int contador = 0;
 
+		LatexNode("white",root->key_value);
+
+		if(NULL=!leaf->key_value){
+
+			LatexChild("white",key_value);
+
+		}
 		
 
 
-	}
+		if(NULL =! leaf->key_value){
+			contador++;
+			return search(key, leaf->left);
+
+		}
+
+		else{
+		for(int i=0;i<contador, i++){
+			cerrar();}
+			return search(leaf->right);
+		}
+
+	
+
 
 }
 

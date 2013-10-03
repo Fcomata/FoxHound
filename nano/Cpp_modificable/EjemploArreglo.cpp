@@ -13,12 +13,16 @@ int main(){
 	Lista * l = new Lista();
 	l->insertar(2);
 	l->insertar(90);
+	l->mostrar();
     	l->insertar(60);
 	l->insertar(-5);
 	l->insertar(15);
+	
 	l->mostrar();
 	cout<<"Los datos de la cadena son: "<< l->getCadena()<<endl;
 	create_tex("listas.tex",l->getCadena());
+
+cout<<"////////////////////////////////////////////////////////////////////"<<endl;
 
     cout<<"Prueba de Arreglos"<<endl;
 
@@ -36,7 +40,6 @@ int main(){
 	a->limpiaVector();
 
 
-    cout<<"El suma es: " << a->sumaVector()<<endl;
     cout<<a->getCadena();
     create_tex("arreglos.tex",a->getCadena());
     cin.get();

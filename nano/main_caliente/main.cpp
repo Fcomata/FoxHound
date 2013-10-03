@@ -18,9 +18,7 @@ if (menu==1){
 
 int menuArreglo=0;
 
-string nombre =getNombre();
-
-Arreglo * nombre = new Arreglo(); ///SE PUEDE????
+Arreglo * A = new Arreglo(); ///SE PUEDE????
 
 cout<<"Menu de Arreglos: \n 1)Llenar Vector \n 2)Insertar Elemento \n 3)Elimina Elemento \n 4)Ingresar Elemento en Posicion\n 5)Elimina Elemento en Posicion\n 6)Intercambiar Elementos\n 7)Invierte Vector \n 8)Maximo \n 9) Minimo \n 10)Ordenar \n 0)Salir"<<endl;
 	

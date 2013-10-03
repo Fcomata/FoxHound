@@ -3,6 +3,7 @@
 #include <fstream>
 #include <stdio.h>
 #include <string>
+
 using namespace std;
 
 void create_tex(string, string);
