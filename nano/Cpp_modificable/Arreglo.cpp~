@@ -14,7 +14,7 @@ Arreglo::Arreglo(int n){
 
 	for(int i=0;i< tamano;i++){
 
-		vector[i]=NULL;
+		vector[i]=0;
 
    }
 
