@@ -10,7 +10,9 @@ public:
 	void insertar_al_inicio(int v);
 	void insertar_al_final(int v);
 	void insertar_en_medio(int v, int pos);
-	void borrar(int v);
+	void borrar_al_inicio();
+	void borrar_al_final();
+	void borrar_en_medio();
 	void elSiguiente();
 	void elPrimero();
 	void elUltimo();

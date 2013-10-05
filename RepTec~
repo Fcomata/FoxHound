@@ -1,0 +1,44 @@
+/@/Introduccion
+
+El uso de estructuras de datos hoy en dia es de suma importancia, ya que son estructuras dinamcas, es decir estas pueden crecer segun se necesiten o bien decrecer. 
+Sobre toda la importancia hay que reconocer que su concepion y compreson es muy dificil, ya que se manejan punteros, es decir direcciones a memoria ram. 
+De ahi nuestra propuesta, poder ayudar a la comprension de estas estructuras de una forma visual, una documentacion en beamer (Latex), de manera automatica.
+
+La documentacion para un programador es la herramienta de mayor importancia, la comprension del codigo es la prioridad de un programador. El crear documentacion ordenada y visual de manera
+automatica es una gran ventaja a la hora de programar. Quitarle el peso, de la documentacion, al programador y poder desplegarla de 
+una manera visual, sin duda alguna es una idea innovadora, y de suma importancia para comprender los procesos computacionales, con un lenguaje de peso para los humanos como es el visual.
+
+/@/Reporte Tecnico del Proyecto
+
+////Evolucion del Proyecto
+
+Inicicalmente el concepto de visualizar dentro de Latex las estructuras abstractas se percibia de una manera muy abstracta, valga la ironia. Como equipo pasamos un momneto de confunsion, 
+en el cual tuvimos que investigar por donde empezar, y una de las decisiones mas mportantes del proyecto fue usar la caracteristica de C++, programacion por objetos. El poder tener
+la capacidad para encapsular elementos para poder modelarlos facilmente, fue el exito de este proyecto, ya que facilito y despejo nuestra confunsion en cuanto al proyecto.
+
+Seguidamente al terminar ciertas estrcuturas (arreglos y listas), era la hora de empezar a programar nuestro objetivo, es decir la documentacion en Latex de las acciones a las
+estrcuturas de datos, de una manera simple. Asi que usamos herencia de clases, esta propiedad nos dio una gran ventaja en ahorro de codigo y facilidad de uso. Se utilizo la clase 
+Latex la cual tiene como proposito tener un registro de las acciones que estan sucediendo en codigo Latex. Es decir cada clase tiene un elemento virtual string "cadena", en el cual guarda
+ el codigo Latex, de la accion adecuada de la estructura. Y concibimos que cada clase debe tener una cadena por separado asi que usamos la funcion virtual.
+
+Seguidamente, implementamos las clases arrglo y listas al proyecto, testiamos levemente, ya que el tiempo es corto para la entrega. Y nos dimos a la tarea a empezar estructuras abstractas
+en dos dimension, arboles binarios.
+
+
+////Dificultades dentro el Proyecto
+
+El inicio del proyecto quedo muy en el aire la primera semana, su conceptualizacion comparado con el nivel de programacion del grupo, estaba elevado. Pero no fue un problema, que a su
+se haya solucionado. Investiganado y programando, con pequeños objetivos empezamos el proyecto para concretarlo.
+
+Uno de los grandes problemas que nos impidio a avanzar rapido, fue la poca flexbilidad del codigo Latex, el crear codigo Latex en C++, fue un gran reto de modelacion, ya que se debe tener
+mucho cuidado en cuanto a la sintaxis. Debido a que el proyecto se propuso de manera automatica, no puede haber margen de error a la hora de crear el codigo Latex.
+
+////Elementos a Mejorar
+
+Dado la inflexibilidad de Latex, y el tiempo, no se pudo desplegar animaciones dentro de la presentacion Latex, se crean imagenes estaticas y muy solidas, un elemento a considerar es
+proporcionar mayor movimiento dentro de la presentacion para mejorar la comprension de los sucesos
+
+Soportar mas estructuras, es decir implementar todas las posibles, o generar un grafo generico que genere las otras (pero su complejidad esta a otro nivel), ya que es una idea innovadora,
+y de gran ayuda al programador.
+
+

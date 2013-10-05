@@ -1,0 +1,134 @@
+\documentclass[12pt,letterpaper]{article}     % Tipo de documento y otras especificaciones
+\usepackage[utf8x]{inputenc}                  % Para escribir tildes y eñes
+\usepackage[spanish]{babel}                   % Para que los títulos de figuras, tablas y otros estén en español
+\addto\captionsspanish{\renewcommand{\tablename}{Tabla}}	% Cambiar nombre a tablas
+\addto\captionsspanish{\renewcommand{\listtablename}{Índice de tablas}}		% Cambiar nombre a lista de tablas
+\usepackage{geometry}                         
+\geometry{left=18mm,right=18mm,top=21mm,bottom=21mm} % Tamaño del área de escritura de la página
+\usepackage{ucs}
+\usepackage{amsmath}      % Los paquetes ams son desarrollados por la American Mathematical Society
+\usepackage{amsfonts}     % y mejoran la escritura de fórmulas y símbolos matemáticos.
+\usepackage{amssymb}
+\usepackage{graphicx}     % Para insertar gráficas
+\usepackage[lofdepth,lotdepth]{subfig}	% Para colocar varias figuras
+\usepackage{unitsdef}	  % Para la presentación correcta de unidades
+\renewcommand{\unitvaluesep}{\hspace*{4pt}}	% Redimensionamiento del espacio entre magnitud y unidad
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=black,citecolor=green]{hyperref}     % Para insertar hipervínculos y marcadores
+\usepackage{float}		% Para ubicar las tablas y figuras justo después del texto
+\usepackage{booktabs}	% Para hacer tablas más estilizadas
+\usepackage{multirow}   % Unir filas en tablas
+\batchmode
+\bibliographystyle{plain} 
+\pagestyle{plain} 
+\pagenumbering{arabic}
+\usepackage{lastpage}
+\usepackage{fancyhdr}	% Para manejar los encabezados y pies de página
+\usepackage{listings}
+\lstset{language=c++, label=hola,backgroundcolor=\color{white}, breaklines=true, numbers=left, showspaces=false, showstringspaces=false, frame=shadowbox, rulesepcolor=\color{black} }
+
+\lstdefinestyle{customasm}{
+  belowcaptionskip=1\baselineskip,
+  frame=L,
+  xleftmargin=\parindent,
+  language=[x86masm]Assembler,
+  basicstyle=\footnotesize\ttfamily,
+  commentstyle=\itshape\color{purple!40!black},
+}
+
+\pagestyle{fancy}		% Contenido de los encabezados y pies de pagina
+\lhead{Estructuras Abstractas}
+\chead{}
+\rhead{Proyecto \#1}
+\lfoot{Escuela de Ingeniería Eléctrica}
+\cfoot{\thepage}
+\rfoot{Universidad de Costa Rica}
+
+\author{Francisco Mata Marín, B13981 \\
+		Juan Carlos Montero Molina, A94013 \\
+		Marco Torres Umaña, B16592   \vspace {10mm}} 
+\title{{Universidad de Costa Rica \\ 
+		Facultad de Ingeniería \\
+		Escuela de Ingeniería Eléctrica \\
+		Estructuras abstractas \\
+		II – 2013\\  		 
+		\vspace* {50mm}			
+		 Proyecto \#1 } \vspace* {50mm}}
+		\date{Profesor: Francisco Siles\\19 de septiembre de 2013}  		
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pdfbookmark[1]{Portada}{portada} 	% Marcador para el título
+	\maketitle							% Título
+	\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+ 
+
+\section{Introduccion}
+
+Inicicalmente el concepto de visualizar dentro de Latex las estructuras abstractas se percibia de una manera muy abstracta, valga la ironia. Como equipo pasamos un momneto de confunsion, en el cual tuvimos que investigar por donde empezar, y una de las decisiones mas importantes del proyecto fue usar la caracteristica de C++, programacion por objetos. El poder tenerla capacidad para encapsular elementos para poder modelarlos facilmente, fue el exito de este proyecto, ya que facilito y despejo nuestra confunsion en cuanto al proyecto.\\
+
+Seguidamente al terminar ciertas estrcuturas (arreglos y listas), era la hora de empezar a programar nuestro objetivo, es decir la documentacion en Latex de las acciones a lasestrcuturas de datos, de una manera simple. Asi que usamos herencia de clases, esta propiedad nos dio una gran ventaja en ahorro de codigo y facilidad de uso. Se utilizo la clase Latex la cual tiene como proposito tener un registro de las acciones que estan sucediendo en codigo Latex. Es decir cada clase tiene un elemento virtual string "cadena", en el cual guarda el codigo Latex, de la accion adecuada de la estructura. Y concibimos que cada clase debe tener una cadena por separado asi que usamos la funcion virtual.\\
+
+Seguidamente, implementamos las clases arrglo y listas al proyecto, testiamos levemente, ya que el tiempo es corto para la entrega. Y nos dimos a la tarea a empezar estructuras abstractas en dos dimension, arboles binarios.\\
+
+\section{Justificacion de Lenguajes}
+
+En este proyecto se utilizaron dos lenguajes de programacion, en los cuales se explotaron algunas de sus carateristicas, para cumplir con el proyecto. Inicialmente, se penso programar en Latex ya que su estilo y funcionalidad es muy fina, el poder de modelar matematicamente y informaticamente un archivo de texto, es una idea no solo expectacular sino de gran ayuda a la automatizacion de trabajos tedioso y complicados. Seguidamente, se utilizo el lenguaje C++, ya que el poder de utilizar programacion por objetos, facilito enormemente la organizacion de ideas, metodos y acciones complejas, para cumplir los objetivos.
+
+
+
+\section{Objetivos}
+
+\subsection{Objetivo General} 
+
+Crear una libreria la cual se encargue de crear un beamer (Latex) con la visualizacion de ciertas estructuras abstactas vistas en el curso, desde un codigo de C++
+
+
+\subsection{Objetivos Especificos}
+
+
+\begin{enumerate}
+\item Facilitar la creacion y uso de las estructuras abstractas implementadas dentro de la libreria (principalmente vectores, listas y arboles) 
+\item Crear las animaciones de "Push" y "Pull" nodos de las estructuras, y hacer los cambios adecuados que estos generan en la estructura de una manera visual
+\item Construir herramientas que faciliten al usuario al manejo del beamer dentro del codigo de C++, ejemplos: zoom, seleccion de nodos, animaciones con temporales, entre otros
+\item Implementar la libreria de manera generica, para que soporte cambios y combinacion de estructuras, asi como el redblack tree ** (Opcional: dado el tiempo, se implementara)
+\end{enumerate}
+
+\section{Evolucion del Proyecto}
+
+Inicicalmente el concepto de visualizar dentro de Latex las estructuras abstractas se percibia de una manera muy abstracta, valga la ironia. Como equipo pasamos un momneto de confunsion, en el cual tuvimos que investigar por donde empezar, y una de las decisiones mas mportantes del proyecto fue usar la caracteristica de C++, programacion por objetos. El poder tenerla capacidad para encapsular elementos para poder modelarlos facilmente, fue el exito de este proyecto, ya que facilito y despejo nuestra confunsion en cuanto al proyecto.\\
+
+Seguidamente al terminar ciertas estrcuturas (arreglos y listas), era la hora de empezar a programar nuestro objetivo, es decir la documentacion en Latex de las acciones a lasestrcuturas de datos, de una manera simple. Asi que usamos herencia de clases, esta propiedad nos dio una gran ventaja en ahorro de codigo y facilidad de uso. Se utilizo la clase Latex la cual tiene como proposito tener un registro de las acciones que estan sucediendo en codigo Latex. Es decir cada clase tiene un elemento virtual string "cadena", en el cual guarda el codigo Latex, de la accion adecuada de la estructura. Y concibimos que cada clase debe tener una cadena por separado asi que usamos la funcion virtual.\\
+
+Seguidamente, implementamos las clases arrglo y listas al proyecto, testiamos levemente, ya que el tiempo es corto para la entrega. Y nos dimos a la tarea a empezar estructuras abstractas en dos dimension, arboles binarios.\\
+
+
+\section{Dificultades dentro el Proyecto}
+
+\begin{itemize}
+
+\item El inicio del proyecto quedo muy en el aire la primera semana, su conceptualizacion comparado con el nivel de programacion del grupo, estaba elevado. Pero no fue un problema, que a su se haya solucionado. Investiganado y programando, con pequeños objetivos empezamos el proyecto para concretarlo.
+
+\item Uno de los grandes problemas que nos impidio a avanzar rapido, fue la poca flexbilidad del codigo Latex, el crear codigo Latex en C++, fue un gran reto de modelacion, ya que se debe tener mucho cuidado en cuanto a la sintaxis. Debido a que el proyecto se propuso de manera automatica, no puede haber margen de error a la hora de crear el codigo Latex.
+
+\end{itemize} 
+
+\section{Elementos para mejorar}
+
+\begin{itemize}
+
+\item Dado la inflexibilidad de Latex, y el tiempo, no se pudo desplegar animaciones dentro de la presentacion Latex, se crean imagenes estaticas y muy solidas, un elemento a considerar es proporcionar mayor movimiento dentro de la presentacion para mejorar la comprension de los sucesos
+
+\item Soportar mas estructuras, es decir implementar todas las posibles, o generar un grafo generico que genere las otras (pero su complejidad esta a otro nivel), ya que es una idea innovadora, y de gran ayuda al programador.
+
+\end{itemize} 
+
+\end{document}

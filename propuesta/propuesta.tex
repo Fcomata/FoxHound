@@ -1,99 +1,100 @@
-\documentclass[compress, brown]{beamer}
-\mode <presentation>
-\usetheme{Warsaw}
-\usecolortheme{lily}
+\documentclass[12pt,letterpaper]{article}     % Tipo de documento y otras especificaciones
+\usepackage[utf8x]{inputenc}                  % Para escribir tildes y eñes
+\usepackage[spanish]{babel}                   % Para que los títulos de figuras, tablas y otros estén en español
+\addto\captionsspanish{\renewcommand{\tablename}{Tabla}}	% Cambiar nombre a tablas
+\addto\captionsspanish{\renewcommand{\listtablename}{Índice de tablas}}		% Cambiar nombre a lista de tablas
+\usepackage{geometry}                         
+\geometry{left=18mm,right=18mm,top=21mm,bottom=21mm} % Tamaño del área de escritura de la página
+\usepackage{ucs}
+\usepackage{amsmath}      % Los paquetes ams son desarrollados por la American Mathematical Society
+\usepackage{amsfonts}     % y mejoran la escritura de fórmulas y símbolos matemáticos.
+\usepackage{amssymb}
+\usepackage{graphicx}     % Para insertar gráficas
+\usepackage[lofdepth,lotdepth]{subfig}	% Para colocar varias figuras
+\usepackage{unitsdef}	  % Para la presentación correcta de unidades
+\renewcommand{\unitvaluesep}{\hspace*{4pt}}	% Redimensionamiento del espacio entre magnitud y unidad
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=black,citecolor=green]{hyperref}     % Para insertar hipervínculos y marcadores
+\usepackage{float}		% Para ubicar las tablas y figuras justo después del texto
+\usepackage{booktabs}	% Para hacer tablas más estilizadas
+\usepackage{multirow}   % Unir filas en tablas
+\batchmode
+\bibliographystyle{plain} 
+\pagestyle{plain} 
+\pagenumbering{arabic}
+\usepackage{lastpage}
+\usepackage{fancyhdr}	% Para manejar los encabezados y pies de página
+\usepackage{listings}
+\lstset{language=c++, label=hola,backgroundcolor=\color{white}, breaklines=true, numbers=left, showspaces=false, showstringspaces=false, frame=shadowbox, rulesepcolor=\color{black} }
 
-\usepackage[utf8]{inputenc}
-\usepackage{graphicx}
-\usepackage{tikz}
+\lstdefinestyle{customasm}{
+  belowcaptionskip=1\baselineskip,
+  frame=L,
+  xleftmargin=\parindent,
+  language=[x86masm]Assembler,
+  basicstyle=\footnotesize\ttfamily,
+  commentstyle=\itshape\color{purple!40!black},
+}
+
+\pagestyle{fancy}		% Contenido de los encabezados y pies de pagina
+\lhead{Estructuras abstractas}
+\chead{}
+\rhead{Propuesta proyecto \#1}
+\lfoot{Escuela de Ingeniería Eléctrica}
+\cfoot{\thepage}
+\rfoot{Universidad de Costa Rica}
+
+\author{Francisco Mata Marín, B13981 \\
+		Juan Carlos Montero Molina, A94013 \\
+		Marco Torres Umaña, B16592   \vspace {10mm}} 
+\title{{Universidad de Costa Rica \\ 
+		Facultad de Ingeniería \\
+		Escuela de Ingeniería Eléctrica \\
+		Estructuras abstractas \\
+		II – 2013\\  		 
+		\vspace* {50mm}			
+		 Propuesta proyecto \#1 } \vspace* {50mm}}
+		\date{Profesor: Francisco Siles\\19 de septiembre de 2013}  		
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pdfbookmark[1]{Portada}{portada} 	% Marcador para el título
+	\maketitle							% Título
+	\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\begin{document}%  
 
-\begin{frame}
- \begin{tikzpicture} 
 
- \node (rectangle) at (0,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
- \node (rectangle) at (1,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
- \node (rectangle) at (2,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
- \node (rectangle) at (3,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
- \node (rectangle) at (4,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
+\section{Vision}
+ 
+El usuario programara estructuras abstractas en un lenguaje de C++, la libreria tiene como objetivo principal, facilitar al usuario a visualizar lo que el algortimos de la estructura abstracta utilizanda, sus cambios (push y pull de nodos) dentro de esta, de una manera sencilla. La libreria se encargara de facilitar el uso de las estructuras,  de una manera mas sencilla y natural, al igual que crear el beamer al ser compilado. En resumen se pretende crear una libraria, estilo doxygen, pero de visualizacion de las estructuras principalmente, asi como la manipulacion de esta visualizacion.
 
- \end{tikzpicture} 
- \end{frame} 
+\section{Importancia}
 
- \begin{frame}
- \begin{tikzpicture} 
+La documentacion para un programador es la herramienta de mayor importancia, la comprension del codigo es la prioridad de un programador. El crear documentacion ordenada y visual de manera automatica es una gran ventaja a la hora de programar. Quitarle el peso, de la documentacion, al programador y poder desplegarla de una manera visual, sin duda alguna es una idea innovadora, y de suma importancia para comprender los procesos computacionales, con un lenguaje de peso para los humanos como es el visual.
 
- \node (rectangle) at (0,2) [draw,thick,minimum width=2cm,minimum height=5mm] {45};
- \node (rectangle) at (1,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
- \node (rectangle) at (2,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
- \node (rectangle) at (3,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
- \node (rectangle) at (4,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
- \begin{frame}
- \begin{tikzpicture} 
 
- \node (rectangle) at (0,2) [draw,thick,minimum width=2cm,minimum height=5mm] {45};
- \node (rectangle) at (1,2) [draw,thick,minimum width=2cm,minimum height=5mm] {3};
- \node (rectangle) at (2,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
- \node (rectangle) at (3,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
- \node (rectangle) at (4,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
- \begin{frame}
- \begin{tikzpicture} 
+\section{Objetivos}
 
- \node (rectangle) at (0,2) [draw,thick,minimum width=2cm,minimum height=5mm] {45};
- \node (rectangle) at (1,2) [draw,thick,minimum width=2cm,minimum height=5mm] {3};
- \node (rectangle) at (2,2) [draw,thick,minimum width=2cm,minimum height=5mm] {1};
- \node (rectangle) at (3,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
- \node (rectangle) at (4,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
- \begin{frame}
- \begin{tikzpicture} 
+\subsection{Objetivo General} 
 
- \node (rectangle) at (0,2) [draw,thick,minimum width=2cm,minimum height=5mm] {45};
- \node (rectangle) at (1,2) [draw,thick,minimum width=2cm,minimum height=5mm] {3};
- \node (rectangle) at (2,2) [draw,thick,minimum width=2cm,minimum height=5mm] {1};
- \node (rectangle) at (3,2) [draw,thick,minimum width=2cm,minimum height=5mm] {8};
- \node (rectangle) at (4,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
- \begin{frame}
- \begin{tikzpicture} 
+Crear una libreria la cual se encargue de crear un beamer (Latex) con la visualizacion de ciertas estructuras abstactas vistas en el curso, desde un codigo de C++
 
- \node (rectangle) at (0,2) [draw,thick,minimum width=2cm,minimum height=5mm] {45};
- \node (rectangle) at (1,2) [draw,thick,minimum width=2cm,minimum height=5mm] {3};
- \node (rectangle) at (2,2) [draw,thick,minimum width=2cm,minimum height=5mm] {1};
- \node (rectangle) at (3,2) [draw,thick,minimum width=2cm,minimum height=5mm] {8};
- \node (rectangle) at (4,2) [draw,thick,minimum width=2cm,minimum height=5mm] {9};
- \begin{frame}
- \begin{tikzpicture} 
 
- \node (rectangle) at (0,2) [draw,thick,minimum width=2cm,minimum height=5mm] {45};
- \node (rectangle) at (1,2) [draw,thick,minimum width=2cm,minimum height=5mm] {3};
- \node (rectangle) at (2,2) [draw,thick,minimum width=2cm,minimum height=5mm] {1};
- \node (rectangle) at (3,2) [draw,thick,minimum width=2cm,minimum height=5mm] {8};
- \node (rectangle) at (4,2) [draw,thick,minimum width=2cm,minimum height=5mm] {9};
- \node (rectangle) at (3,2) [draw,thick,fill=green,minimum width=2cm,minimum height=5mm] {8};
+\subsection{Objetivos Especificos}
 
- \end{tikzpicture} 
- \end{frame} 
 
- \begin{frame}
- \begin{tikzpicture} 
+\begin{enumerate}
+\item Facilitar la creacion y uso de las estructuras abstractas implementadas dentro de la libreria (principalmente vectores, listas y arboles) 
+\item Crear las animaciones de "Push" y "Pull" nodos de las estructuras, y hacer los cambios adecuados que estos generan en la estructura de una manera visual
+\item Construir herramientas que faciliten al usuario al manejo del beamer dentro del codigo de C++, ejemplos: zoom, seleccion de nodos, animaciones con temporales, entre otros
+\item Implementar la libreria de manera generica, para que soporte cambios y combinacion de estructuras, asi como el redblack tree ** (Opcional: dado el tiempo, se implementara)
+\end{enumerate}
 
- \node (rectangle) at (0,2) [draw,thick,minimum width=2cm,minimum height=5mm] {1};
- \node (rectangle) at (1,2) [draw,thick,minimum width=2cm,minimum height=5mm] {3};
- \node (rectangle) at (2,2) [draw,thick,minimum width=2cm,minimum height=5mm] {8};
- \node (rectangle) at (3,2) [draw,thick,minimum width=2cm,minimum height=5mm] {9};
- \node (rectangle) at (4,2) [draw,thick,minimum width=2cm,minimum height=5mm] {45};
- \begin{frame}
- \begin{tikzpicture} 
 
- \node (rectangle) at (0,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
- \node (rectangle) at (1,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
- \node (rectangle) at (2,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
- \node (rectangle) at (3,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
- \node (rectangle) at (4,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
 
- \end{tikzpicture} 
- \end{frame} 
 
 \end{document}
-
