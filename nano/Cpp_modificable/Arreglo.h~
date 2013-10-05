@@ -9,7 +9,7 @@ private:
 	int altura;
 	void Latex(int,int,int);
 	void LatexTodo(string);
-	void LatexCantidad(string);
+	void LatexCantidad();
 	void LatexResaltar(int,int,int,string);
 	void begin(string);
 	void end();

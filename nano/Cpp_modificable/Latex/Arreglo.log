@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.5.21)  3 OCT 2013 15:05
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.5.21)  4 OCT 2013 18:26
 entering extended mode
  %&-line parsing enabled.
 **./Latex/Arreglo.tex
@@ -1095,7 +1095,8 @@ Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
 \multicolundershoot=\dimen217
 \mult@nat@firstbox=\box80
 \colbreak@box=\box81
-) (Latex/Arreglo.aux)
+)
+No file Arreglo.aux.
 \openout1 = `Arreglo.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 1.
@@ -1112,7 +1113,6 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 1.
 LaTeX Font Info:    ... okay on input line 1.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 1.
 LaTeX Font Info:    ... okay on input line 1.
-
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
 -------------------- Geometry parameters
@@ -1179,7 +1179,6 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 LaTeX Info: Redefining \ref on input line 1.
 LaTeX Info: Redefining \pageref on input line 1.
- (Latex/Arreglo.out) (Latex/Arreglo.out)
 \@outlinefile=\write5
 \openout5 = `Arreglo.out'.
 
@@ -1274,10 +1273,11 @@ Package ucs Warning: ***************************
 
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
-) (Latex/Arreglo.nav)
+)
+No file Arreglo.nav.
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 13.
+(Font)              size <5> substituted on input line 15.
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1464,18 +1464,19 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 18085 strings out of 495061
- 341130 string characters out of 1182621
- 422646 words of memory out of 3000000
- 20750 multiletter control sequences out of 15000+50000
- 4845 words of font info for 18 fonts, out of 3000000 for 9000
+ 18087 strings out of 495061
+ 341349 string characters out of 1182621
+ 423646 words of memory out of 3000000
+ 20759 multiletter control sequences out of 15000+50000
+ 5152 words of font info for 19 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 49i,17n,53p,879b,556s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,17n,53p,879b,552s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on Latex/Arreglo.pdf (14 pages, 36549 bytes).
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmss8.pfb>
+Output written on Latex/Arreglo.pdf (14 pages, 47961 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
+ 104 PDF objects out of 1000 (max. 8388607)
  29 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

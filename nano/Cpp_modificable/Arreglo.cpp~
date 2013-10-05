@@ -14,11 +14,11 @@ Arreglo::Arreglo(int n){
 
 	for(int i=0;i< tamano;i++){
 
-		vector[i]=0;
+		vector[i]=9999;
 
    }
 
-begin();
+begin("Inicializador");
 
 	for(int i=0; i<tamano; i++){
 
@@ -26,9 +26,7 @@ begin();
 		this->cadena += Convertir(2*i);
 		this->cadena += ",";
 		this->cadena += Convertir(altura);
-		this->cadena += ") [draw,thick,minimum width=2cm,minimum height=5mm] {";
-		this->cadena += Convertir(0); 
-		this->cadena += "};";
+		this->cadena += ") [draw,thick,minimum width=2cm,minimum height=5mm] {9999};";
 
 	}
 end();
@@ -48,7 +46,7 @@ int Arreglo::eliminaElemento(){
 
 	vector[cantidad]=0;
 	cantidad--;
-	LatexTodo();
+	LatexTodo("Elimina elemento");
 end();
 	return (vector[cantidad]);
 
@@ -60,8 +58,8 @@ void Arreglo::eliminaElementoEnPosicion(int pos){
 
 	vector[pos]=0;
 	cantidad--;
-	LatexTodo();
-end();
+	LatexTodo("Elimina elemento en posicion");
+	LatexResaltar(pos,altura-1,vector[pos],"blue");
 }
 
 void Arreglo::ingresarElemento(int elem){
@@ -71,8 +69,8 @@ void Arreglo::ingresarElemento(int elem){
 
 		vector[cantidad]=elem;
 		cantidad++;
-		LatexTodo();
-end();
+		LatexTodo("Ingresa elemento");
+		end();
 }
 
 
@@ -83,10 +81,9 @@ void Arreglo::ingresarElementoEnPosicion(int elem,int pos){
 
 	if (pos<cantidad){
 
-		LatexTodo();
+		LatexTodo("Ingresa elemento en posicion");
 		vector[pos]=elem;
 		cantidad++;
-		
 		LatexResaltar(pos,altura+1,elem,"red");
 	}
 }
@@ -102,12 +99,12 @@ int Arreglo::sumaVector(){
 
 		return acum;
 }
-
+/*
 void Arreglo::invierteVector(){
 
 		int k,i, temp;
 
-		for(i=0,k=cantidad-1;i<k;i++,k--){
+		for(i=0,k=cantidad;i<k;i++,k--){
 			temp=vector[k];
 			vector[k] = vector[i];
 			vector[i]=temp;
@@ -117,7 +114,7 @@ LatexTodo();
 end();
 
 
-}
+}*/
 
 	void Arreglo::imprimeVector(){
 
@@ -185,7 +182,7 @@ void Arreglo:: llenarVector(int cantidad){
 		}
 
 
-LatexTodo();
+LatexTodo("LLena Vector");
 end();
 }
 
@@ -209,7 +206,7 @@ end();
 			aux=i;
 		}
 	}
-LatexTodo();
+LatexTodo("Maximo");
 LatexResaltar(aux,altura,vector[aux],"red");
 
 
@@ -228,7 +225,7 @@ LatexResaltar(aux,altura,vector[aux],"red");
 			aux=i;
 		}
 	}
-LatexTodo();
+LatexTodo("Minimo");
 LatexResaltar(aux,altura,vector[aux],"green");
 
 	return minimo;
@@ -241,7 +238,7 @@ LatexResaltar(aux,altura,vector[aux],"green");
   for(int i=0;i<getCantidad()-1;i++)
 
 	  if(obtenerObjeto(i)==elemento){
-LatexTodo();
+LatexTodo("Busca Elemento");
 LatexResaltar(i,altura,vector[i],"green");	
 
 
@@ -272,7 +269,7 @@ void Arreglo:: ordenar(){
 	}
 		
 
-LatexTodo();
+LatexTodo("Ordenar Vector");
 end();
 
 }
@@ -283,7 +280,7 @@ void Arreglo::limpiaVector(){
 		vector[i]=0;
    }
 
-LatexTodo();
+LatexTodo("Limpia Vector");
 end();
 
 
@@ -311,9 +308,9 @@ void Arreglo::Latex(int posx, int posy, int valor){
 end();
 }
 
-void Arreglo::LatexTodo(){
+void Arreglo::LatexTodo(string nombre){
 
-begin();
+begin(nombre);
 
 	for(int i=0; i<tamano; i++){
 
@@ -329,9 +326,9 @@ begin();
 
 }
 
-void Arreglo::LatexCantidad(){
+void Arreglo::LatexCantidad(string nombre){
 
-begin();
+begin(nombre);
 
 	for(int i=0; i<cantidad; i++){
 
@@ -371,9 +368,12 @@ return s1.str();
 
 }
 
-void Arreglo::begin (){
+void Arreglo::begin (string nombre){
 
-this->cadena += "\n \\begin{frame}";
+this->cadena += "\n \\begin{frame}\n";
+this->cadena +="\\frametitle{";
+this->cadena +=nombre;
+this->cadena +="}\n";
 this->cadena+="\n \\begin{tikzpicture} \n";
 
 }
