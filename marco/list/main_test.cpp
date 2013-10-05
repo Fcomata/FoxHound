@@ -1,35 +1,24 @@
 #include <iostream>
-#include "Lista.h"
+#include "list.h"
 #include "to_tex.h"
-
 using namespace std;
-
 int main(){
-   
-
-    cout<<"Prueba de Listas"<<endl;
-
-	Lista * l = new Lista();
-	l->insertar_al_final(1);
-	l->insertar_al_final(2);
-	l->insertar_al_final(3);
-    	l->insertar_al_final(4);
-	l->insertar_al_final(5);
-	l->insertar_al_inicio(6);
-	l->insertar_en_medio(7, 2);
-	l->insertar_en_medio(8, 2);
-	l->borrar_al_final();
-	l->borrar_al_inicio();
-	l->borrar_en_medio(3);
-	l->buscar(8);	
-	l->buscar(44);
-
+	cout<<"Testing structure: list"<<endl;
+	list * l = new list();
+	l->insert_at_end(1);
+	l->insert_at_end(2);
+	l->insert_at_end(3);
+    	l->insert_at_end(4);
+	l->insert_at_end(5);
+	l->insert_at_beginning(6);
+	l->insert_in_position(7, 2);
+	l->insert_in_position(8, 2);
+	l->delete_first_node();
+	l->delete_last_node();
+	l->delete_in_position(3);
+	l->search(8);	
+	l->search(44);
 	string cadena = l->getCadena();
 	create_tex("test.tex",cadena);
-	
-	
-//cout<<"Los datos de la cadena son: "<< l->getCadena()<<endl;
-    return 0;
+	return 0;
 }
-
-
