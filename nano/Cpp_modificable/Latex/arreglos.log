@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.5.30)  5 OCT 2013 13:14
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.5.30)  5 OCT 2013 15:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./Latex/arreglos.tex ./Latex/test.tex
+**./Latex/arreglos.tex ./Latex/list.tex ./Latex/test.tex
 (./Latex/arreglos.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
@@ -1117,7 +1117,10 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \colbreak@box=\box81
 \multicol@sort@counter=\count178
 )
-No file arreglos.aux.
+(Latex/arreglos.aux
+LaTeX Info: Redefining \. on input line 23.
+LaTeX Info: Redefining \% on input line 23.
+)
 \openout1 = `arreglos.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 1.
@@ -1134,6 +1137,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 1.
 LaTeX Font Info:    ... okay on input line 1.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 1.
 LaTeX Font Info:    ... okay on input line 1.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1211,6 +1215,8 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 1.
 LaTeX Info: Redefining \pageref on input line 1.
 LaTeX Info: Redefining \nameref on input line 1.
+
+(Latex/arreglos.out) (Latex/arreglos.out)
 \@outlinefile=\write5
 \openout5 = `arreglos.out'.
 
@@ -1307,8 +1313,7 @@ Package ucs Warning: ***************************
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
-)
-No file arreglos.nav.
+) (Latex/arreglos.nav)
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 (Font)              size <5> substituted on input line 13.
@@ -1461,16 +1466,16 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 124.
  ) 
 Here is how much of TeX's memory you used:
- 18962 strings out of 495059
- 355627 string characters out of 3182030
- 452335 words of memory out of 3000000
- 21660 multiletter control sequences out of 15000+200000
+ 18995 strings out of 495059
+ 355962 string characters out of 3182030
+ 452392 words of memory out of 3000000
+ 21685 multiletter control sequences out of 15000+200000
  4845 words of font info for 18 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 49i,17n,53p,897b,554s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,17n,53p,914b,554s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on Latex/arreglos.pdf (10 pages, 25220 bytes).
+Output written on Latex/arreglos.pdf (10 pages, 25226 bytes).
 PDF statistics:
  80 PDF objects out of 1000 (max. 8388607)
  61 compressed objects within 1 object stream
