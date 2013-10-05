@@ -1,15 +1,14 @@
 #include <iostream>
 #include <sstream>
 #include <string>
-#include "Arreglo.h"
+#include "array.h"
 #include "list.h"
 #include "to_tex.h"
 
 using namespace std;
 
 int main (){
-
-int cantidad;
+int amount;
 int elemento;
 int posicion;
 int posicion2;
@@ -33,7 +32,7 @@ cout<<"Ingrese el tamaño del arreglo"<<endl;
 
 cin>>tamano;
 
-Arreglo * A = new Arreglo(tamano); 
+array * A = new array(tamano); 
 
 while(menuArreglo!=0){	
 
@@ -47,19 +46,19 @@ switch (menuArreglo){
 	case 0: 
 		menuArreglo=0;
 
-		create_tex("Arreglo.tex",A->getCadena());
+		create_tex("array.tex",A->getCadena());
 		
 	break;
 
 	case 1:
 
-		cantidad=0;
+		amount=0;
 
 		cout<<"Ingrese la cantidad de elementos que desea introducir"<<endl;
 
-		cin>>cantidad;
+		cin>>amount;
 
-		A->llenarVector(cantidad);
+		A->fill_vector(amount);
 
 	break;
 
@@ -71,13 +70,13 @@ switch (menuArreglo){
 
 		cin>>elemento;
 
-		A->ingresarElemento(elemento);
+		A->insert_element(elemento);
 
 	break;
 
 	case 3:
 
-		A->eliminaElemento();
+		A->delete_element();
 
 	break;
 
@@ -95,7 +94,7 @@ switch (menuArreglo){
 
 		cin>>posicion;
 
-		A->ingresarElementoEnPosicion(elemento,posicion);
+		A->insert_element_in_pos(elemento,posicion);
 
 	break;
 
@@ -107,7 +106,7 @@ switch (menuArreglo){
 
 		cin>>posicion;
 
-		A->eliminaElementoEnPosicion(posicion);
+		A->delete_element_in_pos(posicion);
 
 	break;
 
@@ -125,19 +124,19 @@ switch (menuArreglo){
 
 		cin>>posicion2;
 
-		A->intercambiarElementos2(posicion,posicion2);
+		A->exchange_elements2(posicion,posicion2);
 
 	break;
 
 	case 7:
 
-		A->limpiaVector();
+		A->clean_vector();
 	
 	break;
 
 	case 8:
 
-		A->Max();
+		A->max();
 
 	break;
 
@@ -155,26 +154,26 @@ switch (menuArreglo){
 
 		cin>>elemento;
 
-		A->buscarElemento(elemento);
+		A->search_element(elemento);
 
 	break;
 
 	case 11:
 
-		A->ordenar();
+		A->order();
 
 	break;
 
 
 	case 12:
 
-		A->limpiaVector();
+		A->clean_vector();
 
 	break;
 
 	case 13:
 
-		A->invierteVector();
+		A->invest_vector();
 
 	break;
 

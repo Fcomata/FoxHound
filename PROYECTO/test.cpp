@@ -1,13 +1,13 @@
 #include <iostream>
-#include "Arreglo.h"
-#include "Lista.h"
+#include "array.h"
+#include "list.h"
 #include "to_tex.h"
 
 using namespace std;
 
 int main(){
 
-    cout<<"Prueba de Listas"<<endl;
+	cout<<"Testing structure: list"<<endl;
 	list * l = new list();
 	l->insert_at_end(1);
 	l->insert_at_end(2);
@@ -27,24 +27,23 @@ int main(){
 
 cout<<"////////////////////////////////////////////////////////////////////"<<endl;
 
-    cout<<"Prueba de Arreglos"<<endl;
+	cout<<"Testing structure: array"<<endl;
+    	array * a= new array(5);
+    	a->insert_element(5);
+    	a->insert_element(4);
+    	a->insert_element(3);
+    	a->insert_element(2);
+    	a->insert_element(1);
+	a->search_element(3);
+	a->delete_element_in_pos(2);
+	a->insert_element_in_pos(4,14);
+	a->search_element(14);
+	a->order();
+	a->clean_vector();
 
-    	Arreglo * a= new Arreglo(5);
-    	a->ingresarElemento(5);
-    	a->ingresarElemento(4);
-    	a->ingresarElemento(3);
-    	a->ingresarElemento(2);
-    	a->ingresarElemento(1);
-	a->buscarElemento(3);
-	a->eliminaElementoEnPosicion(2);
-	a->ingresarElementoEnPosicion(4,14);
-	a->buscarElemento(14);
-	a->ordenar();
-	a->limpiaVector();
-
-
+    cout<<"El suma es: " << a->sum_vector()<<endl;
     cout<<a->getCadena();
-    create_tex("arreglos.tex",a->getCadena());
+    create_tex("array.tex",a->getCadena());
     cin.get();
     return 0;
 }
