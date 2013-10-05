@@ -197,7 +197,7 @@ int menuLista=1;
 
 while(menuLista!=0){
 
-cout<<"\n Menu de Listas: \n 1)Pila \n 2)Cola \n 3)Lista Simple \n 0)Salir \n"<<endl;
+cout<<"\n Menu de Listas: \n 1)Pila \n 2)Cola (FO/LI) \n 3)Lista Simple \n 0)Salir \n"<<endl;
 
 cin>>menuLista;
 
@@ -207,7 +207,7 @@ if(menuLista==1){
 
 	int menuPila=1;
 
-	while(menuPila=!0){
+	while(menuPila!=0){
 
 		cout<<"Menu de Pila: \n 1)Insertar Elemento \n 2)Elimina Elemento \n 3)Buscar Elemento \n 0)Salir"<<endl;
 
@@ -229,19 +229,14 @@ if(menuLista==1){
 
 		cin>>elemento;
 
-		Pila->insertar(elemento);
+		Pila->insert_at_end(elemento);
 
 	break;
 
 	case 2:
 
-		elemento=0;
 
-		cout<<"Ingrese el elemento"<<endl;
-
-		cin>>elemento;
-
-		Pila->borrar(elemento);
+		Pila->delete_last_node();
 
 	break;
 
@@ -253,7 +248,7 @@ if(menuLista==1){
 
 		cin>>elemento;
 
-		Pila->buscar(elemento);
+		Pila->search(elemento);
 
 	break;
 
@@ -273,7 +268,7 @@ int menuCola=1;
 
 while(menuCola!=0){
 
-cout<<"Menu de Cola: \n 1)Insertar Elemento \n 2)Elimina Elemento \n 3)Buscar Elemento \n 0)Salir"<<endl;
+cout<<"Menu de Cola(FO/LI): \n 1)Insertar Elemento \n 2)Elimina Elemento \n 3)Buscar Elemento \n 0)Salir"<<endl;
 
 cin>>menuCola;
 
@@ -293,19 +288,13 @@ switch (menuCola){
 
 		cin>>elemento;
 
-		Cola->insertar(elemento);
+		Cola->insert_at_end(elemento);
 
 	break;
 
 	case 2:
 
-		elemento=0;
-
-		cout<<"Ingrese el elemento"<<endl;
-
-		cin>>elemento;
-
-		Cola->borrar(elemento);
+		Cola->delete_first_node();
 
 	break;
 
@@ -317,7 +306,7 @@ switch (menuCola){
 
 		cin>>elemento;
 
-		Cola->buscar(elemento);
+		Cola->search(elemento);
 
 	break;
 
@@ -337,7 +326,7 @@ int menuSimple=1;
 
 while(menuSimple!=0){
 
-cout<<"Menu de Lista Simple: \n 1)Insertar Elemento \n 2)Elimina Elemento \n 3)Buscar Elemento \n 0)Salir"<<endl;
+cout<<"Menu de Lista Simple: \n 1)Insertar Elemento al Inicio \n 2)Insertar Elemento al Medio \n 3)Insertar Elemento al Final \n 4)Elimina Elemento al Inicio \n 5)Elimina Elemento al Medio \n 6)Elimina Elemento al Final  \n 7)Buscar Elemento \n 0)Salir"<<endl;
 
 cin>>menuSimple;
 
@@ -357,7 +346,7 @@ switch (menuSimple){
 
 		cin>>elemento;
 
-		Simple->insertar(elemento);
+		Simple->insert_at_beginning(elemento);
 
 	break;
 
@@ -369,7 +358,13 @@ switch (menuSimple){
 
 		cin>>elemento;
 
-		Simple->borrar(elemento);
+		posicion=0;
+
+		cout<<"Ingrese la posicion"<<endl;
+
+		cin>>posicion;
+
+		Simple->insert_in_position(elemento, posicion);
 
 	break;
 
@@ -381,7 +376,47 @@ switch (menuSimple){
 
 		cin>>elemento;
 
-		Simple->buscar(elemento);
+		Simple->insert_at_end(elemento);
+	break;
+
+
+	case 4: 
+
+		Simple->delete_first_node();
+
+	break;
+
+
+	case 5: 
+
+		posicion=0;
+
+		cout<<"Ingrese la posicion"<<endl;
+
+		cin>>posicion;
+
+		Simple->delete_in_position(posicion);
+
+	break;
+
+
+
+	case 6: 
+
+		Simple->delete_last_node();
+
+	break;
+
+
+	case 7: 
+
+		elemento=0;
+
+		cout<<"Ingrese el elemento"<<endl;
+
+		cin>>elemento;
+
+		Simple->search(elemento);
 
 	break;
 
