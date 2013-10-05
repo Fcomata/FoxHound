@@ -1,0 +1,84 @@
+\documentclass{beamer} \usetheme[pageofpages=of, alternativetitlepage=true]{Torino}\usecolortheme{nouvelle} \usepackage[spanish]{babel} \usepackage{thumbpdf} \usepackage{tikz} \usetikzlibrary{arrows} \usepackage{ucs} \usepackage[utf8]{inputenc} \usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade} \usepackage{verbatim} \usepackage{booktabs} \usepackage{multicol} \usepackage{url} \beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}} \begin{document}
+
+ \begin{frame}
+ \begin{tikzpicture}[shorten >=1pt,->]
+ \tikzstyle{main_node}=[rectangle,fill=black!25,minimum size=20pt,inner sep=0pt] 
+\node[main_node] (1) {4}; 
+\node[main_node] (null) [right of=1] {Null};
+
+\path[every node/.style={font=\sffamily\small}]
+(1) edge [left] node [left] {} (null);
+
+
+ \end{tikzpicture} 
+ \end{frame} 
+
+ \begin{frame}
+ \begin{tikzpicture}[shorten >=1pt,->]
+ \tikzstyle{main_node}=[rectangle,fill=black!25,minimum size=20pt,inner sep=0pt] 
+\node[main_node] (1) {5}; 
+\node[main_node] (2)[right of=1] {4}; 
+\node[main_node] (null) [right of=2] {Null};
+
+\path[every node/.style={font=\sffamily\small}]
+(1) edge [left] node [left] {} (2)
+(2) edge [left] node [left] {} (null);
+
+
+ \end{tikzpicture} 
+ \end{frame} 
+
+ \begin{frame}
+ \begin{tikzpicture}[shorten >=1pt,->]
+ \tikzstyle{main_node}=[rectangle,fill=black!25,minimum size=20pt,inner sep=0pt] 
+\node[main_node] (1) {7}; 
+\node[main_node] (2)[right of=1] {5}; 
+\node[main_node] (3)[right of=2] {4}; 
+\node[main_node] (null) [right of=3] {Null};
+
+\path[every node/.style={font=\sffamily\small}]
+(1) edge [left] node [left] {} (2)
+(2) edge [left] node [left] {} (3)
+(3) edge [left] node [left] {} (null);
+
+
+ \end{tikzpicture} 
+ \end{frame} 
+
+ \begin{frame}
+ \begin{tikzpicture}[shorten >=1pt,->]
+ \tikzstyle{main_node}=[rectangle,fill=black!25,minimum size=20pt,inner sep=0pt] 
+\node[main_node] (1) {4}; 
+\node[main_node] (2)[right of=1] {7}; 
+\node[main_node] (3)[right of=2] {5}; 
+\node[main_node] (4)[right of=3] {4}; 
+\node[main_node] (null) [right of=4] {Null};
+
+\path[every node/.style={font=\sffamily\small}]
+(1) edge [left] node [left] {} (2)
+(2) edge [left] node [left] {} (3)
+(3) edge [left] node [left] {} (4)
+(4) edge [left] node [left] {} (null);
+
+
+ \end{tikzpicture} 
+ \end{frame} 
+
+ \begin{frame}
+ \begin{tikzpicture}[shorten >=1pt,->]
+ \tikzstyle{main_node}=[rectangle,fill=black!25,minimum size=20pt,inner sep=0pt] 
+\node[main_node] (1) {7}; 
+\node[main_node] (2)[right of=1] {5}; 
+\node[main_node] (3)[right of=2] {4}; 
+\node[main_node] (null) [right of=3] {Null};
+
+\path[every node/.style={font=\sffamily\small}]
+(1) edge [left] node [left] {} (2)
+(2) edge [left] node [left] {} (3)
+(3) edge [left] node [left] {} (null);
+
+
+ \end{tikzpicture} 
+ \end{frame} 
+
+\end{document}
