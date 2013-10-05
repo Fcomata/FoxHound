@@ -1,4 +1,3 @@
-
 #include "Latex.h"
 
 Latex::Latex(void)

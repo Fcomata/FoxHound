@@ -13,5 +13,5 @@ ejemplo.o: ejemplo.cpp
 	g++ -c ejemplo.cpp
 
 clean:
-	rm -rf *o main
+	rm -rf *log *aux *o main
 
