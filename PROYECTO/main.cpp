@@ -2,7 +2,7 @@
 #include <sstream>
 #include <string>
 #include "Arreglo.h"
-#include "Lista.h"
+#include "list.h"
 #include "to_tex.h"
 
 using namespace std;
@@ -203,7 +203,7 @@ cin>>menuLista;
 
 if(menuLista==1){
 
-	Lista * Pila = new Lista(); 
+	list * Pila = new list(); 
 
 	int menuPila=1;
 
@@ -267,7 +267,7 @@ if(menuLista==1){
 
 if(menuLista==2){
 
-Lista * Cola = new Lista();
+list * Cola = new list();
 
 int menuCola=1;
 
@@ -331,7 +331,7 @@ switch (menuCola){
 
 if(menuLista==3){
 
-Lista * Simple = new Lista();
+list * Simple = new list();
 
 int menuSimple=1;
 

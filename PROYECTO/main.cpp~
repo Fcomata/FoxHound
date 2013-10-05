@@ -125,7 +125,7 @@ switch (menuArreglo){
 
 		cin>>posicion2;
 
-		A->intercambiarElementos(posicion,posicion2);
+		A->intercambiarElementos2(posicion,posicion2);
 
 	break;
 
