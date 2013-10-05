@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.5.30)  2 OCT 2013 15:27
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.5.30)  5 OCT 2013 13:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./Latex/arreglos.tex ./Latex/listas.tex
+**./Latex/arreglos.tex ./Latex/test.tex
 (./Latex/arreglos.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
@@ -1467,7 +1467,7 @@ Here is how much of TeX's memory you used:
  21660 multiletter control sequences out of 15000+200000
  4845 words of font info for 18 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 49i,17n,53p,899b,554s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,17n,53p,897b,554s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb>
 Output written on Latex/arreglos.pdf (10 pages, 25220 bytes).

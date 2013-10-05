@@ -1,26 +1,30 @@
 #include <iostream>
 #include "Arreglo.h"
-#include "Lista.h"
+#include "list.h"
 #include "to_tex.h"
 
 using namespace std;
 
 int main(){
-   
+	cout<<"Testing structure: list"<<endl;
+	list * l = new list();
+	l->insert_at_end(1);
+	l->insert_at_end(2);
+	l->insert_at_end(3);
+    	l->insert_at_end(4);
+	l->insert_at_end(5);
+	l->insert_at_beginning(6);
+	l->insert_in_position(7, 2);
+	l->insert_in_position(8, 2);
+	l->delete_first_node();
+	l->delete_last_node();
+	l->delete_in_position(3);
+	l->search(8);	
+	l->search(44);
+	string cadena = l->getCadena();
+	create_tex("test.tex",cadena);
 
-    cout<<"Prueba de Listas"<<endl;
-
-	Lista * l = new Lista();
-	l->insertar(2);
-	l->insertar(90);
-    	l->insertar(60);
-	l->insertar(-5);
-	l->insertar(15);
-	l->mostrar();
-	cout<<"Los datos de la cadena son: "<< l->getCadena()<<endl;
-	create_tex("listas.tex",l->getCadena());
-
-    cout<<"Prueba de Arreglos"<<endl;
+	cout<<"Prueba de Arreglos"<<endl;
 
     	Arreglo * a= new Arreglo(5);
     	a->ingresarElemento(5);

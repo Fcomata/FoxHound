@@ -29,14 +29,14 @@ using namespace std;
 void Lista::insertar_al_final(int v){
 	//Lista Vacia	
 	elPrimero();
-	primero=new Nodo(v,primero);
+	primero=new list_node(v,primero);
 	cant++;
 	mostrar();
 }
 
 void Lista::insertar_al_inicio(int v){
 	elUltimo();
-	Nodo* nuevo_ultimo=new Nodo(v, NULL);
+	list_node* nuevo_ultimo=new list_node(v, NULL);
 	actual->setS(nuevo_ultimo);
 	cant++;
 	mostrar();
@@ -48,8 +48,8 @@ void Lista::insertar_en_medio(int v,int pos){
 	{
 		actual=actual->getS();
 	}
-	Nodo* nodo_a_insertar= new Nodo(v,(actual->getS()));
-	actual->setS(nodo_a_insertar);
+	list_node* list_node_a_insertar= new list_node(v,(actual->getS()));
+	actual->setS(list_node_a_insertar);
 	cant++;
 	mostrar();
 }
@@ -79,7 +79,7 @@ void Lista::borrar_en_medio(int pos){
 	{
 		actual=actual->getS();
 	}
-	Nodo* temp; 
+	list_node* temp; 
 	temp=actual->getS();
 	actual->setS((actual->getS())->getS());
 	delete temp;
@@ -88,7 +88,7 @@ void Lista::borrar_en_medio(int pos){
 }
 
 bool Lista::buscar(int v){
-	Nodo* anterior=NULL;
+	list_node* anterior=NULL;
 	elPrimero();
 	while(actual!=NULL){
 	if(actual->getV()==v){
@@ -122,7 +122,7 @@ void Lista::mostrar(){
 	cadena+=Convertir(v);
 	cadena+="}; \n";	
     }
-//Nodo null, siempre al final
+//list_node null, siempre al final
 	this->cadena+="\\node[main_node] (null) [right of=";
 	this->cadena+=Convertir(cant);
 	this->cadena+="] {Null};\n\n";
@@ -135,7 +135,7 @@ void Lista::mostrar(){
 	this->cadena+=Convertir(i+1);
 	this->cadena+=")\n";
 	}
-//Flecha de el ultimo nodo a null
+//Flecha de el ultimo list_node a null
 this->cadena+="(";
 	this->cadena+=Convertir(cant);
 	this->cadena+=") edge [left] node [left] {} (";
