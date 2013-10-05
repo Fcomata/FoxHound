@@ -51,7 +51,7 @@ cantidad++;
 	vector[cantidad]=9999;
 	cantidad--;
 	LatexTodo("Elimina elemento");
-end();
+	end();
 	return (vector[cantidad]);
 
 }
@@ -63,6 +63,7 @@ void Arreglo::eliminaElementoEnPosicion(int pos){
 	vector[pos]=9999;
 	cantidad--;
 	LatexResaltar(pos,altura-1,vector[pos],"blue");
+	end();
 }
 
 void Arreglo::ingresarElemento(int elem){
@@ -74,7 +75,7 @@ if(cantidad==tamano){
 		LatexTodo("Error al Ingresar elemento, Vector LLeno");
 		end();
 
-}
+	}
 
 
 else{
@@ -82,7 +83,7 @@ else{
 		cantidad++;
 		LatexTodo("Ingresa elemento");
 		end();
-}
+	}
 }
 
 
@@ -91,12 +92,13 @@ void Arreglo::ingresarElementoEnPosicion(int elem,int pos){
   
   //cantidad vs tamaño***
 
-	if (pos<cantidad){
+	if (pos<tamano){
 
 		LatexTodo("Ingresa elemento en posicion");
 		vector[pos]=elem;
 		cantidad++;
 		LatexResaltar(pos,altura+1,elem,"red");
+		end();
 	}
 }
 
@@ -164,13 +166,14 @@ end();
 
 		if(pos1<cantidad && pos2<cantidad){
 
-	LatexTodo("Intercambiar elementos Pos1 a Pos2");
-	LatexResaltar(pos1,altura+1,vector[pos2],"red");
+
 
 			aux=vector[pos1];
 
-	LatexTodo("Intercambiar elementos Pos2 a Pos1");
+	LatexTodo("Intercambiar elementos Pos1 a Pos2");
+	LatexResaltar(pos1,altura+1,vector[pos2],"red");
 	LatexResaltar(pos2,altura+1,aux,"blue");
+	end();
 
 			vector[pos1]=vector[pos2];
 			vector[pos2]=aux;
@@ -238,6 +241,7 @@ end();
 	}
 LatexTodo("Maximo");
 LatexResaltar(aux,altura,vector[aux],"red");
+end();
 
 
 	return maximo;
@@ -257,6 +261,7 @@ LatexResaltar(aux,altura,vector[aux],"red");
 	}
 LatexTodo("Minimo");
 LatexResaltar(aux,altura,vector[aux],"green");
+end();
 
 	return minimo;
  }
@@ -270,7 +275,8 @@ LatexResaltar(aux,altura,vector[aux],"green");
 	  if(obtenerObjeto(i)==elemento){
 
 LatexTodo("Busca Elemento");
-LatexResaltar(i,altura,vector[i],"green");	
+LatexResaltar(i,altura,vector[i],"green");
+end();	
 
 
 	return true;
@@ -389,7 +395,7 @@ void Arreglo::LatexResaltar(int posx, int posy, int valor, string color){
 		this->cadena += Convertir(valor); 
 		this->cadena += "};";
 
-end();
+
 }
 
 string Arreglo::Convertir(int valor){
