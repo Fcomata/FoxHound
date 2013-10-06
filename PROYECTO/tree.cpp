@@ -10,18 +10,7 @@ tree::~tree(){
 	destroy_tree();
 }
 
-void tree::create_tree(){
-	this->cadena += "\\documentclass{article} \n \\usepackage{tikz} \n \\usetikzlibrary{trees} \n \\begin{document} \n\n";
-}
 
-void tree::finish_tree(){
-	this->cadena += "\n \\end{document} \n";
-	ofstream output;
-	output.open("output.tex");
-	output << this->cadena;
-	output.close();
-	system("pdflatex output.tex");
-}
 
 void tree::destroy_tree(node *leaf){
 	if(leaf!=NULL){
@@ -73,6 +62,7 @@ node *tree::search(int key, node *leaf){
 void tree::insert_root(int key){
 	
 	this->cadena_temp += "\n \\begin{frame} \n\n \\begin{tikzpicture}[level distance=2cm, level 1/.style={sibling distance=7cm}, level 2/.style={sibling distance=3.5cm}, level 3/.style={sibling distance=2cm}] \n";
+
 	this->cadena_temp += "\\node [circle,draw,thick] {";
 	this->cadena_temp += convertir(key);
 	this->cadena_temp += "}; \n \\end{tikzpicture} \n\n \\end{frame} \n\n \\newpage";

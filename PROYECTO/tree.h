@@ -10,12 +10,10 @@ class tree: public Latex{
         tree();
         ~tree();
 
-		void insert_root(int key);
+	void insert_root(int key);
         void insert1(int key);
         void insert2(int key);
         node *search(int key);
-        void create_tree();
-        void destroy_tree();
         void finish_tree();
 
     private:
