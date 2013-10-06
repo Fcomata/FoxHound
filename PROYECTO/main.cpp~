@@ -272,7 +272,7 @@ list * Simple = new list();
 int menuSimple=1;
 cout<<"\n"<<endl;
 while(menuSimple!=0){
-if(Simple->size=!0)
+if(Simple->size==0)
 {
 cout<<"Menu de Lista Simple: \n 1)Insertar Elemento al Final \n 0)Salir"<<endl;
 cin>>menuSimple;
@@ -346,8 +346,31 @@ switch (menuSimple){
 
 
 if (menu==3){
-//tree * Arbol = new tree();
+
+tree * Arbol = new tree();
+
 int menuTree=0;
+
+cout<<"Menu de Lista Simple: \n 1)Insertar Elemento al Final \n 0)Salir"<<endl;
+
+cin>>menuTree;
+
+
+switch (menuTree){
+
+case 0:
+
+break;
+
+case 1:
+
+break;
+
+case 2:
+
+break;
+
+	  }//end switch
 	}//end if(menu==3)
     }//en while(menu=!0)
 }//end main

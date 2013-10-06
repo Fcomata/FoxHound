@@ -346,8 +346,42 @@ switch (menuSimple){
 
 
 if (menu==3){
-//tree * Arbol = new tree();
+
+tree * Arbol = new tree();
+
 int menuTree=0;
+
+cout<<"Menu de Lista Simple: \n 1)Insertar Raiz \n 2)Insertar Hijo \n 3)Eliminar \n 0)Salir"<<endl;
+
+cin>>menuTree;
+
+
+switch (menuTree){
+
+	case 0:
+
+	break;
+
+	case 1:
+
+		elemento=0;
+		cout<<"Ingrese el elemento"<<endl;
+		cin>>elemento;
+		Arbol->insert_root(elemento);
+
+
+	break;
+
+	case 2:
+
+		elemento=0;
+		cout<<"Ingrese el elemento"<<endl;
+		cin>>elemento;
+        	Arbol->insert_child(elemento);
+
+	break;
+
+	  }//end switch
 	}//end if(menu==3)
     }//en while(menu=!0)
 }//end main

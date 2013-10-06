@@ -1,5 +1,4 @@
 #include "tree.h"
-#include "latex.h"
 #include <iostream>
 using namespace std;
 
@@ -73,29 +72,7 @@ void tree::insert_root(int key){
 	
 }
 
-void tree::insert1(int key){
-	
-	if(root!=NULL)
-		insert(key, root);
-	else{
-		root=new node;
-		root->key_value=key;
-		root->left=NULL;
-		root->right=NULL;
-	}
-	
-	this->cadena_temp += "\n child {node [circle,draw,thick] {";
-	this->cadena_temp += convertir(key);
-	this->cadena_temp += "}}; \n \\end{tikzpicture} \\end{frame} \n\n \\newpage";
-	
-	this->cadena += this->cadena_temp;
-	
-	int found = this->cadena_temp.find(";");
-	this->cadena_temp.erase(this->cadena_temp.begin()+found,this->cadena_temp.end());
-	
-}
-
-void tree::insert2(int key){
+void tree::insert_child(int key){
 	
 	if(root!=NULL)
 		insert(key, root);
