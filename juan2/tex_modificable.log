@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.8.29)  30 SEP 2013 15:19
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.8.29)  5 OCT 2013 17:50
 entering extended mode
  %&-line parsing enabled.
-**binary_tree1.tex
-(./binary_tree1.tex
+**tex_modificable.tex
+(./tex_modificable.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
@@ -297,8 +297,8 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytrees
 .code.tex
 File: tikzlibrarytrees.code.tex 2008/02/24 v2.10 (rcs-revision 1.2)
-) (./binary_tree1.aux)
-\openout1 = `binary_tree1.aux'.
+) (./tex_modificable.aux)
+\openout1 = `tex_modificable.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
@@ -325,25 +325,20 @@ LaTeX Font Info:    ... okay on input line 4.
 \MPscratchDim=\dimen149
 \MPnumerator=\count111
 \everyMPtoPDFconversion=\toks25
-)
-Overfull \hbox (57.90877pt too wide) in paragraph at lines 30--31
-[][] 
- []
+) [1
 
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./binary_tree1.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./tex_modificable.aux) ) 
 Here is how much of TeX's memory you used:
- 9294 strings out of 493848
- 179204 string characters out of 1152823
- 213824 words of memory out of 3000000
- 12432 multiletter control sequences out of 15000+50000
+ 9220 strings out of 493848
+ 177482 string characters out of 1152823
+ 209824 words of memory out of 3000000
+ 12358 multiletter control sequences out of 15000+50000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 56i,12n,55p,424b,1096s stack positions out of 5000i,500n,10000p,200000b,50000s
-</us
-r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on binary_tree1.pdf (1 page, 16399 bytes).
+ 56i,8n,55p,427b,678s stack positions out of 5000i,500n,10000p,200000b,50000s
+<
+/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on tex_modificable.pdf (1 page, 10078 bytes).
 PDF statistics:
  13 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

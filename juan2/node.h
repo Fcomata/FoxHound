@@ -1,4 +1,3 @@
-#include "Latex.h"
 #include <iostream>
 using namespace std;
 

@@ -3,5 +3,26 @@
  \begin{frame}
  \begin{tikzpicture}[shorten >=1pt,->]
  \tikzstyle{main_node}=[rectangle,fill=black!25,minimum size=20pt,inner sep=0pt] 
+\node[main_node] (1) {12}; 
+\node[main_node] (null) [right of=1] {Null};
+
+\path[every node/.style={font=\sffamily\small}]
+(1) edge [left] node [left] {} (null);
+
+
+ \end{tikzpicture} 
+ \end{frame} 
+
+ \begin{frame}
+ \begin{tikzpicture}[shorten >=1pt,->]
+ \tikzstyle{main_node}=[rectangle,fill=black!25,minimum size=20pt,inner sep=0pt] 
+\node[main_node] (null) [right of=0] {Null};
+
+\path[every node/.style={font=\sffamily\small}]
+(0) edge [left] node [left] {} (null);
+
+
+ \end{tikzpicture} 
+ \end{frame} 
 
 \end{document}
