@@ -6,9 +6,8 @@ int main(){
 
 	a->create_tree();
 	a->insert_root(3);
-	a->insert(1);
-	a->insert(4);
-	a->insert(7);
+	a->insert1(1);
+	a->insert1(4);
 	a->finish_tree();
 
 	return 0;

@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.8.29)  6 OCT 2013 10:21
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.8.29)  6 OCT 2013 10:28
 entering extended mode
  %&-line parsing enabled.
-**tex_modificable.tex
-(./tex_modificable.tex
+**output.tex
+(./output.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
@@ -297,9 +297,8 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytrees
 .code.tex
 File: tikzlibrarytrees.code.tex 2008/02/24 v2.10 (rcs-revision 1.2)
-)
-No file tex_modificable.aux.
-\openout1 = `tex_modificable.aux'.
+) (./output.aux)
+\openout1 = `output.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
@@ -313,7 +312,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
-ABD: EveryShipout initializing macros
+ ABD: EveryShipout initializing macros
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count107
@@ -326,27 +325,22 @@ ABD: EveryShipout initializing macros
 \MPscratchDim=\dimen149
 \MPnumerator=\count111
 \everyMPtoPDFconversion=\toks25
-)
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 24.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 24.
- [1
+) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./tex_modificable.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] (./output.aux) ) 
 Here is how much of TeX's memory you used:
- 9271 strings out of 493848
- 178683 string characters out of 1152823
- 212121 words of memory out of 3000000
- 12411 multiletter control sequences out of 15000+50000
+ 9232 strings out of 493848
+ 177637 string characters out of 1152823
+ 209824 words of memory out of 3000000
+ 12372 multiletter control sequences out of 15000+50000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 56i,16n,55p,427b,1592s stack positions out of 5000i,500n,10000p,200000b,50000s
-<
-/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on tex_modificable.pdf (1 page, 16443 bytes).
+ 56i,9n,55p,419b,684s stack positions out of 5000i,500n,10000p,200000b,50000s
+</
+usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on output.pdf (3 pages, 11747 bytes).
 PDF statistics:
- 13 PDF objects out of 1000 (max. 8388607)
+ 19 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
