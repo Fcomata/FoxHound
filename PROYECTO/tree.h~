@@ -5,19 +5,21 @@
 #include <algorithm>
 #include <fstream>
 
-class tree: public Latex{
+
+class tree: public latex{
+
 
     public:
 
         tree();
         ~tree();
-	string cadena_temp;
 
 	void insert_root(int key);
         void insert1(int key);
         void insert2(int key);
         node *search(int key);
         void finish_tree();
+        
 
     private:
 

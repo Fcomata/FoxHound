@@ -4,12 +4,10 @@
 #include <sstream>
 #include <algorithm>
 #include <fstream>
-<<<<<<< HEAD
-class tree: public latex{
-=======
 
-class tree: public Latex{
->>>>>>> bf17ea10b7128a3218da3c237d318c854712ce35
+
+class tree: public latex{
+
 
     public:
 
@@ -17,6 +15,7 @@ class tree: public Latex{
         ~tree();
 
 	void insert_root(int key);
+	void destroy_tree();
         void insert1(int key);
         void insert2(int key);
         node *search(int key);
