@@ -213,58 +213,31 @@ if(menuLista==1){
 		cin>>menuPila;
 
    switch (menuPila){
-
 	case 0: 
-
 		create_tex("Pila.tex",Pila->getCadena());
-
 	break;
-
 	case 1:
-
 		elemento=0;
-
 		cout<<"Ingrese el elemento"<<endl;
-
 		cin>>elemento;
-
 		Pila->insert_at_end(elemento);
-
 	break;
-
 	case 2:
-
-
 		Pila->delete_last_node();
-
 	break;
-
 	case 3:
-
 		elemento=0;
-
 		cout<<"Ingrese el elemento"<<endl;
-
 		cin>>elemento;
-
 		Pila->search(elemento);
-
 	break;
-
-
-
 	}//end switch
-
     }//end while
 
 }//en if()
-
 if(menuLista==2){
-
 list * Cola = new list();
-
 int menuCola=1;
-
 while(menuCola!=0){
 
 cout<<"Menu de Cola(FO/LI): \n 1)Insertar Elemento \n 2)Elimina Elemento \n 3)Buscar Elemento \n 0)Salir"<<endl;
@@ -272,55 +245,31 @@ cout<<"Menu de Cola(FO/LI): \n 1)Insertar Elemento \n 2)Elimina Elemento \n 3)Bu
 cin>>menuCola;
 
 switch (menuCola){
-
 	case 0: 
-
 		create_tex("Cola.tex",Cola->getCadena());
-
 	break;
-
 	case 1:
-
 		elemento=0;
-
 		cout<<"Ingrese el elemento"<<endl;
-
 		cin>>elemento;
-
 		Cola->insert_at_end(elemento);
-
 	break;
-
 	case 2:
-
 		Cola->delete_first_node();
-
 	break;
-
 	case 3:
-
 		elemento=0;
-
 		cout<<"Ingrese el elemento"<<endl;
-
 		cin>>elemento;
-
 		Cola->search(elemento);
-
 	break;
-
-
    }//end switch
-	
  }//end while
-
 }//en if()
 
 
 if(menuLista==3){
-
 list * Simple = new list();
-
 int menuSimple=1;
 
 while(menuSimple!=0){
@@ -330,119 +279,59 @@ cout<<"Menu de Lista Simple: \n 1)Insertar Elemento al Inicio \n 2)Insertar Elem
 cin>>menuSimple;
 
 switch (menuSimple){
-
 	case 0: 
-
 		create_tex("ListaSimple.tex",Simple->getCadena());
-
 	break;
-
 	case 1:
-
 		elemento=0;
-
 		cout<<"Ingrese el elemento"<<endl;
-
 		cin>>elemento;
-
 		Simple->insert_at_beginning(elemento);
-
 	break;
-
 	case 2:
-
 		elemento=0;
-
 		cout<<"Ingrese el elemento"<<endl;
-
 		cin>>elemento;
-
 		posicion=0;
-
 		cout<<"Ingrese la posicion"<<endl;
-
 		cin>>posicion;
-
 		Simple->insert_in_position(elemento, posicion);
-
 	break;
-
 	case 3:
-
 		elemento=0;
-
 		cout<<"Ingrese el elemento"<<endl;
-
 		cin>>elemento;
-
 		Simple->insert_at_end(elemento);
 	break;
-
-
 	case 4: 
-
 		Simple->delete_first_node();
-
 	break;
-
-
 	case 5: 
-
 		posicion=0;
-
 		cout<<"Ingrese la posicion"<<endl;
-
 		cin>>posicion;
-
 		Simple->delete_in_position(posicion);
-
 	break;
-
-
-
 	case 6: 
-
 		Simple->delete_last_node();
-
 	break;
-
-
 	case 7: 
-
 		elemento=0;
-
 		cout<<"Ingrese el elemento"<<endl;
-
 		cin>>elemento;
-
 		Simple->search(elemento);
-
 	break;
-
-
-
 	}//end switch 
-
      }//en while
-
    }//end menu Lista Simple
-
  }// end while general
-
 }//end if(menu==2);
 
 
 
 if (menu==3){
-
 //tree * Arbol = new tree();
-
 int menuTree=0;
-
-
-
 	}//end if(menu==3)
-
     }//en while(menu=!0)
-
 }//end main

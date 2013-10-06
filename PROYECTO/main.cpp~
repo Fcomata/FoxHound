@@ -213,58 +213,31 @@ if(menuLista==1){
 		cin>>menuPila;
 
    switch (menuPila){
-
 	case 0: 
-
 		create_tex("Pila.tex",Pila->getCadena());
-
 	break;
-
 	case 1:
-
 		elemento=0;
-
 		cout<<"Ingrese el elemento"<<endl;
-
 		cin>>elemento;
-
 		Pila->insert_at_end(elemento);
-
 	break;
-
 	case 2:
-
-
 		Pila->delete_last_node();
-
 	break;
-
 	case 3:
-
 		elemento=0;
-
 		cout<<"Ingrese el elemento"<<endl;
-
 		cin>>elemento;
-
 		Pila->search(elemento);
-
 	break;
-
-
-
 	}//end switch
-
     }//end while
 
 }//en if()
-
 if(menuLista==2){
-
 list * Cola = new list();
-
 int menuCola=1;
-
 while(menuCola!=0){
 
 cout<<"Menu de Cola(FO/LI): \n 1)Insertar Elemento \n 2)Elimina Elemento \n 3)Buscar Elemento \n 0)Salir"<<endl;
@@ -272,41 +245,23 @@ cout<<"Menu de Cola(FO/LI): \n 1)Insertar Elemento \n 2)Elimina Elemento \n 3)Bu
 cin>>menuCola;
 
 switch (menuCola){
-
 	case 0: 
-
 		create_tex("Cola.tex",Cola->getCadena());
-
 	break;
-
 	case 1:
-
 		elemento=0;
-
 		cout<<"Ingrese el elemento"<<endl;
-
 		cin>>elemento;
-
 		Cola->insert_at_end(elemento);
-
 	break;
-
 	case 2:
-
 		Cola->delete_first_node();
-
 	break;
-
 	case 3:
-
 		elemento=0;
-
 		cout<<"Ingrese el elemento"<<endl;
-
 		cin>>elemento;
-
 		Cola->search(elemento);
-
 	break;
 
 
