@@ -1,6 +1,6 @@
-#include "Latex.h"
+#include "latex.h"
 #include "list_node.h"
-class list:public Latex{
+class list:public latex{
 public:
 	list();///< Default constructor.
 	~list();///< Destructor.

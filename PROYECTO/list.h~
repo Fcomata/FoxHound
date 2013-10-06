@@ -1,4 +1,4 @@
-#include "Latex.h"
+#include "latex.h"
 #include "list_node.h"
 class list:public Latex{
 public:

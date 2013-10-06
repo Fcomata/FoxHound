@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['arreglo',['Arreglo',['../class_arreglo.html',1,'']]]
+  ['array',['array',['../classarray.html',1,'']]]
 ];
