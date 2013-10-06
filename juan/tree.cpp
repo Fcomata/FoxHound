@@ -10,6 +10,19 @@ tree::~tree(){
 	destroy_tree();
 }
 
+void tree::create_tree(){
+	this->cadena += "\\documentclass{article} \n \\usepackage{tikz} \n \\usetikzlibrary{trees} \n \\begin{document} \n\n";
+}
+
+void tree::finish_tree(){
+	this->cadena += "\n \\end{document} \n";
+	ofstream output;
+	output.open("output.tex");
+	output << this->cadena;
+	output.close();
+	system("pdflatex output.tex");
+}
+
 void tree::destroy_tree(node *leaf){
 	if(leaf!=NULL){
 		destroy_tree(leaf->left);
@@ -91,15 +104,6 @@ void tree::insert_root(int key){
 	this->cadena_temp.erase(this->cadena_temp.begin()+found,this->cadena_temp.end());
 	
 	//cout << cadena_temp << endl;
-}
-
-void tree::create_tree(){
-	this->cadena += "\\documentclass{article} \n \\usepackage{tikz} \n \\usetikzlibrary{trees} \n \\begin{document} \n\n";
-}
-
-void tree::finish_tree(){
-	this->cadena += "\n \\end{document} \n";
-	cout << cadena << endl;
 }
 
 node *tree::search(int key){

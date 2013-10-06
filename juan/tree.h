@@ -3,7 +3,7 @@
 #include <string>
 #include <sstream>
 #include <algorithm>
-
+#include <fstream>
 class tree: public Latex{
 
     public:
