@@ -22,14 +22,14 @@ void list::insert_at_end(int v){
 	go_to_last_node();
 	first_node=new list_node(v,first_node);
 	size++;
-	show("Inserta al final");
+	show();
 }
 void list::insert_at_beginning(int v){
 	go_to_first_node();
 	list_node* new_last=new list_node(v, NULL);
 	current_node->set_next(new_last);
 	size++;
-	show("Inserta al inicio");
+	show();
 }
 void list::insert_in_position(int v,int pos){
 	go_to_last_node();
@@ -40,14 +40,14 @@ void list::insert_in_position(int v,int pos){
 	list_node* new_node= new list_node(v,(current_node->get_next()));
 	current_node->set_next(new_node);
 	size++;
-	show("Inserta en Posicion");
+	show();
 }
 void list::delete_last_node(){
 	go_to_last_node();
 	first_node = current_node->get_next();
 	delete current_node;
 	size--;
-	show("Elimina el ultimo nodo");
+	show();
 }
 void list::delete_first_node(){
 	go_to_last_node();
@@ -57,7 +57,7 @@ void list::delete_first_node(){
 	}
 	delete current_node;
 	size--;
-	show("Elimina el primer nodo");
+	show();
 }
 void list::delete_in_position(int pos){
 	go_to_last_node();
@@ -70,7 +70,7 @@ void list::delete_in_position(int pos){
 	current_node->set_next((current_node->get_next())->get_next());
 	delete temp;
 	size--;
-	show("Elimina el nodo de posicion");
+	show();
 }
 bool list::search(int v){
 	list_node* anterior=NULL;
@@ -87,9 +87,9 @@ bool list::search(int v){
 	cout<<v<<endl;
 	return false;
  }
-void list::show(string nombre){
+void list::show(){
 	go_to_last_node();
-	begin_tex(nombre);
+	begin_tex();
 	cout<<"The list contains: "<<endl;
 	for(int i=1; i<=size;i++){
 		int v=current_node->get_value();
@@ -151,11 +151,8 @@ string list::getCadena(){
 	cout<<"Values ​​in the list are: "<<endl;
 	return this->cadena;
 }
-void list::begin_tex(string nombre){
+void list::begin_tex(){
 	this->cadena += "\n \\begin{frame}";
-	this->cadena +="\\frametitle{";
-	this->cadena +=nombre;
-	this->cadena +="}\n";
 	this->cadena+="\n \\begin{tikzpicture}[shorten >=1pt,->]";
 	this->cadena+="\n \\tikzstyle{main_node}=[rectangle,fill=black!25,minimum size=20pt,inner sep=0pt] \n";
 	}

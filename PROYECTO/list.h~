@@ -20,9 +20,9 @@ public:
 	void begin_tex();///< Writes the headers and required latex libraries and packages on the .tex file.
 	void end_tex();///< Writes the footers on the .tex file.
 	string to_string(int v);///< Convert an int "v" to string.
+	int size;///< Size of the list.
 private:
 	list_node* first_node;///< First node in the list.
 	list_node* current_node;///< Last node in the list, this points to NULL.
-	int size;///< Size of the list.
 	void show();///< Show the list.
 };

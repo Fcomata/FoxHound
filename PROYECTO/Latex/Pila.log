@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.5.21)  5 OCT 2013 17:21
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.5.21)  6 OCT 2013 01:19
 entering extended mode
  %&-line parsing enabled.
 **Pila.tex
@@ -1095,8 +1095,7 @@ Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
 \multicolundershoot=\dimen217
 \mult@nat@firstbox=\box80
 \colbreak@box=\box81
-)
-No file Pila.aux.
+) (./Pila.aux)
 \openout1 = `Pila.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 1.
@@ -1113,6 +1112,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 1.
 LaTeX Font Info:    ... okay on input line 1.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 1.
 LaTeX Font Info:    ... okay on input line 1.
+
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
 -------------------- Geometry parameters
@@ -1179,6 +1179,8 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 LaTeX Info: Redefining \ref on input line 1.
 LaTeX Info: Redefining \pageref on input line 1.
+ (./Pila.out)
+(./Pila.out)
 \@outlinefile=\write5
 \openout5 = `Pila.out'.
 
@@ -1273,11 +1275,10 @@ Package ucs Warning: ***************************
 
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
-)
-No file Pila.nav.
+) (./Pila.nav)
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 14.
+(Font)              size <5> substituted on input line 16.
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1352,6 +1353,30 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [6
 
 ]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[7
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[8
+
+]
 \tf@nav=\write6
 \openout6 = `Pila.nav'.
 
@@ -1368,18 +1393,19 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 18082 strings out of 495061
- 341041 string characters out of 1182621
- 424646 words of memory out of 3000000
- 20773 multiletter control sequences out of 15000+50000
- 5150 words of font info for 19 fonts, out of 3000000 for 9000
+ 18129 strings out of 495061
+ 341693 string characters out of 1182621
+ 425645 words of memory out of 3000000
+ 20807 multiletter control sequences out of 15000+50000
+ 5457 words of font info for 20 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 49i,17n,62p,868b,726s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,17n,62p,868b,722s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on Pila.pdf (6 pages, 27207 bytes).
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmss8.pfb>
+Output written on Pila.pdf (8 pages, 40397 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
- 13 named destinations out of 1000 (max. 500000)
+ 71 PDF objects out of 1000 (max. 8388607)
+ 17 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
