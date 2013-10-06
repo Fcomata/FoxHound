@@ -10,8 +10,6 @@ tree::~tree(){
 	destroy_tree();
 }
 
-
-
 void tree::destroy_tree(node *leaf){
 	if(leaf!=NULL){
 		destroy_tree(leaf->left);

@@ -1,7 +1,7 @@
 all: main
 
 main: to_tex.o latex.o list_node.o list.o array.o main.o
-	g++ to_tex.o latex.o list_node.o list.o array.o main.o -o main
+	g++ to_tex.o latex.o list_node.o list.o array.o tree.o main.o -o main
 to_tex.o: to_tex.cpp
 	g++ -c to_tex.cpp
 
@@ -16,6 +16,9 @@ list.o: list.cpp
 
 array.o: array.cpp
 	g++ -c array.cpp
+	
+tree.o:
+	g++ -c tree.cpp
 
 main.o: main.cpp
 	g++ -c main.cpp

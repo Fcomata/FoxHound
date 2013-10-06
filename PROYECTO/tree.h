@@ -1,10 +1,10 @@
-#include "node.h"
-#include "Latex.h"
+#include "tree_node.h"
+#include "latex.h"
 #include <string>
 #include <sstream>
 #include <algorithm>
 #include <fstream>
-class tree: public Latex{
+class tree: public latex{
 
     public:
         tree();
@@ -15,6 +15,7 @@ class tree: public Latex{
         void insert2(int key);
         node *search(int key);
         void finish_tree();
+        
 
     private:
         void destroy_tree(node *leaf);
