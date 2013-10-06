@@ -3,7 +3,6 @@
 #include <sstream>
 
 using namespace std;
-
    list::list(){
 	first_node=current_node=NULL;
 	size=0; 	
