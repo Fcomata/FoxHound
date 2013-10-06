@@ -8,6 +8,7 @@ class latex
 {
 protected:
 	string cadena;
+	string cadena_temp;
 public:
 	virtual string getCadena();
 	latex(void);

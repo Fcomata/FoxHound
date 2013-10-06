@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.5.21)  6 OCT 2013 13:44
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.5.21)  6 OCT 2013 13:41
 entering extended mode
  %&-line parsing enabled.
-**./Latex/Cola.tex ./Latex/ListaSimple.tex ./Latex/Pila.tex ./Latex/array.tex
-(./Latex/Cola.tex
+**array.tex
+(./array.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, loaded.
@@ -638,21 +638,21 @@ Package: beamerinnerthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
 (/usr/share/texmf/tex/latex/beamer/base/themes/outer/beamerouterthemedefault.st
 y
 Package: beamerouterthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
-))) (Latex/beamerthemeTorino.sty (Latex/beamerinnerthemefancy.sty
+))) (./beamerthemeTorino.sty (./beamerinnerthemefancy.sty
 \beamer@fancy@lineup=\skip57
 \beamer@fancy@linemid=\skip58
 \beamer@fancy@linebottom=\skip59
 \beamer@fancy@normalmargin=\skip60
 )
-(Latex/beamerouterthemedecolines.sty
+(./beamerouterthemedecolines.sty
 \headerheight=\skip61
 \beamer@decolines@lineup=\skip62
 \beamer@decolines@linemid=\skip63
 \beamer@decolines@linebottom=\skip64
 \beamer@decolines@watermarkheightbottom=\skip65
 \beamer@decolines@watermarkheightupperorig=\skip66
-) (Latex/beamercolorthemechameleon.sty))
-(Latex/beamercolorthemenouvelle.sty)
+) (./beamercolorthemechameleon.sty))
+(./beamercolorthemenouvelle.sty)
 (/usr/share/texmf-texlive/tex/generic/babel/babel.sty
 Package: babel 2008/07/06 v3.8l The Babel package
 
@@ -682,7 +682,7 @@ Package babel Info: Making > an active character on input line 630.
 Package: thumbpdf 2008/04/16 v3.10 Inclusion of thumbnails (HO)
 
 
-Package thumbpdf Warning: Thumbnail data file `Cola.tpt' not found.
+Package thumbpdf Warning: Thumbnail data file `array.tpt' not found.
 
 ) (/usr/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
@@ -1099,8 +1099,9 @@ Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytrees
 .code.tex
 File: tikzlibrarytrees.code.tex 2008/02/24 v2.10 (rcs-revision 1.2)
-) (Latex/Cola.aux)
-\openout1 = `Cola.aux'.
+)
+No file array.aux.
+\openout1 = `array.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
@@ -1116,7 +1117,6 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
-
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
 -------------------- Geometry parameters
@@ -1183,10 +1183,8 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 LaTeX Info: Redefining \ref on input line 17.
 LaTeX Info: Redefining \pageref on input line 17.
- (Latex/Cola.out)
-(Latex/Cola.out)
 \@outlinefile=\write5
-\openout5 = `Cola.out'.
+\openout5 = `array.out'.
 
 \AtBeginShipoutBox=\box83
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -1279,7 +1277,8 @@ Package ucs Warning: ***************************
 
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
-) (Latex/Cola.nav)
+)
+No file array.nav.
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 (Font)              size <5> substituted on input line 31.
@@ -1393,59 +1392,35 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [9
 
 ]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[10
-
-]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[11
-
-]
 \tf@nav=\write6
-\openout6 = `Cola.nav'.
+\openout6 = `array.nav'.
 
 \tf@toc=\write7
-\openout7 = `Cola.toc'.
+\openout7 = `array.toc'.
 
 \tf@snm=\write8
-\openout8 = `Cola.snm'.
+\openout8 = `array.snm'.
 
- (Latex/Cola.aux)
+ (./array.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 18169 strings out of 495061
- 342852 string characters out of 1182621
- 427429 words of memory out of 3000000
- 20836 multiletter control sequences out of 15000+50000
- 5457 words of font info for 20 fonts, out of 3000000 for 9000
+ 18102 strings out of 495061
+ 342099 string characters out of 1182621
+ 424429 words of memory out of 3000000
+ 20784 multiletter control sequences out of 15000+50000
+ 5152 words of font info for 19 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 49i,17n,62p,521b,724s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,17n,53p,455b,554s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-te
 xlive/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on Latex/Cola.pdf (11 pages, 45706 bytes).
+Output written on array.pdf (9 pages, 40938 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 23 named destinations out of 1000 (max. 500000)
+ 77 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
