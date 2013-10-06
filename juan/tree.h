@@ -2,6 +2,7 @@
 #include "Latex.h"
 #include <string>
 #include <sstream>
+#include <algorithm>
 
 class tree: public Latex{
 
@@ -12,6 +13,7 @@ class tree: public Latex{
 		void insert_root(int key);
         void insert(int key);
         node *search(int key);
+        void create_tree();
         void destroy_tree();
         void finish_tree();
 

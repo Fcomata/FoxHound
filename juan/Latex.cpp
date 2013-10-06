@@ -3,6 +3,7 @@
 Latex::Latex(void)
 {
 	cadena="";
+	cadena_temp="";
 }
 
 Latex::~Latex(void)

@@ -6,7 +6,7 @@ class Latex
 {
 
 protected:
-	string cadena;
+	string cadena,cadena_temp;
 public:
 	virtual string getCadena();
 	Latex(void);
