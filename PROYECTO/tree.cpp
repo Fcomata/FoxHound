@@ -2,6 +2,7 @@
 #include <iostream>
 using namespace std;
 
+
 tree::tree(){
 	root=NULL;
 }

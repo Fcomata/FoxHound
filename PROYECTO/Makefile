@@ -1,7 +1,13 @@
 all: main
 
+<<<<<<< HEAD
 main: to_tex.o latex.o list_node.o list.o array.o main.o
 	g++ to_tex.o latex.o list_node.o list.o array.o tree.o main.o -o main
+=======
+main: to_tex.o latex.o list_node.o list.o array.o tree.o main.o 
+	g++ to_tex.o latex.o list_node.o tree.o list.o array.o main.o -o main
+
+>>>>>>> bf17ea10b7128a3218da3c237d318c854712ce35
 to_tex.o: to_tex.cpp
 	g++ -c to_tex.cpp
 
@@ -22,6 +28,9 @@ tree.o:
 
 main.o: main.cpp
 	g++ -c main.cpp
+
+tree.o: tree.cpp
+	g++ -c tree.cpp
 
 clean:
 	rm -rf *o main

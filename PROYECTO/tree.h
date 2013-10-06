@@ -4,9 +4,15 @@
 #include <sstream>
 #include <algorithm>
 #include <fstream>
+<<<<<<< HEAD
 class tree: public latex{
+=======
+
+class tree: public Latex{
+>>>>>>> bf17ea10b7128a3218da3c237d318c854712ce35
 
     public:
+
         tree();
         ~tree();
 
@@ -18,6 +24,7 @@ class tree: public latex{
         
 
     private:
+
         void destroy_tree(node *leaf);
         void insert(int key, node *leaf);
         node *search(int key, node *leaf);

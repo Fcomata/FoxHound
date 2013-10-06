@@ -2,6 +2,8 @@
 #include <iostream>
 using namespace std;
 
+string cadena_temp;
+
 tree::tree(){
 	root=NULL;
 }
@@ -10,14 +12,7 @@ tree::~tree(){
 	destroy_tree();
 }
 
-void tree::create_tree(){
-	this->cadena += "\\documentclass{article} \n \\usepackage{tikz} \n \\usetikzlibrary{trees} \n \\begin{document} \n\n";
-}
 
-void tree::finish_tree(){
-	this->cadena += "\n \\end{document} \n";
-
-}
 
 void tree::destroy_tree(node *leaf){
 	if(leaf!=NULL){
