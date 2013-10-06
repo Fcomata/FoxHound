@@ -267,17 +267,31 @@ switch (menuCola){
  }//end while
 }//en if()
 
-
 if(menuLista==3){
 list * Simple = new list();
 int menuSimple=1;
-
+cout<<"\n"<<endl;
 while(menuSimple!=0){
-
-cout<<"Menu de Lista Simple: \n 1)Insertar Elemento al Inicio \n 2)Insertar Elemento al Medio \n 3)Insertar Elemento al Final \n 4)Elimina Elemento al Inicio \n 5)Elimina Elemento al Medio \n 6)Elimina Elemento al Final  \n 7)Buscar Elemento \n 0)Salir"<<endl;
-
+if(Simple->size==0)
+{
+cout<<"Menu de Lista Simple: \n 1)Insertar Elemento al Final \n 0)Salir"<<endl;
 cin>>menuSimple;
-
+switch (menuSimple){
+	case 0: 
+		create_tex("ListaSimple.tex",Simple->getCadena());
+	break;
+	case 1:
+		elemento=0;
+		cout<<"Ingrese el elemento"<<endl;
+		cin>>elemento;
+		Simple->insert_at_end(elemento);
+	break;
+		}//end switch 
+	}//end if
+else
+{
+cout<<"Menu de Lista Simple: \n 1)Insertar Elemento al Inicio \n 2)Insertar Elemento al Medio \n 3)Insertar Elemento al Final \n 4)Elimina Elemento al Inicio \n 5)Elimina Elemento al Medio \n 6)Elimina Elemento al Final  \n 7)Buscar Elemento \n 0)Salir"<<endl;
+cin>>menuSimple;
 switch (menuSimple){
 	case 0: 
 		create_tex("ListaSimple.tex",Simple->getCadena());
@@ -321,7 +335,9 @@ switch (menuSimple){
 		cin>>elemento;
 		Simple->search(elemento);
 	break;
-	}//end switch 
+		}//end switch 
+}
+
      }//en while
    }//end menu Lista Simple
  }// end while general
