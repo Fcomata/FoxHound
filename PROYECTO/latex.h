@@ -1,19 +1,15 @@
 #include <string>
-
 #pragma once
 #ifndef LATEX
 #define LATEX
 #endif
-
 using namespace std;
-
-class Latex
+class latex
 {
-
 protected:
 	string cadena;
 public:
 	virtual string getCadena();
-	Latex(void);
-	~Latex(void);
+	latex(void);
+	~latex(void);
 };

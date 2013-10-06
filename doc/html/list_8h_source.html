@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>DataStructures4Beamer: /home/mtorres/Dropbox/Universidad/Estructuras/Proyecto1/FoxHound/nano/Cpp_modificable/list.h Source File</title>
+<title>DataStructures4Beamer: /home/mtorres/Dropbox/Universidad/Estructuras/Proyecto1/FoxHound/PROYECTO/list.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -79,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_2900c9666d402596adb48931a71dee0f.html">nano</a></li><li class="navelem"><a class="el" href="dir_4703f3e05e2be497c608df6a07bace08.html">Cpp_modificable</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_5959f6cf2e43ca8840dd67087c5657d1.html">PROYECTO</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -87,9 +87,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">list.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;Latex.h&quot;</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;latex.h&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;list_node.h&quot;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno"><a class="code" href="classlist.html">    3</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlist.html">list</a>:<span class="keyword">public</span> <a class="code" href="class_latex.html">Latex</a>{</div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="code" href="classlist.html">    3</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlist.html">list</a>:<span class="keyword">public</span> <a class="code" href="classlatex.html">latex</a>{</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;        <a class="code" href="classlist.html#a223ecca7c96ef287c1e647493a32fbf6" title="Default constructor.">list</a>();</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;        <a class="code" href="classlist.html#a72eaabb03a048506432f8d167db12524" title="Destructor.">~list</a>();</div>
@@ -109,16 +109,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classlist.html#ae62b808b02ddd303878ee7459349e093" title="Writes the headers and required latex libraries and packages on the .tex file.">begin_tex</a>();</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classlist.html#ad0581363cabe43d9524e27321bf19cc0" title="Writes the footers on the .tex file.">end_tex</a>();</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">string</span> <a class="code" href="classlist.html#af38e18a21e1631f6f0e381aefe4262fe" title="Convert an int &quot;v&quot; to string.">to_string</a>(<span class="keywordtype">int</span> v);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="classlist__node.html">list_node</a>* first_node;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="classlist__node.html">list_node</a>* current_node;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">int</span> size;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">void</span> show()</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="classlist.html#a3b03adad0c0429bae9493667ff366dc2">   23</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classlist.html#a3b03adad0c0429bae9493667ff366dc2" title="Size of the list.">size</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="classlist__node.html">list_node</a>* first_node;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="classlist__node.html">list_node</a>* current_node;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">void</span> show();</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 5 2013 15:34:27 for DataStructures4Beamer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 6 2013 00:17:55 for DataStructures4Beamer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>
