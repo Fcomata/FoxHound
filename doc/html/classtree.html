@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>DataStructures4Beamer: /home/mtorres/Dropbox/Universidad/Estructuras/Proyecto1/FoxHound/nano/ Directory Reference</title>
+<title>DataStructures4Beamer: tree Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,7 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -58,12 +58,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+    </ul>
+  </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -72,25 +80,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_2900c9666d402596adb48931a71dee0f.html">nano</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classtree-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">nano Directory Reference</div>  </div>
+<div class="title">tree Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2><a name="subdirs"></a>
-Directories</h2></td></tr>
-<tr class="memitem:dir_4703f3e05e2be497c608df6a07bace08"><td class="memItemLeft" align="right" valign="top">directory &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dir_4703f3e05e2be497c608df6a07bace08.html">Cpp_modificable</a></td></tr>
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:acbfbccebf3d8482cb6a1a878ab99491f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acbfbccebf3d8482cb6a1a878ab99491f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>insert_root</b> (int key)</td></tr>
+<tr class="memitem:aac63ed69d695ac263438cd5da4317b6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac63ed69d695ac263438cd5da4317b6a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>insert1</b> (int key)</td></tr>
+<tr class="memitem:aa4c44ce4c18a7341b34124d26e7a5563"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa4c44ce4c18a7341b34124d26e7a5563"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>insert2</b> (int key)</td></tr>
+<tr class="memitem:a9a4e341c78d3559e5f6e3b0060530f05"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a4e341c78d3559e5f6e3b0060530f05"></a>
+<a class="el" href="structnode.html">node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>search</b> (int key)</td></tr>
+<tr class="memitem:a86bf515529211e7f7d1f18892bf6fff5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86bf515529211e7f7d1f18892bf6fff5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>finish_tree</b> ()</td></tr>
 </table>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/mtorres/Dropbox/Universidad/Estructuras/Proyecto1/FoxHound/PROYECTO/<a class="el" href="tree_8h_source.html">tree.h</a></li>
+<li>/home/mtorres/Dropbox/Universidad/Estructuras/Proyecto1/FoxHound/PROYECTO/tree.cpp</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 5 2013 15:34:28 for DataStructures4Beamer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 6 2013 13:42:31 for DataStructures4Beamer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

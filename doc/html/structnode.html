@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>DataStructures4Beamer: /home/mtorres/Dropbox/Universidad/Estructuras/Proyecto1/FoxHound/nano/Cpp_modificable/Nodo.h Source File</title>
+<title>DataStructures4Beamer: node Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,8 +38,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -60,7 +60,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -68,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -77,34 +80,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_2900c9666d402596adb48931a71dee0f.html">nano</a></li><li class="navelem"><a class="el" href="dir_4703f3e05e2be497c608df6a07bace08.html">Cpp_modificable</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="structnode-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Nodo.h</div>  </div>
+<div class="title">node Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00003"></a><span class="lineno"><a class="code" href="class_nodo.html">    3</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_nodo.html">Nodo</a>{</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;        <span class="keywordtype">int</span> valor;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;        <a class="code" href="class_nodo.html">Nodo</a> *siguiente;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        <a class="code" href="class_nodo.html">Nodo</a>(<span class="keywordtype">int</span> v,<a class="code" href="class_nodo.html">Nodo</a>*);</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        ~<a class="code" href="class_nodo.html">Nodo</a>();</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keywordtype">void</span> setV (<span class="keywordtype">int</span> );</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keywordtype">int</span> getV ();</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keywordtype">void</span> setS(<a class="code" href="class_nodo.html">Nodo</a> *) ;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="class_nodo.html">Nodo</a> * getS ();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;};</div>
-</div><!-- fragment --></div><!-- contents -->
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a182db137ea0884489bee856c63b33d9a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a182db137ea0884489bee856c63b33d9a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>key_value</b></td></tr>
+<tr class="memitem:a7cbff55ff448f557223f79299056e9b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cbff55ff448f557223f79299056e9b1"></a>
+<a class="el" href="structnode.html">node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>left</b></td></tr>
+<tr class="memitem:abdc86d4c8604c481752953af3235fc47"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abdc86d4c8604c481752953af3235fc47"></a>
+<a class="el" href="structnode.html">node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>right</b></td></tr>
+</table>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>/home/mtorres/Dropbox/Universidad/Estructuras/Proyecto1/FoxHound/PROYECTO/<a class="el" href="tree__node_8h_source.html">tree_node.h</a></li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 5 2013 03:03:42 for DataStructures4Beamer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 6 2013 13:42:31 for DataStructures4Beamer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

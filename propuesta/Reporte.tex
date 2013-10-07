@@ -36,24 +36,25 @@
 }
 
 \pagestyle{fancy}		% Contenido de los encabezados y pies de pagina
-\lhead{Estructuras Abstractas}
+\lhead{Estructuras Abstractas de Datos y Algoritmos para Ingenieria}
 \chead{}
 \rhead{Proyecto \#1}
 \lfoot{Escuela de Ingeniería Eléctrica}
 \cfoot{\thepage}
 \rfoot{Universidad de Costa Rica}
 
-\author{Francisco Mata Marín, B13981 \\
-		Juan Carlos Montero Molina, A94013 \\
-		Marco Torres Umaña, B16592   \vspace {10mm}} 
+\author{
+Francisco Mata Marín, B13981 \\
+Juan Carlos Montero Molina, A94013 \\
+Marco Torres Umaña, B16592   \vspace {10mm}} 
 \title{{Universidad de Costa Rica \\ 
 		Facultad de Ingeniería \\
 		Escuela de Ingeniería Eléctrica \\
-		Estructuras abstractas \\
-		II – 2013\\  		 
+		Estructuras Abstractas de Datos y Algoritmos para Ingenieria \\
+		II - 2013\\  		 
 		\vspace* {50mm}			
-		 Proyecto \#1 } \vspace* {50mm}}
-		\date{Profesor: Francisco Siles\\19 de septiembre de 2013}  		
+		 Proyecto \#1 \\ DataStructures4Beamer } \vspace* {50mm}}
+		\date{Profesor: Francisco Siles\\7 de Octubre de 2013}  		
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
@@ -73,62 +74,59 @@
 
 \section{Introduccion}
 
-Inicicalmente el concepto de visualizar dentro de Latex las estructuras abstractas se percibia de una manera muy abstracta, valga la ironia. Como equipo pasamos un momneto de confunsion, en el cual tuvimos que investigar por donde empezar, y una de las decisiones mas importantes del proyecto fue usar la caracteristica de C++, programacion por objetos. El poder tenerla capacidad para encapsular elementos para poder modelarlos facilmente, fue el exito de este proyecto, ya que facilito y despejo nuestra confunsion en cuanto al proyecto.\\
+Inicialmente el concepto de visualizar dentro de Latex las estructuras abstractas se percibe de una manera muy abstracta, valga la ironía. Como equipo pasamos un momento de confusión, en el cual tuvimos que investigar por donde empezar, y una de las decisiones más importantes del proyecto fue usar la característica de C++, programación por objetos. El poder tener la capacidad para encapsular elementos para poder modelarlos fácilmente, fue el éxito de este proyecto, ya que facilitó y despejó nuestra confusión en cuanto al proyecto.\\
 
-Seguidamente al terminar ciertas estrcuturas (arreglos y listas), era la hora de empezar a programar nuestro objetivo, es decir la documentacion en Latex de las acciones a lasestrcuturas de datos, de una manera simple. Asi que usamos herencia de clases, esta propiedad nos dio una gran ventaja en ahorro de codigo y facilidad de uso. Se utilizo la clase Latex la cual tiene como proposito tener un registro de las acciones que estan sucediendo en codigo Latex. Es decir cada clase tiene un elemento virtual string "cadena", en el cual guarda el codigo Latex, de la accion adecuada de la estructura. Y concibimos que cada clase debe tener una cadena por separado asi que usamos la funcion virtual.\\
+Seguidamente al terminar ciertas estructuras (arreglos y listas), era la hora de empezar a programar nuestro objetivo, es decir la documentación en Latex de las acciones a las estructuras de datos, de una manera simple. Así que usamos herencia de clases, esta propiedad nos dio una gran ventaja en ahorro de código y facilidad de uso. Se utilizo la clase Latex la cual tiene como propósito tener un registro de las acciones que están sucediendo en código Latex. Es decir cada clase tiene un elemento virtual string "cadena", en el cual guarda el código Latex, de la acción adecuada de la estructura. Y concebimos que cada clase debe tener una cadena por separado así que usamos la función virtual.\\
 
-Seguidamente, implementamos las clases arrglo y listas al proyecto, testiamos levemente, ya que el tiempo es corto para la entrega. Y nos dimos a la tarea a empezar estructuras abstractas en dos dimension, arboles binarios.\\
+Seguidamente, implementamos las clases arreglo (array)  y lista (list) al proyecto, se hicieron las pruebas brevemente, ya que el tiempo es corto para la entrega. Y nos dimos a la tarea a empezar estructuras abstractas en dos dimension, árboles binarios (tree).\\
 
 \section{Justificacion de Lenguajes}
 
-En este proyecto se utilizaron dos lenguajes de programacion, en los cuales se explotaron algunas de sus carateristicas, para cumplir con el proyecto. Inicialmente, se penso programar en Latex ya que su estilo y funcionalidad es muy fina, el poder de modelar matematicamente y informaticamente un archivo de texto, es una idea no solo expectacular sino de gran ayuda a la automatizacion de trabajos tedioso y complicados. Seguidamente, se utilizo el lenguaje C++, ya que el poder de utilizar programacion por objetos, facilito enormemente la organizacion de ideas, metodos y acciones complejas, para cumplir los objetivos.
-
-
+En este proyecto se utilizaron dos lenguajes de programación, en los cuales se explotaron algunas de sus características, para cumplir con el proyecto. Inicialmente, se pensó programar en Latex ya que su estilo y funcionalidad es muy fina, el poder de modelar matemáticamente e informáticamente un archivo de texto, es una idea no solo espectacular sino de gran ayuda a la automatización de trabajos tedioso y complicados. Seguidamente, se utilizó el lenguaje C++, ya que el poder de utilizar programación por objetos, facilitó enormemente la organización de ideas, métodos y acciones complejas, para cumplir los objetivos.
 
 \section{Objetivos}
 
 \subsection{Objetivo General} 
 
-Crear una libreria la cual se encargue de crear un beamer (Latex) con la visualizacion de ciertas estructuras abstactas vistas en el curso, desde un codigo de C++
+Crear una librería la cual se encargue de crear un beamer (Latex) con la visualización de ciertas estructuras abstractas vistas en el curso, desde un código de C++.
 
-
-\subsection{Objetivos Especificos}
-
+\subsection{Objetivos Específicos}
 
 \begin{enumerate}
-\item Facilitar la creacion y uso de las estructuras abstractas implementadas dentro de la libreria (principalmente vectores, listas y arboles) 
-\item Crear las animaciones de "Push" y "Pull" nodos de las estructuras, y hacer los cambios adecuados que estos generan en la estructura de una manera visual
-\item Construir herramientas que faciliten al usuario al manejo del beamer dentro del codigo de C++, ejemplos: zoom, seleccion de nodos, animaciones con temporales, entre otros
-\item Implementar la libreria de manera generica, para que soporte cambios y combinacion de estructuras, asi como el redblack tree ** (Opcional: dado el tiempo, se implementara)
-\end{enumerate}
+\item Facilitar la creación y uso de las estructuras abstractas implementadas dentro de la librería (principalmente vectores, listas y árboles)
+
+\item Crear las animaciones de "push" y "pull" nodos de las estructuras, y hacer los cambios adecuados que estos generan en la estructura de una manera visual
+
+\item Construir herramientas que faciliten al usuario al manejo del beamer dentro del código de C++, ejemplos: zoom, selección de nodos, animaciones con temporales, entre otros
+
+\item Implementar la librería de manera genérica, para que soporte cambios y combinación de estructuras, así como el árbol rojo-negro (redblack tree).  ** (Opcional: dado el tiempo, se implementara)\end{enumerate}
 
 \section{Evolucion del Proyecto}
 
-Inicicalmente el concepto de visualizar dentro de Latex las estructuras abstractas se percibia de una manera muy abstracta, valga la ironia. Como equipo pasamos un momneto de confunsion, en el cual tuvimos que investigar por donde empezar, y una de las decisiones mas mportantes del proyecto fue usar la caracteristica de C++, programacion por objetos. El poder tenerla capacidad para encapsular elementos para poder modelarlos facilmente, fue el exito de este proyecto, ya que facilito y despejo nuestra confunsion en cuanto al proyecto.\\
+Inicialmente el concepto de visualizar dentro de Latex las estructuras abstractas se percibe de una manera muy abstracta, valga la ironía. Como equipo pasamos un momento de confusión, en el cual tuvimos que investigar por donde empezar, y una de las decisiones más importantes del proyecto fue usar la característica de C++, programación por objetos. El poder tener la capacidad para encapsular elementos para poder modelarlos fácilmente, fue el éxito de este proyecto, ya que facilitó y despejó nuestra confusión en cuanto al proyecto.\\
 
-Seguidamente al terminar ciertas estrcuturas (arreglos y listas), era la hora de empezar a programar nuestro objetivo, es decir la documentacion en Latex de las acciones a lasestrcuturas de datos, de una manera simple. Asi que usamos herencia de clases, esta propiedad nos dio una gran ventaja en ahorro de codigo y facilidad de uso. Se utilizo la clase Latex la cual tiene como proposito tener un registro de las acciones que estan sucediendo en codigo Latex. Es decir cada clase tiene un elemento virtual string "cadena", en el cual guarda el codigo Latex, de la accion adecuada de la estructura. Y concibimos que cada clase debe tener una cadena por separado asi que usamos la funcion virtual.\\
+Seguidamente al terminar ciertas estructuras (arreglos y listas), era la hora de empezar a programar nuestro objetivo, es decir la documentación en Latex de las acciones a las estructuras de datos, de una manera simple. Así que usamos herencia de clases, esta propiedad nos dio una gran ventaja en ahorro de código y facilidad de uso. Se utilizo la clase Latex la cual tiene como propósito tener un registro de las acciones que están sucediendo en código Latex. Es decir cada clase tiene un elemento virtual string "cadena", en el cual guarda el código Latex, de la acción adecuada de la estructura. Y concebimos que cada clase debe tener una cadena por separado así que usamos la función virtual.\\
 
-Seguidamente, implementamos las clases arrglo y listas al proyecto, testiamos levemente, ya que el tiempo es corto para la entrega. Y nos dimos a la tarea a empezar estructuras abstractas en dos dimension, arboles binarios.\\
-
+Seguidamente, implementamos las clases arreglo y listas al proyecto, probamos brevemente, ya que el tiempo es corto para la entrega. Y nos dimos a la tarea a empezar estructuras abstractas en dos dimension, árboles binarios.\\
 
 \section{Dificultades dentro el Proyecto}
 
 \begin{itemize}
 
-\item El inicio del proyecto quedo muy en el aire la primera semana, su conceptualizacion comparado con el nivel de programacion del grupo, estaba elevado. Pero no fue un problema, que a su se haya solucionado. Investiganado y programando, con pequeños objetivos empezamos el proyecto para concretarlo.
+\item El inicio del proyecto quedó muy en el aire la primera semana, su conceptualización comparado con el nivel de programación del grupo, estaba elevado. Pero no fue un problema, que a su se haya solucionado.Investigando y programando, con pequeños objetivos empezamos el proyecto para concretarlo.
 
-\item Uno de los grandes problemas que nos impidio a avanzar rapido, fue la poca flexbilidad del codigo Latex, el crear codigo Latex en C++, fue un gran reto de modelacion, ya que se debe tener mucho cuidado en cuanto a la sintaxis. Debido a que el proyecto se propuso de manera automatica, no puede haber margen de error a la hora de crear el codigo Latex.
+\item Uno de los grandes problemas que nos impidió a avanzar rápido, fue la poca flexibilidad del código Latex, el crear código Latex en C++, fue un gran reto de modelación, ya que se debe tener mucho cuidado en cuanto a la sintaxis. Debido a que el proyecto se propuso de manera automática, no puede haber margen de error a la hora de crear el código Latex.
 
-\end{itemize} 
+\end{itemize}
 
 \section{Elementos para mejorar}
 
 \begin{itemize}
 
-\item Dado la inflexibilidad de Latex, y el tiempo, no se pudo desplegar animaciones dentro de la presentacion Latex, se crean imagenes estaticas y muy solidas, un elemento a considerar es proporcionar mayor movimiento dentro de la presentacion para mejorar la comprension de los sucesos
+\item Dado la inflexibilidad de Latex, y el tiempo, no se pudo desplegar animaciones dentro de la presentación Latex, se crean imágenes estáticas y muy sólidas, un elemento a considerar es proporcionar mayor movimiento dentro de la presentación para mejorar la comprensión de los sucesos
 
-\item Soportar mas estructuras, es decir implementar todas las posibles, o generar un grafo generico que genere las otras (pero su complejidad esta a otro nivel), ya que es una idea innovadora, y de gran ayuda al programador.
+\item Soportar más estructuras, es decir implementar todas las posibles, o generar un grafo genérico que genere las otras (pero su complejidad esta a otro nivel), ya que es una idea innovadora, y de gran ayuda al programador.
 
-\end{itemize} 
+\end{itemize}
 
 \end{document}
