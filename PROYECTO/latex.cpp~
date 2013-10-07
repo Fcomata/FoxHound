@@ -1,15 +1,16 @@
-#include "Latex.h"
-
-Latex::Latex(void)
+#include "latex.h"
+latex::latex(void)
 {
 	cadena="";
+	cadena_temp="";
 }
-
-Latex::~Latex(void)
+latex::~latex(void)
 {
 }
-
-string  Latex::getCadena(){
+string  latex::getCadena(){
 	return this->cadena;
+}
 
+string  latex::getCadenaTemp(){
+	return this->cadena_temp;
 }

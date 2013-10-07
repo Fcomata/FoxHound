@@ -22,10 +22,4 @@ system("pdflatex -output-directory Latex ./Latex/*.tex");
 }
 
 
-//	Hay que llamar funciones del sistema.
-//void delete_tex (string name)
-//{
-//string line = "rm -rf ";
-//string command +=(line +name);
-//system(command);
-//}
+

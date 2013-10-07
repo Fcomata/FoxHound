@@ -3,6 +3,7 @@
 #include <string>
 #include "array.h"
 #include "list.h"
+#include "tree.h"
 #include "to_tex.h"
 
 using namespace std;
@@ -12,6 +13,8 @@ int amount;
 int elemento;
 int posicion;
 int posicion2;
+int nodo;
+node*root;
 
 int menu =1;
 
@@ -272,7 +275,7 @@ list * Simple = new list();
 int menuSimple=1;
 cout<<"\n"<<endl;
 while(menuSimple!=0){
-if(Simple->size=!0)
+if(Simple->size==0)
 {
 cout<<"Menu de Lista Simple: \n 1)Insertar Elemento al Final \n 0)Salir"<<endl;
 cin>>menuSimple;
@@ -346,8 +349,61 @@ switch (menuSimple){
 
 
 if (menu==3){
-//tree * Arbol = new tree();
-int menuTree=0;
+
+tree * Arbol = new tree();
+
+int menuTree=1;
+
+while(menuTree!=0){
+
+cout<<"Menu de Lista Simple: \n 1)Insertar Raiz \n 2)Insertar Hijo \n 3)Eliminar \n 0)Salir"<<endl;
+
+cin>>menuTree;
+
+
+switch (menuTree){
+
+	case 0:
+
+		create_tex("Arboles.tex", Arbol->getCadena());
+
+	break;
+
+	case 1:
+
+		elemento=0;
+		cout<<"Ingrese el elemento"<<endl;
+		cin>>elemento;
+		Arbol->insert_root(elemento);
+
+
+	break;
+
+	case 2:
+
+		elemento=0;
+		cout<<"Ingrese el elemento"<<endl;
+		cin>>elemento;
+		cout<<"Ingrese el nodo \n 1)Hijos de root\n 2) Hijos Izquierda \n 3)Hijos Derecha "<<endl;
+		cin>>nodo;
+		root=Arbol->devolver();
+t
+		if(nodo==1){Arbol->insert_child(elemento, root);}
+
+		if(nodo==2){Arbol->insert_child(elemento, root->left);}
+        	
+		if(nodo==3){Arbol->insert_child(elemento, root->right);}
+
+	break;
+
+	case 3:
+
+		Arbol->destroy_tree();
+
+	break;
+		
+	     }//switch
+	  }//end while
 	}//end if(menu==3)
     }//en while(menu=!0)
 }//end main
