@@ -3,6 +3,7 @@
 #include <string>
 #include "array.h"
 #include "list.h"
+#include "tree.h"
 #include "to_tex.h"
 
 using namespace std;
@@ -350,7 +351,7 @@ if (menu==3){
 tree * Arbol = new tree();
 
 int menuTree=0;
-
+while(menuTree!=0){
 cout<<"Menu de Lista Simple: \n 1)Insertar Raiz \n 2)Insertar Hijo \n 3)Eliminar \n 0)Salir"<<endl;
 
 cin>>menuTree;
@@ -388,8 +389,9 @@ switch (menuTree){
 		Arbol->destroy_tree();
 
 	break;
-
-	  }//end switch
+		
+	     }//switch
+	  }//end while
 	}//end if(menu==3)
     }//en while(menu=!0)
 }//end main

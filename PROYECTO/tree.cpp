@@ -94,7 +94,7 @@ void tree::insert_child(int key){
 	
 }
 
-void tree::finishtree(){
+void tree::finish_tree(){
 
 this->cadena+="};";
 ofstream myfile;
