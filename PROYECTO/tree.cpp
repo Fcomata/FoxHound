@@ -106,12 +106,8 @@ void tree::insert_child(int key, node* leaf){
 	this->cadena_temp += "\n child {node [circle,draw,thick] {";
 	this->cadena_temp += convertir(key);
 	this->cadena_temp += "}";
-	this->cadena_temp += "\n child {node [circle,draw,thick] {";
-	this->cadena_temp += convertir(root->left->key_value);
-	this->cadena_temp += "}}";
-	this->cadena_temp += "\n child {node [circle,draw,thick] {";
-	this->cadena_temp += convertir(root->right->key_value);
-	this->cadena_temp += "}";
+	this->cadena_temp += "\n child {node [circle,draw,thick] {NULL}}";
+	this->cadena_temp += "\n child {node [circle,draw,thick] {NULL}";
 	this->cadena_temp += "}}; \n \\end{tikzpicture} \\end{frame} \n\n \\newpage";
 	
 	this->cadena += this->cadena_temp;
