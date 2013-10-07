@@ -94,6 +94,22 @@ void tree::insert_child(int key){
 	
 }
 
+void tree::finishtree(){
+
+this->cadena+="};";
+ofstream myfile;
+string route;
+route+="./Latex/Arbol.tex";
+
+myfile.open (route.c_str());
+myfile << "\\documentclass{beamer} \n \\usetheme[pageofpages=of, alternativetitlepage=true]{Torino} \n \\usecolortheme{nouvelle} \n \\usepackage[spanish]{babel} \n \\usepackage{thumbpdf} \n \\usepackage{tikz} \n \\usetikzlibrary{arrows} \n \\usepackage{ucs} \n \\usepackage[utf8]{inputenc} \n \\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade} \n \\usepackage{verbatim} \n \\usepackage{booktabs} \n \\usepackage{multicol} \n \\usepackage{url} \n \\beamersetuncovermixins{\\opaqueness<1>{25}}{\\opaqueness<2->{15}} \n \\usetikzlibrary{trees} \n \\begin{document}\n";
+myfile << this->cadena;
+myfile << "\n\\end{document}";
+myfile.close();
+
+}
+
+
 node *tree::search(int key){
 	return search(key, root);
 }

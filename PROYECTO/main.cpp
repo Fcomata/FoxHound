@@ -354,11 +354,13 @@ int menuTree=0;
 cout<<"Menu de Lista Simple: \n 1)Insertar Raiz \n 2)Insertar Hijo \n 3)Eliminar \n 0)Salir"<<endl;
 
 cin>>menuTree;
-
+while(menuTree!=0){
 
 switch (menuTree){
 
 	case 0:
+
+		create_tex("Arboles.tex", Arbol->getCadena());
 
 	break;
 
@@ -381,7 +383,14 @@ switch (menuTree){
 
 	break;
 
-	  }//end switch
+	case 3:
+
+		Arbol->destroy_tree();
+
+	break;
+		
+	     }//switch
+	  }//end while
 	}//end if(menu==3)
     }//en while(menu=!0)
 }//end main

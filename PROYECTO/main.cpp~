@@ -351,24 +351,43 @@ tree * Arbol = new tree();
 
 int menuTree=0;
 
-cout<<"Menu de Lista Simple: \n 1)Insertar Elemento al Final \n 0)Salir"<<endl;
+cout<<"Menu de Lista Simple: \n 1)Insertar Raiz \n 2)Insertar Hijo \n 3)Eliminar \n 0)Salir"<<endl;
 
 cin>>menuTree;
 
 
 switch (menuTree){
 
-case 0:
+	case 0:
 
-break;
+		create_tex("Arboles.tex", Arbol->getCadena());
 
-case 1:
+	break;
 
-break;
+	case 1:
 
-case 2:
+		elemento=0;
+		cout<<"Ingrese el elemento"<<endl;
+		cin>>elemento;
+		Arbol->insert_root(elemento);
 
-break;
+
+	break;
+
+	case 2:
+
+		elemento=0;
+		cout<<"Ingrese el elemento"<<endl;
+		cin>>elemento;
+        	Arbol->insert_child(elemento);
+
+	break;
+
+	case 3:
+
+		Arbol->destroy_tree();
+
+	break;
 
 	  }//end switch
 	}//end if(menu==3)
