@@ -72,10 +72,10 @@ void tree::insert_root(int key){
 	
 }
 
-void tree::insert_child(int key){
+void tree::insert_child(int key, node* leaf){
 	
 	if(root!=NULL)
-		insert(key, root);
+		insert(key, leaf);
 	else{
 		root=new node;
 		root->key_value=key;
@@ -123,5 +123,11 @@ string tree::convertir(int entero){
 	stringstream code;
 	code << entero;
 	return code.str();
+
+}
+
+node* tree::devolver(){
+
+return root;
 
 }

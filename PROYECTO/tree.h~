@@ -16,7 +16,7 @@ class tree: public latex{
 
 	void insert_root(int key);
 	void destroy_tree();
-        void insert_child(int key);
+        void insert_child(int key, node* leaf);
         node *search(int key);
         void finish_tree();
         

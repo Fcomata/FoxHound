@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.5.21)  6 OCT 2013 18:31
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.5.21)  6 OCT 2013 19:12
 entering extended mode
  %&-line parsing enabled.
 **./Latex/Arboles.tex ./Latex/Cola.tex ./Latex/ListaSimple.tex ./Latex/Pila.tex
@@ -1280,115 +1280,6 @@ Package ucs Warning: ***************************
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 ) (Latex/Arboles.nav)
-
-LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 25.
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[2
-
-]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[3
-
-]
-Overfull \hbox (97.94807pt too wide) in paragraph at lines 52--52
-[][]  
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[4
-
-]
-Overfull \hbox (297.11736pt too wide) in paragraph at lines 63--63
-[][]  
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[5
-
-]
-Overfull \hbox (496.28664pt too wide) in paragraph at lines 75--75
-[][]  
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[6
-
-]
-Overfull \hbox (695.45592pt too wide) in paragraph at lines 88--88
-[][]  
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[7
-
-]
 \tf@nav=\write6
 \openout6 = `Arboles.nav'.
 
@@ -1398,25 +1289,20 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `Arboles.snm'.
 
- (Latex/Arboles.aux)
 
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 1.0pt have occurred.
-
- ) 
+(Latex/Arboles.aux) ) 
 Here is how much of TeX's memory you used:
- 18263 strings out of 495061
- 345315 string characters out of 1182621
- 424429 words of memory out of 3000000
- 20939 multiletter control sequences out of 15000+50000
- 4845 words of font info for 18 fonts, out of 3000000 for 9000
+ 17965 strings out of 495061
+ 339142 string characters out of 1182621
+ 417429 words of memory out of 3000000
+ 20657 multiletter control sequences out of 15000+50000
+ 4545 words of font info for 17 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 49i,17n,53p,541b,739s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on Latex/Arboles.pdf (7 pages, 28774 bytes).
+ 49i,10n,53p,541b,287s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+No pages of output.
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
- 15 named destinations out of 1000 (max. 500000)
+ 9 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

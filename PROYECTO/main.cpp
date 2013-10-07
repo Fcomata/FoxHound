@@ -13,6 +13,8 @@ int amount;
 int elemento;
 int posicion;
 int posicion2;
+int nodo;
+node*root;
 
 int menu =1;
 
@@ -382,7 +384,15 @@ switch (menuTree){
 		elemento=0;
 		cout<<"Ingrese el elemento"<<endl;
 		cin>>elemento;
-        	Arbol->insert_child(elemento);
+		cout<<"Ingrese el nodo \n 1)Hijos de root\n 2) Hijos Izquierda \n 3)Hijos Derecha "<<endl;
+		cin>>nodo;
+		root=Arbol->devolver();
+
+		if(nodo==1){Arbol->insert_child(elemento, root);}
+
+		if(nodo==2){Arbol->insert_child(elemento, root->left);}
+        	
+		if(nodo==3){Arbol->insert_child(elemento, root->right);}
 
 	break;
 
