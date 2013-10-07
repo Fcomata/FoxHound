@@ -1,22 +1,12 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.5.21)  6 OCT 2013 19:12
-=======
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.8.29)  6 OCT 2013 18:48
->>>>>>> a90750207fd01706cb67705a40daafdc48d20f1f
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.5.21)  6 OCT 2013 20:39
 entering extended mode
  %&-line parsing enabled.
-**./Latex/Arboles.tex ./Latex/Arreglo.tex ./Latex/Cola.tex ./Latex/ListaSimple.
-tex ./Latex/Pila.tex ./Latex/array.tex
+**./Latex/Arboles.tex ./Latex/Cola.tex ./Latex/ListaSimple.tex ./Latex/Pila.tex
+ ./Latex/array.tex
 (./Latex/Arboles.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
-ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
-9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
-skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
-orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
-, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
-rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+yphenation, loaded.
 (/usr/share/texmf/tex/latex/beamer/base/beamer.cls
 (/usr/share/texmf/tex/latex/beamer/base/beamerbasercs.sty
 Package: beamerbasercs 2010/06/12 (rcs-revision c3821710bb40)
@@ -109,8 +99,7 @@ Package ifvtex Info: VTeX not detected.
 \Gm@odd@mp=\dimen121
 \Gm@even@mp=\dimen122
 \Gm@dimlist=\toks15
-
-(/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg))
+)
 (/usr/share/texmf-texlive/tex/latex/base/size11.clo
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
@@ -665,7 +654,7 @@ Package: beamerouterthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
 \beamer@decolines@watermarkheightupperorig=\skip66
 ) (Latex/beamercolorthemechameleon.sty))
 (Latex/beamercolorthemenouvelle.sty)
-(/var/lib/texmf/tex/generic/babel/babel.sty
+(/usr/share/texmf-texlive/tex/generic/babel/babel.sty
 Package: babel 2008/07/06 v3.8l The Babel package
 
 (/usr/share/texmf-texlive/tex/generic/babel/spanish.ldf
@@ -677,6 +666,12 @@ LaTeX Info: Redefining \textlatin on input line 82.
 \babel@savecnt=\count150
 \U@D=\dimen178
 )
+
+Package babel Warning: No hyphenation patterns were loaded for
+(babel)                the language `Spanish'
+(babel)                I will use the patterns loaded for \language=0 instead.
+
+\l@spanish = a dialect from \language0
 \es@datefmt=\count151
 \es@quottoks=\toks41
 \es@quotdepth=\count152
@@ -684,8 +679,7 @@ Package babel Info: Making " an active character on input line 492.
 Package babel Info: Making . an active character on input line 585.
 Package babel Info: Making < an active character on input line 630.
 Package babel Info: Making > an active character on input line 630.
-))
-(/usr/share/texmf-texlive/tex/generic/thumbpdf/thumbpdf.sty
+)) (/usr/share/texmf-texlive/tex/generic/thumbpdf/thumbpdf.sty
 Package: thumbpdf 2008/04/16 v3.10 Inclusion of thumbnails (HO)
 
 
@@ -1286,8 +1280,6 @@ Package ucs Warning: ***************************
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 ) (Latex/Arboles.nav)
-<<<<<<< HEAD
-=======
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 (Font)              size <5> substituted on input line 25.
@@ -1329,7 +1321,6 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [3
 
 ]
->>>>>>> a90750207fd01706cb67705a40daafdc48d20f1f
 \tf@nav=\write6
 \openout6 = `Arboles.nav'.
 
@@ -1339,36 +1330,25 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `Arboles.snm'.
 
+ (Latex/Arboles.aux)
 
-(Latex/Arboles.aux) ) 
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.0pt have occurred.
+
+ ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 17965 strings out of 495061
- 339142 string characters out of 1182621
- 417429 words of memory out of 3000000
- 20657 multiletter control sequences out of 15000+50000
- 4545 words of font info for 17 fonts, out of 3000000 for 9000
- 28 hyphenation exceptions out of 8191
- 49i,10n,53p,541b,287s stack positions out of 5000i,500n,10000p,200000b,50000s
-
-No pages of output.
-PDF statistics:
- 9 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
-=======
- 18134 strings out of 493848
- 342884 string characters out of 1152823
- 423957 words of memory out of 3000000
- 20913 multiletter control sequences out of 15000+50000
+ 18161 strings out of 495061
+ 343463 string characters out of 1182621
+ 424429 words of memory out of 3000000
+ 20845 multiletter control sequences out of 15000+50000
  4845 words of font info for 18 fonts, out of 3000000 for 9000
- 714 hyphenation exceptions out of 8191
- 49i,17n,53p,561b,737s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28 hyphenation exceptions out of 8191
+ 49i,17n,53p,541b,965s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on Latex/Arboles.pdf (3 pages, 21305 bytes).
+Output written on Latex/Arboles.pdf (3 pages, 22010 bytes).
 PDF statistics:
  39 PDF objects out of 1000 (max. 8388607)
  7 named destinations out of 1000 (max. 500000)
->>>>>>> a90750207fd01706cb67705a40daafdc48d20f1f
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
