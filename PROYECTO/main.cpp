@@ -386,7 +386,7 @@ switch (menuTree){
 		cin>>elemento;
 		cout<<"Ingrese el nodo \n 1)Hijos de root\n 2) Hijos Izquierda \n 3)Hijos Derecha "<<endl;
 		cin>>nodo;
-		root=Arbol->devolver();
+		root=Arbol->return_root();
 
 		if(nodo==1){Arbol->insert_child(elemento, root);}
 

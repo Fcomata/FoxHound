@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,17 +90,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classtree.html">tree</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>finish_tree</b>() (defined in <a class="el" href="classtree.html">tree</a>)</td><td class="entry"><a class="el" href="classtree.html">tree</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>insert1</b>(int key) (defined in <a class="el" href="classtree.html">tree</a>)</td><td class="entry"><a class="el" href="classtree.html">tree</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>insert2</b>(int key) (defined in <a class="el" href="classtree.html">tree</a>)</td><td class="entry"><a class="el" href="classtree.html">tree</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>insert_root</b>(int key) (defined in <a class="el" href="classtree.html">tree</a>)</td><td class="entry"><a class="el" href="classtree.html">tree</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>search</b>(int key) (defined in <a class="el" href="classtree.html">tree</a>)</td><td class="entry"><a class="el" href="classtree.html">tree</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>tree</b>() (defined in <a class="el" href="classtree.html">tree</a>)</td><td class="entry"><a class="el" href="classtree.html">tree</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>~tree</b>() (defined in <a class="el" href="classtree.html">tree</a>)</td><td class="entry"><a class="el" href="classtree.html">tree</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlatex.html#ad55bec26256e48f114d250bed4a3f35d">cadena</a></td><td class="entry"><a class="el" href="classlatex.html">latex</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classlatex.html#abe019c68eb9e6be93980f728ee837817">cadena_temp</a></td><td class="entry"><a class="el" href="classlatex.html">latex</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtree.html#a523172b004801388b1e6920d6d984347">destroy_tree</a>()</td><td class="entry"><a class="el" href="classtree.html">tree</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classtree.html#a86bf515529211e7f7d1f18892bf6fff5">finish_tree</a>()</td><td class="entry"><a class="el" href="classtree.html">tree</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlatex.html#a087cec6e7708a663c6de8fceb5028fa7">getCadena</a>()</td><td class="entry"><a class="el" href="classlatex.html">latex</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classlatex.html#a2fc1375dd9193d6089e93848f45b577c">getCadenaTemp</a>()</td><td class="entry"><a class="el" href="classlatex.html">latex</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtree.html#adebed7ad744b6db3354bfdc9a6713143">insert_child</a>(int key, node *leaf)</td><td class="entry"><a class="el" href="classtree.html">tree</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classtree.html#acbfbccebf3d8482cb6a1a878ab99491f">insert_root</a>(int key)</td><td class="entry"><a class="el" href="classtree.html">tree</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlatex.html#aace0b094e1bd77e62505bdaa8c3f6e27">latex</a>(void)</td><td class="entry"><a class="el" href="classlatex.html">latex</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classtree.html#a4fe0fb0307507a56395a377d2166d4d2">return_root</a>()</td><td class="entry"><a class="el" href="classtree.html">tree</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtree.html#a9a4e341c78d3559e5f6e3b0060530f05">search</a>(int key)</td><td class="entry"><a class="el" href="classtree.html">tree</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classtree.html#a9f2a566ac2710fafc31232456780e82d">tree</a>()</td><td class="entry"><a class="el" href="classtree.html">tree</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlatex.html#afacb95a7c4d29fa0ecb7c26bd5e383e1">~latex</a>(void)</td><td class="entry"><a class="el" href="classlatex.html">latex</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classtree.html#a05f3faa3c9a8f6fed237e2d0f6172244">~tree</a>()</td><td class="entry"><a class="el" href="classtree.html">tree</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 6 2013 13:42:31 for DataStructures4Beamer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 01:17:31 for DataStructures4Beamer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -88,6 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_n"><span>n</span></a></li>
       <li><a href="#index_o"><span>o</span></a></li>
       <li><a href="#index_p"><span>p</span></a></li>
+      <li><a href="#index_r"><span>r</span></a></li>
       <li><a href="#index_s"><span>s</span></a></li>
       <li><a href="#index_t"><span>t</span></a></li>
       <li><a href="#index_0x7e"><span>~</span></a></li>
@@ -99,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -154,6 +156,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>delete_last_node()
 : <a class="el" href="classlist.html#a940e14191c9749919d81be840b1ce163">list</a>
 </li>
+<li>destroy_tree()
+: <a class="el" href="classtree.html#a523172b004801388b1e6920d6d984347">tree</a>
+</li>
 </ul>
 
 
@@ -174,6 +179,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>fill_vector()
 : <a class="el" href="classarray.html#a1907d4f2b944c0acd6f45d4659e49646">array</a>
 </li>
+<li>finish_tree()
+: <a class="el" href="classtree.html#a86bf515529211e7f7d1f18892bf6fff5">tree</a>
+</li>
 <li>frequency()
 : <a class="el" href="classarray.html#afe6a8d768c570a02b57263abcbe6a65e">array</a>
 </li>
@@ -187,8 +195,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>get_current_node()
 : <a class="el" href="classlist.html#af3be16d99b45856c9222dec685628122">list</a>
 </li>
+<li>get_next()
+: <a class="el" href="classlist__node.html#a8652a8e934c044a5d3e898629173c23f">list_node</a>
+</li>
 <li>get_objet()
 : <a class="el" href="classarray.html#a427fb838f6e374a9ea4ef0e7b44d93dd">array</a>
+</li>
+<li>get_value()
+: <a class="el" href="classlist__node.html#a8248fa0566e951fe9e57e3e110b73f33">list_node</a>
+</li>
+<li>getCadena()
+: <a class="el" href="classlatex.html#a087cec6e7708a663c6de8fceb5028fa7">latex</a>
+, <a class="el" href="classlist.html#af9c57f43f632e0c885c2393dc375ccf9">list</a>
+, <a class="el" href="classarray.html#ac4088f8ff54a0a4e016ac66b900c976a">array</a>
+</li>
+<li>getCadenaTemp()
+: <a class="el" href="classlatex.html#a2fc1375dd9193d6089e93848f45b577c">latex</a>
 </li>
 <li>go_to_first_node()
 : <a class="el" href="classlist.html#afb9c1a47eb001496eabd2d3ac37d283d">list</a>
@@ -206,6 +228,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>insert_at_end()
 : <a class="el" href="classlist.html#a0aa6499aab860dccd290638f1db18148">list</a>
 </li>
+<li>insert_child()
+: <a class="el" href="classtree.html#adebed7ad744b6db3354bfdc9a6713143">tree</a>
+</li>
 <li>insert_element()
 : <a class="el" href="classarray.html#aeddcdc0e56dc8cea81f9031200722317">array</a>
 </li>
@@ -215,6 +240,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>insert_in_position()
 : <a class="el" href="classlist.html#ac6ae86ceba69b3d9930925e826533fe6">list</a>
 </li>
+<li>insert_root()
+: <a class="el" href="classtree.html#acbfbccebf3d8482cb6a1a878ab99491f">tree</a>
+</li>
 <li>invest_vector()
 : <a class="el" href="classarray.html#ac3d618d2d45fc6734b870e69175191a5">array</a>
 </li>
@@ -222,8 +250,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
+<li>latex()
+: <a class="el" href="classlatex.html#aace0b094e1bd77e62505bdaa8c3f6e27">latex</a>
+</li>
 <li>list()
 : <a class="el" href="classlist.html#a223ecca7c96ef287c1e647493a32fbf6">list</a>
+</li>
+<li>list_node()
+: <a class="el" href="classlist__node.html#a9b9ef19a716fe4a3e52f5f7b3739caf7">list_node</a>
 </li>
 </ul>
 
@@ -262,12 +296,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </ul>
 
 
+<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>return_root()
+: <a class="el" href="classtree.html#a4fe0fb0307507a56395a377d2166d4d2">tree</a>
+</li>
+</ul>
+
+
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
 <li>search()
 : <a class="el" href="classlist.html#a7ad1d4788bef2d9ccb1827ed1576eb4e">list</a>
+, <a class="el" href="classtree.html#a9a4e341c78d3559e5f6e3b0060530f05">tree</a>
 </li>
 <li>search_element()
 : <a class="el" href="classarray.html#a411982e015049087a459f6ae39b6114b">array</a>
+</li>
+<li>set_next()
+: <a class="el" href="classlist__node.html#a9808bd1c12f8265d261793b2f60b8b95">list_node</a>
+</li>
+<li>set_value()
+: <a class="el" href="classlist__node.html#a775315187e361ab4dd6a8a3add2ba59c">list_node</a>
 </li>
 <li>sum_vector()
 : <a class="el" href="classarray.html#adc0ddb6f7348edf390b97e883f4ee773">array</a>
@@ -279,6 +327,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>to_string()
 : <a class="el" href="classlist.html#af38e18a21e1631f6f0e381aefe4262fe">list</a>
 </li>
+<li>tree()
+: <a class="el" href="classtree.html#a9f2a566ac2710fafc31232456780e82d">tree</a>
+</li>
 </ul>
 
 
@@ -286,14 +337,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>~array()
 : <a class="el" href="classarray.html#a9650b46e4d802e77a89ec65e248c523e">array</a>
 </li>
+<li>~latex()
+: <a class="el" href="classlatex.html#afacb95a7c4d29fa0ecb7c26bd5e383e1">latex</a>
+</li>
 <li>~list()
 : <a class="el" href="classlist.html#a72eaabb03a048506432f8d167db12524">list</a>
+</li>
+<li>~list_node()
+: <a class="el" href="classlist__node.html#ac703809a68a2093c70f9b9f4aa3409d1">list_node</a>
+</li>
+<li>~tree()
+: <a class="el" href="classtree.html#a05f3faa3c9a8f6fed237e2d0f6172244">tree</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 6 2013 13:42:31 for DataStructures4Beamer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 01:17:31 for DataStructures4Beamer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

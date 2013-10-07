@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,16 +90,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classlist__node.html">list_node</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>get_next</b>() (defined in <a class="el" href="classlist__node.html">list_node</a>)</td><td class="entry"><a class="el" href="classlist__node.html">list_node</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>get_value</b>() (defined in <a class="el" href="classlist__node.html">list_node</a>)</td><td class="entry"><a class="el" href="classlist__node.html">list_node</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>list_node</b>(int v, list_node *) (defined in <a class="el" href="classlist__node.html">list_node</a>)</td><td class="entry"><a class="el" href="classlist__node.html">list_node</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>set_next</b>(list_node *) (defined in <a class="el" href="classlist__node.html">list_node</a>)</td><td class="entry"><a class="el" href="classlist__node.html">list_node</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>set_value</b>(int) (defined in <a class="el" href="classlist__node.html">list_node</a>)</td><td class="entry"><a class="el" href="classlist__node.html">list_node</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>~list_node</b>() (defined in <a class="el" href="classlist__node.html">list_node</a>)</td><td class="entry"><a class="el" href="classlist__node.html">list_node</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlist__node.html#a8652a8e934c044a5d3e898629173c23f">get_next</a>()</td><td class="entry"><a class="el" href="classlist__node.html">list_node</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classlist__node.html#a8248fa0566e951fe9e57e3e110b73f33">get_value</a>()</td><td class="entry"><a class="el" href="classlist__node.html">list_node</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlist__node.html#a9b9ef19a716fe4a3e52f5f7b3739caf7">list_node</a>(int v, list_node *)</td><td class="entry"><a class="el" href="classlist__node.html">list_node</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classlist__node.html#a9808bd1c12f8265d261793b2f60b8b95">set_next</a>(list_node *)</td><td class="entry"><a class="el" href="classlist__node.html">list_node</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlist__node.html#a775315187e361ab4dd6a8a3add2ba59c">set_value</a>(int)</td><td class="entry"><a class="el" href="classlist__node.html">list_node</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classlist__node.html#ac703809a68a2093c70f9b9f4aa3409d1">~list_node</a>()</td><td class="entry"><a class="el" href="classlist__node.html">list_node</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 6 2013 13:42:31 for DataStructures4Beamer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 01:17:31 for DataStructures4Beamer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -61,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -68,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,7 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">array.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;latex.h&quot;</span></div>
+<a href="array_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="latex_8h.html">latex.h</a>&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno"><a class="code" href="classarray.html">    2</a></span>&#160;<span class="keyword">class </span><a class="code" href="classarray.html">array</a>: <span class="keyword">public</span> <a class="code" href="classlatex.html">latex</a></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;{</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">private</span>: </div>
@@ -95,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;        <span class="keywordtype">int</span> size;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        <span class="keywordtype">int</span> amount;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        <span class="keywordtype">int</span> height;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classlatex.html">latex</a>(<span class="keywordtype">int</span>,<span class="keywordtype">int</span>,<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classlatex.html#aace0b094e1bd77e62505bdaa8c3f6e27">latex</a>(<span class="keywordtype">int</span>,<span class="keywordtype">int</span>,<span class="keywordtype">int</span>);</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keywordtype">void</span> latex_all(<span class="keywordtype">string</span>);</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keywordtype">void</span> latex_amount(<span class="keywordtype">string</span>);</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keywordtype">void</span> latex_highlight(<span class="keywordtype">int</span>,<span class="keywordtype">int</span>,<span class="keywordtype">int</span>,<span class="keywordtype">string</span>);</div>
@@ -125,12 +127,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classarray.html#a411982e015049087a459f6ae39b6114b" title="Confirms if exist the element &quot;elem&quot; in the array.">search_element</a>(<span class="keywordtype">int</span>);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classarray.html#a38e384e7d7ad83f194639013cf7eb7fd" title="Orders the array from lowest to highest.">order</a>();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classarray.html#a9650b46e4d802e77a89ec65e248c523e" title="Destructor, deletes the array.">~array</a>(<span class="keywordtype">void</span>); </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">string</span> getCadena();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">string</span> <a class="code" href="classarray.html#ac4088f8ff54a0a4e016ac66b900c976a">getCadena</a>();</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 6 2013 13:42:25 for DataStructures4Beamer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 01:17:30 for DataStructures4Beamer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

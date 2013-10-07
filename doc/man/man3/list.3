@@ -1,0 +1,182 @@
+.TH "list" 3 "Mon Oct 7 2013" "Version 1.0" "DataStructures4Beamer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+list \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <list\&.h>\fP
+.PP
+Inherits \fBlatex\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBlist\fP ()"
+.br
+.RI "\fIDefault constructor\&. \fP"
+.ti -1c
+.RI "\fB~list\fP ()"
+.br
+.RI "\fIDestructor\&. \fP"
+.ti -1c
+.RI "bool \fBsearch\fP (int v)"
+.br
+.RI "\fIConfirms if the value 'v' is in the list\&. \fP"
+.ti -1c
+.RI "void \fBinsert_at_beginning\fP (int v)"
+.br
+.RI "\fIInserts a new node with value 'v' at beginning of the list\&. \fP"
+.ti -1c
+.RI "void \fBinsert_at_end\fP (int v)"
+.br
+.RI "\fIInserts a new node at end of the list\&. \fP"
+.ti -1c
+.RI "void \fBinsert_in_position\fP (int v, int pos)"
+.br
+.RI "\fIInserts a new node with value 'v' in the position 'pos' of the list\&. \fP"
+.ti -1c
+.RI "void \fBdelete_first_node\fP ()"
+.br
+.RI "\fIDeletes the first node of the list\&. \fP"
+.ti -1c
+.RI "void \fBdelete_last_node\fP ()"
+.br
+.RI "\fIDeletes the last node of the list\&. \fP"
+.ti -1c
+.RI "void \fBdelete_in_position\fP (int pos)"
+.br
+.RI "\fIDeletes the node in the position 'pos'of the list\&. \fP"
+.ti -1c
+.RI "void \fBnext_node\fP ()"
+.br
+.RI "\fISet the current node in the next node of the list\&. \fP"
+.ti -1c
+.RI "void \fBgo_to_first_node\fP ()"
+.br
+.RI "\fISet the current node in the first node of the list\&. \fP"
+.ti -1c
+.RI "void \fBgo_to_last_node\fP ()"
+.br
+.RI "\fISet the current node in the last node of the list\&. \fP"
+.ti -1c
+.RI "bool \fBget_current_node\fP ()"
+.br
+.RI "\fIReturns the current node, if this is not NULL\&. \fP"
+.ti -1c
+.RI "int \fBcurrent_value\fP ()"
+.br
+.RI "\fIReturns the value of the current node\&. \fP"
+.ti -1c
+.RI "string \fBgetCadena\fP ()"
+.br
+.ti -1c
+.RI "void \fBbegin_tex\fP (string)"
+.br
+.RI "\fIWrites the headers and required latex libraries and packages on the \&.tex file\&. \fP"
+.ti -1c
+.RI "void \fBend_tex\fP ()"
+.br
+.RI "\fIWrites the footers on the \&.tex file\&. \fP"
+.ti -1c
+.RI "string \fBto_string\fP (int v)"
+.br
+.RI "\fIConvert an int 'v' to string\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBsize\fP"
+.br
+.RI "\fISize of the list\&. \fP"
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "list::list ()"
+
+.PP
+Default constructor\&. 
+.SS "list::~list ()"
+
+.PP
+Destructor\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void list::begin_tex (stringnombre)"
+
+.PP
+Writes the headers and required latex libraries and packages on the \&.tex file\&. 
+.SS "int list::current_value ()"
+
+.PP
+Returns the value of the current node\&. 
+.SS "void list::delete_first_node ()"
+
+.PP
+Deletes the first node of the list\&. 
+.SS "void list::delete_in_position (intpos)"
+
+.PP
+Deletes the node in the position 'pos'of the list\&. 
+.SS "void list::delete_last_node ()"
+
+.PP
+Deletes the last node of the list\&. 
+.SS "void list::end_tex ()"
+
+.PP
+Writes the footers on the \&.tex file\&. 
+.SS "bool list::get_current_node ()"
+
+.PP
+Returns the current node, if this is not NULL\&. 
+.SS "string list::getCadena ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBlatex\fP\&.
+.SS "void list::go_to_first_node ()"
+
+.PP
+Set the current node in the first node of the list\&. 
+.SS "void list::go_to_last_node ()"
+
+.PP
+Set the current node in the last node of the list\&. 
+.SS "void list::insert_at_beginning (intv)"
+
+.PP
+Inserts a new node with value 'v' at beginning of the list\&. 
+.SS "void list::insert_at_end (intv)"
+
+.PP
+Inserts a new node at end of the list\&. 
+.SS "void list::insert_in_position (intv, intpos)"
+
+.PP
+Inserts a new node with value 'v' in the position 'pos' of the list\&. 
+.SS "void list::next_node ()"
+
+.PP
+Set the current node in the next node of the list\&. 
+.SS "bool list::search (intv)"
+
+.PP
+Confirms if the value 'v' is in the list\&. 
+.SS "string list::to_string (intv)"
+
+.PP
+Convert an int 'v' to string\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "int list::size"
+
+.PP
+Size of the list\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for DataStructures4Beamer from the source code\&.

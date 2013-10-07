@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -61,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -68,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,36 +89,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">tree.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;node.h&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;Latex.h&quot;</span></div>
+<a href="tree_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tree__node_8h.html">tree_node.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="latex_8h.html">latex.h</a>&quot;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="code" href="classtree.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="classtree.html">tree</a>: <span class="keyword">public</span> Latex{</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <a class="code" href="classtree.html">tree</a>();</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        ~<a class="code" href="classtree.html">tree</a>();</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordtype">void</span> insert_root(<span class="keywordtype">int</span> key);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordtype">void</span> insert1(<span class="keywordtype">int</span> key);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">void</span> insert2(<span class="keywordtype">int</span> key);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="structnode.html">node</a> *search(<span class="keywordtype">int</span> key);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordtype">void</span> finish_tree();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="code" href="classtree.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classtree.html">tree</a>: <span class="keyword">public</span> <a class="code" href="classlatex.html">latex</a>{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <a class="code" href="classtree.html#a9f2a566ac2710fafc31232456780e82d" title="Default constructor.">tree</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <a class="code" href="classtree.html#a05f3faa3c9a8f6fed237e2d0f6172244" title="Destructor.">~tree</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classtree.html#acbfbccebf3d8482cb6a1a878ab99491f" title="Inserts the root node of the tree, initially its leaves are pointing to NULL.">insert_root</a>(<span class="keywordtype">int</span> key); </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classtree.html#a523172b004801388b1e6920d6d984347" title="Destroy each leaf if is not points to NULL.">destroy_tree</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classtree.html#adebed7ad744b6db3354bfdc9a6713143" title="Inserts a leaf with value &quot;key&quot; in the node &quot;leaf&quot;.">insert_child</a>(<span class="keywordtype">int</span> key, <a class="code" href="structnode.html">node</a>* leaf); </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="structnode.html">node</a> *<a class="code" href="classtree.html#a9a4e341c78d3559e5f6e3b0060530f05" title="Returns the node with the key_value &quot;key&quot;.">search</a>(<span class="keywordtype">int</span> key); </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classtree.html#a86bf515529211e7f7d1f18892bf6fff5" title="Draws the tree on the .tex file.">finish_tree</a>(); </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="structnode.html">node</a>* <a class="code" href="classtree.html#a4fe0fb0307507a56395a377d2166d4d2" title="Returns the root of the tree.">return_root</a>(); </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">void</span> destroy_tree(<a class="code" href="structnode.html">node</a> *leaf);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classtree.html#a523172b004801388b1e6920d6d984347" title="Destroy each leaf if is not points to NULL.">destroy_tree</a>(<a class="code" href="structnode.html">node</a> *leaf);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">void</span> insert(<span class="keywordtype">int</span> key, <a class="code" href="structnode.html">node</a> *leaf);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="structnode.html">node</a> *search(<span class="keywordtype">int</span> key, <a class="code" href="structnode.html">node</a> *leaf);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="structnode.html">node</a> *<a class="code" href="classtree.html#a9a4e341c78d3559e5f6e3b0060530f05" title="Returns the node with the key_value &quot;key&quot;.">search</a>(<span class="keywordtype">int</span> key, <a class="code" href="structnode.html">node</a> *leaf);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">string</span> convertir(<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="structnode.html">node</a> *root;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="structnode.html">node</a> *root;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 6 2013 13:42:25 for DataStructures4Beamer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 01:17:30 for DataStructures4Beamer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

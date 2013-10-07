@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,31 +91,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>This is the complete list of members for <a class="el" href="classlist.html">list</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classlist.html#a66002d493740d5c50137c428597b4f70">begin_tex</a>(string)</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>cadena</b> (defined in <a class="el" href="classlatex.html">latex</a>)</td><td class="entry"><a class="el" href="classlatex.html">latex</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classlist.html#a4a401135cd9300328664b4295f8bcbb1">current_value</a>()</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classlist.html#a9442b8d51977d2e334668c5af309b0a6">delete_first_node</a>()</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classlist.html#aad82eb6c4ac56b4d52ceb292aef40232">delete_in_position</a>(int pos)</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classlist.html#a940e14191c9749919d81be840b1ce163">delete_last_node</a>()</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classlist.html#ad0581363cabe43d9524e27321bf19cc0">end_tex</a>()</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classlist.html#af3be16d99b45856c9222dec685628122">get_current_node</a>()</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>getCadena</b>() (defined in <a class="el" href="classlist.html">list</a>)</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classlatex.html#ad55bec26256e48f114d250bed4a3f35d">cadena</a></td><td class="entry"><a class="el" href="classlatex.html">latex</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlatex.html#abe019c68eb9e6be93980f728ee837817">cadena_temp</a></td><td class="entry"><a class="el" href="classlatex.html">latex</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classlist.html#a4a401135cd9300328664b4295f8bcbb1">current_value</a>()</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlist.html#a9442b8d51977d2e334668c5af309b0a6">delete_first_node</a>()</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classlist.html#aad82eb6c4ac56b4d52ceb292aef40232">delete_in_position</a>(int pos)</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlist.html#a940e14191c9749919d81be840b1ce163">delete_last_node</a>()</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classlist.html#ad0581363cabe43d9524e27321bf19cc0">end_tex</a>()</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlist.html#af3be16d99b45856c9222dec685628122">get_current_node</a>()</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classlist.html#af9c57f43f632e0c885c2393dc375ccf9">getCadena</a>()</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlatex.html#a2fc1375dd9193d6089e93848f45b577c">getCadenaTemp</a>()</td><td class="entry"><a class="el" href="classlatex.html">latex</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classlist.html#afb9c1a47eb001496eabd2d3ac37d283d">go_to_first_node</a>()</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classlist.html#a3d9c0dd74589893d2e8337f6b2fa78ac">go_to_last_node</a>()</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classlist.html#a69b02d50b1ec180ca86003eefc427bef">insert_at_beginning</a>(int v)</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classlist.html#a0aa6499aab860dccd290638f1db18148">insert_at_end</a>(int v)</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classlist.html#ac6ae86ceba69b3d9930925e826533fe6">insert_in_position</a>(int v, int pos)</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>latex</b>(void) (defined in <a class="el" href="classlatex.html">latex</a>)</td><td class="entry"><a class="el" href="classlatex.html">latex</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlatex.html#aace0b094e1bd77e62505bdaa8c3f6e27">latex</a>(void)</td><td class="entry"><a class="el" href="classlatex.html">latex</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classlist.html#a223ecca7c96ef287c1e647493a32fbf6">list</a>()</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classlist.html#ab11707b9d85a5c33d0bebf8944c0e857">next_node</a>()</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classlist.html#a7ad1d4788bef2d9ccb1827ed1576eb4e">search</a>(int v)</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classlist.html#a3b03adad0c0429bae9493667ff366dc2">size</a></td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classlist.html#af38e18a21e1631f6f0e381aefe4262fe">to_string</a>(int v)</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>~latex</b>(void) (defined in <a class="el" href="classlatex.html">latex</a>)</td><td class="entry"><a class="el" href="classlatex.html">latex</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlatex.html#afacb95a7c4d29fa0ecb7c26bd5e383e1">~latex</a>(void)</td><td class="entry"><a class="el" href="classlatex.html">latex</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classlist.html#a72eaabb03a048506432f8d167db12524">~list</a>()</td><td class="entry"><a class="el" href="classlist.html">list</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 6 2013 13:42:31 for DataStructures4Beamer by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 7 2013 01:17:31 for DataStructures4Beamer by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>
