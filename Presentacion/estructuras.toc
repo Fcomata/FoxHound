@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.10pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{Descripci\IeC {\'o}n General}{3}{0}{1}
+\beamer@sectionintoc {2}{Condiciones del dise\IeC {\~n}o}{4}{0}{2}
