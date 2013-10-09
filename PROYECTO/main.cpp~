@@ -21,7 +21,7 @@ int menu =1;
 while (menu!=0){
 
 
-cout<<"\n \n---- Menu Principal ---- \n Que estructura Abstracta desea usar \n 1) Arreglo \n 2) Lista \n 3) Arbol Binario \n 0) Salir"<<endl;
+cout<<"\n \n-----------------Menu Principal----------------- \n Que estructura Abstracta desea usar \n 1) Arreglo \n 2) Lista \n 3) Arbol Binario \n 0) Salir"<<endl;
 
 cin>>menu;
 
@@ -40,7 +40,7 @@ array * A = new array(tamano);
 while(menuArreglo!=0){	
 
 
-cerr<<"Menu de Arreglos: \n 1)Llenar Vector \n 2)Insertar Elemento \n 3)Elimina Elemento \n 4)Ingresar Elemento en Posicion\n 5)Elimina Elemento en Posicion\n 6)Intercambiar Elementos\n 7)Limpia vector\n 8)Maximo \n 9) Minimo  \n 10)Busca Elemento \n 11)Ordenar \n 12)Limpia Vector \n 13)Invierte Vector \n 0)Salir"<<endl;
+cerr<<"-----------------Menu de Arreglos----------------- \n 1)Llenar Vector \n 2)Insertar Elemento \n 3)Elimina Elemento \n 4)Ingresar Elemento en Posicion\n 5)Elimina Elemento en Posicion\n 6)Intercambiar Elementos\n 7)Limpia vector\n 8)Maximo \n 9) Minimo  \n 10)Busca Elemento \n 11)Ordenar \n 12)Invierte Vector \n 0)Salir"<<endl;
 	
 cin>>menuArreglo;
 
@@ -170,12 +170,6 @@ switch (menuArreglo){
 
 	case 12:
 
-		A->clean_vector();
-
-	break;
-
-	case 13:
-
 		A->invest_vector();
 
 	break;
@@ -199,7 +193,7 @@ int menuLista=1;
 
 while(menuLista!=0){
 
-cout<<"\n Menu de Listas: \n 1)Pila \n 2)Cola (FO/LI) \n 3)Lista Simple \n 0)Salir \n"<<endl;
+cout<<"\n -----------------Menu de Listas----------------- \n 1)Pila \n 2)Cola (FO/LI) \n 3)Lista Simple \n 0)Salir \n"<<endl;
 
 cin>>menuLista;
 
@@ -211,7 +205,7 @@ if(menuLista==1){
 
 	while(menuPila!=0){
 
-		cout<<"Menu de Pila: \n 1)Insertar Elemento \n 2)Elimina Elemento \n 3)Buscar Elemento \n 0)Salir"<<endl;
+		cout<<"-----------------Menu de Pila----------------- \n 1)Insertar Elemento \n 2)Elimina Elemento \n 3)Buscar Elemento \n 0)Salir"<<endl;
 
 		cin>>menuPila;
 
@@ -239,11 +233,14 @@ if(menuLista==1){
 
 }//en if()
 if(menuLista==2){
+
 list * Cola = new list();
+
 int menuCola=1;
+
 while(menuCola!=0){
 
-cout<<"Menu de Cola(FO/LI): \n 1)Insertar Elemento \n 2)Elimina Elemento \n 3)Buscar Elemento \n 0)Salir"<<endl;
+cout<<"-----------------Menu de Cola-----------------: \n 1)Insertar Elemento \n 2)Elimina Elemento \n 3)Buscar Elemento \n 0)Salir"<<endl;
 
 cin>>menuCola;
 
@@ -271,12 +268,17 @@ switch (menuCola){
 }//en if()
 
 if(menuLista==3){
+
 list * Simple = new list();
+
 int menuSimple=1;
+
 cout<<"\n"<<endl;
+
 while(menuSimple!=0){
-if(Simple->size==0)
-{
+
+if(Simple->size==0){
+
 cout<<"Menu de Lista Simple: \n 1)Insertar Elemento al Final \n 0)Salir"<<endl;
 cin>>menuSimple;
 switch (menuSimple){
@@ -293,7 +295,7 @@ switch (menuSimple){
 	}//end if
 else
 {
-cout<<"Menu de Lista Simple: \n 1)Insertar Elemento al Inicio \n 2)Insertar Elemento al Medio \n 3)Insertar Elemento al Final \n 4)Elimina Elemento al Inicio \n 5)Elimina Elemento al Medio \n 6)Elimina Elemento al Final  \n 7)Buscar Elemento \n 0)Salir"<<endl;
+cout<<"-----------------Menu de Lista Simple----------------- \n 1)Insertar Elemento al Inicio \n 2)Insertar Elemento al Medio \n 3)Insertar Elemento al Final \n 4)Elimina Elemento al Inicio \n 5)Elimina Elemento al Medio \n 6)Elimina Elemento al Final  \n 7)Buscar Elemento \n 0)Salir"<<endl;
 cin>>menuSimple;
 switch (menuSimple){
 	case 0: 
@@ -356,7 +358,7 @@ int menuTree=1;
 
 while(menuTree!=0){
 
-cout<<"Menu de Lista Simple: \n 1)Insertar Raiz \n 2)Insertar Hijo \n 3)Eliminar \n 0)Salir"<<endl;
+cout<<"-----------------Menu de Arboles----------------- \n 1)Insertar \n 2)Eliminar \n 0)Salir"<<endl;
 
 cin>>menuTree;
 
@@ -374,29 +376,18 @@ switch (menuTree){
 		elemento=0;
 		cout<<"Ingrese el elemento"<<endl;
 		cin>>elemento;
-		Arbol->insert_root(elemento);
 
+		root=Arbol->devolver();
+
+		Arbol->insert(elemento, root);
+
+		//Arbol->preTree(root);	
+
+		cout<<Arbol->getCadena()<<endl;
 
 	break;
 
 	case 2:
-
-		elemento=0;
-		cout<<"Ingrese el elemento"<<endl;
-		cin>>elemento;
-		cout<<"Ingrese el nodo \n 1)Hijos de root\n 2) Hijos Izquierda \n 3)Hijos Derecha "<<endl;
-		cin>>nodo;
-		root=Arbol->devolver();
-t
-		if(nodo==1){Arbol->insert_child(elemento, root);}
-
-		if(nodo==2){Arbol->insert_child(elemento, root->left);}
-        	
-		if(nodo==3){Arbol->insert_child(elemento, root->right);}
-
-	break;
-
-	case 3:
 
 		Arbol->destroy_tree();
 

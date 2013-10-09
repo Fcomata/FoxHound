@@ -24,11 +24,8 @@ end();
 		delete[] vector;		
 }
 int array::delete_element(){
-amount=0;
-while(vector[amount]!=9999){
-amount++;
-}
-	vector[amount]=9999;
+
+	vector[amount-1]=9999;
 	amount--;
 	latex_all("Elimina elemento");
 	end();
@@ -151,14 +148,16 @@ int array:: arithmetic_mean() {
 		return  promedio;
 }
 int array::max() {
+
   	 int  maximo;
 	 int aux;
 	 maximo=get_objet(0);
 	 for(int i=0;i<get_amount();i++){
+if(get_objet(i)!=9999){
 		if(get_objet(i)>maximo){
 			maximo=get_objet(i);
 			aux=i;
-		}
+		}}
 	}
 latex_all("Maximo");
 latex_highlight(aux,height,vector[aux],"red");
@@ -180,13 +179,13 @@ latex_highlight(aux,height,vector[aux],"green");
 end();
 	return minimo;
  }
-bool array:: search_element(int elemento){
+bool array:: search_element(int elem){
 //encuentra el primer elemento lineal
   for(int i=0;i<get_amount()-1;i++)
-	  if(get_objet(i)==elemento){
+	  if(get_objet(i)==elem){
 latex_all("Busca Elemento");
 latex_highlight(i,height,vector[i],"green");
-end();	
+end();
 	return true;
 		}
   return false;

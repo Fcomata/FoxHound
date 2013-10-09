@@ -13,6 +13,7 @@ private:
 	void begin(string);//
 	void end();//
 	string to_string(int);
+
 public:
 	int delete_element();///< Deletes the first element in the array.
 	void delete_element_in_pos(int);///< Deletes the element in the position "pos" of the array.
@@ -23,7 +24,7 @@ public:
 	int sum_vector();///< Returns the sum of all elements in the array.
 	int max();///< Returns the element with the highest value in the array.
 	int min();///< Returns the element with the lowest value in the array.
-	void invest_vector();///< Reverses the positions of the elements ​​in the array.
+	void invert_vector();///< Reverses the positions of the elements ​​in the array.
 	void exchange_elements2(int,int);///< Change the position of two elements.
 	void print_vector();///< Displays the array values right through console.
 	int get_amount();///< Returns current number of elements contained in the array.

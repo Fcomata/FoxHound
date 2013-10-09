@@ -24,11 +24,8 @@ end();
 		delete[] vector;		
 }
 int array::delete_element(){
-amount=0;
-while(vector[amount]!=9999){
-amount++;
-}
-	vector[amount]=9999;
+
+	vector[amount-1]=9999;
 	amount--;
 	latex_all("Elimina elemento");
 	end();
@@ -72,7 +69,7 @@ int array::sum_vector(){
    }
 		return acum;
 }
-void array::invest_vector(){
+void array::invert_vector(){
 		int k,i, temp;
 		for(i=0,k=amount-1;i<k;i++,k--){
 			temp=vector[k];
@@ -151,14 +148,16 @@ int array:: arithmetic_mean() {
 		return  promedio;
 }
 int array::max() {
+
   	 int  maximo;
 	 int aux;
 	 maximo=get_objet(0);
 	 for(int i=0;i<get_amount();i++){
+if(get_objet(i)!=9999){
 		if(get_objet(i)>maximo){
 			maximo=get_objet(i);
 			aux=i;
-		}
+		}}
 	}
 latex_all("Maximo");
 latex_highlight(aux,height,vector[aux],"red");

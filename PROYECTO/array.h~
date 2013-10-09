@@ -1,5 +1,5 @@
 #include "latex.h"
-class array: public Latex
+class array: public latex
 {
 private: 
 	int *vector;///< Default constructor.
@@ -13,6 +13,7 @@ private:
 	void begin(string);//
 	void end();//
 	string to_string(int);
+
 public:
 	int delete_element();///< Deletes the first element in the array.
 	void delete_element_in_pos(int);///< Deletes the element in the position "pos" of the array.

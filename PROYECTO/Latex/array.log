@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.5.21)  6 OCT 2013 13:41
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.5.21)  7 OCT 2013 15:16
 entering extended mode
  %&-line parsing enabled.
-**array.tex
-(./array.tex
+**./Latex/array.tex
+(./Latex/array.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, loaded.
@@ -638,21 +638,43 @@ Package: beamerinnerthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
 (/usr/share/texmf/tex/latex/beamer/base/themes/outer/beamerouterthemedefault.st
 y
 Package: beamerouterthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
-))) (./beamerthemeTorino.sty (./beamerinnerthemefancy.sty
-\beamer@fancy@lineup=\skip57
-\beamer@fancy@linemid=\skip58
-\beamer@fancy@linebottom=\skip59
-\beamer@fancy@normalmargin=\skip60
-)
-(./beamerouterthemedecolines.sty
-\headerheight=\skip61
-\beamer@decolines@lineup=\skip62
-\beamer@decolines@linemid=\skip63
-\beamer@decolines@linebottom=\skip64
-\beamer@decolines@watermarkheightbottom=\skip65
-\beamer@decolines@watermarkheightupperorig=\skip66
-) (./beamercolorthemechameleon.sty))
-(./beamercolorthemenouvelle.sty)
+)))
+
+! LaTeX Error: File `beamerthemeTorino.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+
+! LaTeX Error: Unknown option `pageofpages=of' for package `beamerthemeTorino'.
+
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 ...ages=of, alternativetitlepage=true]{Torino}
+                                                  
+? 
+
+! LaTeX Error: Unknown option `alternativetitlepage=true' for package `beamerth
+emeTorino'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 ...ages=of, alternativetitlepage=true]{Torino}
+                                                  
+? 
+
+! LaTeX Error: File `beamercolorthemenouvelle.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
 (/usr/share/texmf-texlive/tex/generic/babel/babel.sty
 Package: babel 2008/07/06 v3.8l The Babel package
 
@@ -1063,8 +1085,8 @@ Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
 \page@free=\dimen212
 \premulticols=\dimen213
 \postmulticols=\dimen214
-\multicolsep=\skip67
-\multicolbaselineskip=\skip68
+\multicolsep=\skip57
+\multicolbaselineskip=\skip58
 \partial@page=\box57
 \last@line=\box58
 \mult@rightbox=\box59
@@ -1125,7 +1147,7 @@ landscape: --
 twocolumn: --
 twoside: --
 asymmetric: --
-h-parts: 21.85083pt, 320.4937pt, 21.85083pt
+h-parts: 28.45274pt, 307.28987pt, 28.45274pt
 v-parts: 0.0pt, 273.14662pt, 0.0pt
 hmarginratio: --
 vmarginratio: --
@@ -1140,10 +1162,10 @@ driver: pdftex
 -------------------- Page layout dimensions and switches
 \paperwidth  364.19536pt
 \paperheight 273.14662pt
-\textwidth  320.4937pt
+\textwidth  307.28987pt
 \textheight 244.6939pt
-\oddsidemargin  -50.41916pt
-\evensidemargin -50.41916pt
+\oddsidemargin  -43.81725pt
+\evensidemargin -43.81725pt
 \topmargin  -72.26999pt
 \headheight 14.22636pt
 \headsep    0.0pt
@@ -1283,113 +1305,22 @@ No file array.nav.
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 (Font)              size <5> substituted on input line 31.
 
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
+] [3
 
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
+] [4
 
-[2
+] [5
+
+] [6
 
 ]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[3
-
-]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[4
-
-]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[5
-
-]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[6
-
-]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
 [7
 
-]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[8
-
-]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[9
+] [8
 
 ]
 \tf@nav=\write6
@@ -1401,26 +1332,25 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `array.snm'.
 
- (./array.aux)
+ (Latex/array.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 18102 strings out of 495061
- 342099 string characters out of 1182621
- 424429 words of memory out of 3000000
- 20784 multiletter control sequences out of 15000+50000
+ 17936 strings out of 495061
+ 337111 string characters out of 1182621
+ 417524 words of memory out of 3000000
+ 20631 multiletter control sequences out of 15000+50000
  5152 words of font info for 19 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 49i,17n,53p,455b,554s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,14n,53p,463b,552s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on array.pdf (9 pages, 40938 bytes).
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss12.pfb>
+Output written on Latex/array.pdf (8 pages, 61800 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 19 named destinations out of 1000 (max. 500000)
+ 227 PDF objects out of 1000 (max. 8388607)
+ 17 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
