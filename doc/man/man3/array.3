@@ -1,0 +1,208 @@
+.TH "array" 3 "Sat Nov 2 2013" "Version 1.0" "DataStructures4Beamer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+array \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <array\&.h>\fP
+.PP
+Inherits \fBlatex\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBdelete_element\fP ()"
+.br
+.RI "\fIDeletes the first element in the array\&. \fP"
+.ti -1c
+.RI "void \fBdelete_element_in_pos\fP (int)"
+.br
+.RI "\fIDeletes the element in the position 'pos' of the array\&. \fP"
+.ti -1c
+.RI "void \fBinsert_element\fP (int)"
+.br
+.RI "\fIInserts an element with value 'elem' to the first position of the array\&. \fP"
+.ti -1c
+.RI "void \fBinsert_element_in_pos\fP (int, int)"
+.br
+.RI "\fIInserts an element with value 'elem' to the position 'pos' of the array\&. \fP"
+.ti -1c
+.RI "void \fBfill_vector\fP (int)"
+.br
+.RI "\fIFills an empty array, assigns zero to each position\&. \fP"
+.ti -1c
+.RI "\fBarray\fP (int n=10)"
+.br
+.RI "\fIConstructor initializes an array of size 'n'\&. \fP"
+.ti -1c
+.RI "int \fBsum_vector\fP ()"
+.br
+.RI "\fIReturns the sum of all elements in the array\&. \fP"
+.ti -1c
+.RI "int \fBmax\fP ()"
+.br
+.RI "\fIReturns the element with the highest value in the array\&. \fP"
+.ti -1c
+.RI "int \fBmin\fP ()"
+.br
+.RI "\fIReturns the element with the lowest value in the array\&. \fP"
+.ti -1c
+.RI "void \fBinvert_vector\fP ()"
+.br
+.RI "\fIReverses the positions of the elements ​​in the array\&. \fP"
+.ti -1c
+.RI "void \fBexchange_elements2\fP (int, int)"
+.br
+.RI "\fIChange the position of two elements\&. \fP"
+.ti -1c
+.RI "void \fBprint_vector\fP ()"
+.br
+.RI "\fIDisplays the array values right through console\&. \fP"
+.ti -1c
+.RI "int \fBget_amount\fP ()"
+.br
+.RI "\fIReturns current number of elements contained in the array\&. \fP"
+.ti -1c
+.RI "void \fBclean_vector\fP ()"
+.br
+.RI "\fIDeletes all elements in the array\&. \fP"
+.ti -1c
+.RI "int \fBget_objet\fP (int)"
+.br
+.RI "\fIReturns the element in the position 'n' in the array\&. \fP"
+.ti -1c
+.RI "void \fBexchange_elements\fP (int, int)"
+.br
+.RI "\fIChange the position of two elements\&. \fP"
+.ti -1c
+.RI "int \fBfrequency\fP (int)"
+.br
+.RI "\fICalculate and return the frequency of element 'elem'\&. \fP"
+.ti -1c
+.RI "int \fBmode\fP ()"
+.br
+.RI "\fICalculate and return the mode of the array\&. \fP"
+.ti -1c
+.RI "int \fBarithmetic_mean\fP ()"
+.br
+.RI "\fICalculate and return the average of the values in the array\&. \fP"
+.ti -1c
+.RI "bool \fBsearch_element\fP (int)"
+.br
+.RI "\fIConfirms if exist the element 'elem' in the array\&. \fP"
+.ti -1c
+.RI "void \fBorder\fP ()"
+.br
+.RI "\fIOrders the array from lowest to highest\&. \fP"
+.ti -1c
+.RI "virtual \fB~array\fP (void)"
+.br
+.RI "\fIDestructor, deletes the array\&. \fP"
+.ti -1c
+.RI "string \fBgetCadena\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "array::array (intn = \fC10\fP)"
+
+.PP
+Constructor initializes an array of size 'n'\&. 
+.SS "array::~array (void)\fC [virtual]\fP"
+
+.PP
+Destructor, deletes the array\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "int array::arithmetic_mean ()"
+
+.PP
+Calculate and return the average of the values in the array\&. 
+.SS "void array::clean_vector ()"
+
+.PP
+Deletes all elements in the array\&. 
+.SS "int array::delete_element ()"
+
+.PP
+Deletes the first element in the array\&. 
+.SS "void array::delete_element_in_pos (intpos)"
+
+.PP
+Deletes the element in the position 'pos' of the array\&. 
+.SS "void array::exchange_elements (intpos1, intpos2)"
+
+.PP
+Change the position of two elements\&. 
+.SS "void array::exchange_elements2 (intpos1, intpos2)"
+
+.PP
+Change the position of two elements\&. 
+.SS "void array::fill_vector (intamount)"
+
+.PP
+Fills an empty array, assigns zero to each position\&. 
+.SS "int array::frequency (intelem)"
+
+.PP
+Calculate and return the frequency of element 'elem'\&. 
+.SS "int array::get_amount ()"
+
+.PP
+Returns current number of elements contained in the array\&. 
+.SS "int array::get_objet (intn)"
+
+.PP
+Returns the element in the position 'n' in the array\&. 
+.SS "string array::getCadena ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBlatex\fP\&.
+.SS "void array::insert_element (intelem)"
+
+.PP
+Inserts an element with value 'elem' to the first position of the array\&. 
+.SS "void array::insert_element_in_pos (intelem, intpos)"
+
+.PP
+Inserts an element with value 'elem' to the position 'pos' of the array\&. 
+.SS "void array::invert_vector ()"
+
+.PP
+Reverses the positions of the elements ​​in the array\&. 
+.SS "int array::max ()"
+
+.PP
+Returns the element with the highest value in the array\&. 
+.SS "int array::min ()"
+
+.PP
+Returns the element with the lowest value in the array\&. 
+.SS "int array::mode ()"
+
+.PP
+Calculate and return the mode of the array\&. 
+.SS "void array::order ()"
+
+.PP
+Orders the array from lowest to highest\&. 
+.SS "void array::print_vector ()"
+
+.PP
+Displays the array values right through console\&. 
+.SS "bool array::search_element (intelem)"
+
+.PP
+Confirms if exist the element 'elem' in the array\&. 
+.SS "int array::sum_vector ()"
+
+.PP
+Returns the sum of all elements in the array\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for DataStructures4Beamer from the source code\&.

@@ -1,0 +1,35 @@
+% A simple commutative diagram
+% Stefan Kottwitz
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{matrix}
+\begin{document}
+\begin{tikzpicture}
+  \matrix (m) [matrix of math nodes,row sep=3mm,column sep=-0mm,minimum width=2mm, rectangle]
+  {
+     \node[draw,rectangle, fill=blue!20]{F_x(\omega)}; &
+     \node[draw,rectangle, fill=blue!20]{F_y(\omega)}; &    
+     \node[draw,rectangle, fill=blue!20]{F_z(\omega)};\\}; 
+ 
+
+  \path[-stealth]
+
+   (m-1-2) node [draw,rectangle, fill=blue!20]{$F_z(\omega)$}
+
+%F_x(t) & F_y(t) "Large item inside the matrix" & F_{z}(t)\\
+
+
+%   (m-1-1) edge node [left] {$\mathcal{B}_X$} (m-2-1)
+%           edge [double] node [below] {$\mathcal{B}_t$} (m-1-2)
+
+ %   (m-2-1.east|-m-2-2) edge node [below] {$\mathcal{X}_T$}
+  %          node [above] {$\exists$} (m-2-2)
+
+   % (m-2-1.east|-m-2-2) edge node [below] {$\mathcal{B}_T$}
+    %        node [above] {$\exists$} (m-2-2)
+
+    %(m-1-2) edge node [right] {$\mathcal{B}_T$} (m-2-2)
+     %       edge [dashed,-] (m-2-1)
+;
+\end{tikzpicture}
+\end{document}

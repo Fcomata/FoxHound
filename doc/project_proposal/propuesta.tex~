@@ -1,0 +1,97 @@
+\documentclass[compress, brown]{beamer}
+\mode <presentation>
+\usetheme{Warsaw}
+\usecolortheme{lily}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{tikz}
+\graphicspath{{../multimedia/}}
+\begin{document}%  
+
+\begin{frame}
+ \begin{tikzpicture} 
+
+ \node (rectangle) at (0,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
+ \node (rectangle) at (1,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
+ \node (rectangle) at (2,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
+ \node (rectangle) at (3,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
+ \node (rectangle) at (4,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
+
+ \end{tikzpicture} 
+ \end{frame} 
+
+ \begin{frame}
+ \begin{tikzpicture} 
+
+ \node (rectangle) at (0,2) [draw,thick,minimum width=2cm,minimum height=5mm] {45};
+ \node (rectangle) at (1,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
+ \node (rectangle) at (2,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
+ \node (rectangle) at (3,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
+ \node (rectangle) at (4,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
+ \begin{frame}
+ \begin{tikzpicture} 
+
+ \node (rectangle) at (0,2) [draw,thick,minimum width=2cm,minimum height=5mm] {45};
+ \node (rectangle) at (1,2) [draw,thick,minimum width=2cm,minimum height=5mm] {3};
+ \node (rectangle) at (2,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
+ \node (rectangle) at (3,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
+ \node (rectangle) at (4,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
+ \begin{frame}
+ \begin{tikzpicture} 
+
+ \node (rectangle) at (0,2) [draw,thick,minimum width=2cm,minimum height=5mm] {45};
+ \node (rectangle) at (1,2) [draw,thick,minimum width=2cm,minimum height=5mm] {3};
+ \node (rectangle) at (2,2) [draw,thick,minimum width=2cm,minimum height=5mm] {1};
+ \node (rectangle) at (3,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
+ \node (rectangle) at (4,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
+ \begin{frame}
+ \begin{tikzpicture} 
+
+ \node (rectangle) at (0,2) [draw,thick,minimum width=2cm,minimum height=5mm] {45};
+ \node (rectangle) at (1,2) [draw,thick,minimum width=2cm,minimum height=5mm] {3};
+ \node (rectangle) at (2,2) [draw,thick,minimum width=2cm,minimum height=5mm] {1};
+ \node (rectangle) at (3,2) [draw,thick,minimum width=2cm,minimum height=5mm] {8};
+ \node (rectangle) at (4,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
+ \begin{frame}
+ \begin{tikzpicture} 
+
+ \node (rectangle) at (0,2) [draw,thick,minimum width=2cm,minimum height=5mm] {45};
+ \node (rectangle) at (1,2) [draw,thick,minimum width=2cm,minimum height=5mm] {3};
+ \node (rectangle) at (2,2) [draw,thick,minimum width=2cm,minimum height=5mm] {1};
+ \node (rectangle) at (3,2) [draw,thick,minimum width=2cm,minimum height=5mm] {8};
+ \node (rectangle) at (4,2) [draw,thick,minimum width=2cm,minimum height=5mm] {9};
+ \begin{frame}
+ \begin{tikzpicture} 
+
+ \node (rectangle) at (0,2) [draw,thick,minimum width=2cm,minimum height=5mm] {45};
+ \node (rectangle) at (1,2) [draw,thick,minimum width=2cm,minimum height=5mm] {3};
+ \node (rectangle) at (2,2) [draw,thick,minimum width=2cm,minimum height=5mm] {1};
+ \node (rectangle) at (3,2) [draw,thick,minimum width=2cm,minimum height=5mm] {8};
+ \node (rectangle) at (4,2) [draw,thick,minimum width=2cm,minimum height=5mm] {9};
+ \node (rectangle) at (3,2) [draw,thick,fill=green,minimum width=2cm,minimum height=5mm] {8};
+
+ \end{tikzpicture} 
+ \end{frame} 
+
+ \begin{frame}
+ \begin{tikzpicture} 
+
+ \node (rectangle) at (0,2) [draw,thick,minimum width=2cm,minimum height=5mm] {1};
+ \node (rectangle) at (1,2) [draw,thick,minimum width=2cm,minimum height=5mm] {3};
+ \node (rectangle) at (2,2) [draw,thick,minimum width=2cm,minimum height=5mm] {8};
+ \node (rectangle) at (3,2) [draw,thick,minimum width=2cm,minimum height=5mm] {9};
+ \node (rectangle) at (4,2) [draw,thick,minimum width=2cm,minimum height=5mm] {45};
+ \begin{frame}
+ \begin{tikzpicture} 
+
+ \node (rectangle) at (0,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
+ \node (rectangle) at (1,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
+ \node (rectangle) at (2,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
+ \node (rectangle) at (3,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
+ \node (rectangle) at (4,2) [draw,thick,minimum width=2cm,minimum height=5mm] {0};
+
+ \end{tikzpicture} 
+ \end{frame} 
+
+\end{document}
+

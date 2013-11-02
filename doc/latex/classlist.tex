@@ -1,0 +1,279 @@
+\hypertarget{classlist}{\section{list Class Reference}
+\label{classlist}\index{list@{list}}
+}
+
+
+{\ttfamily \#include $<$list.\-h$>$}
+
+Inheritance diagram for list\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classlist}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlist_a223ecca7c96ef287c1e647493a32fbf6}{list} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classlist_a72eaabb03a048506432f8d167db12524}{$\sim$list} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classlist_a7ad1d4788bef2d9ccb1827ed1576eb4e}{search} (int v)
+\begin{DoxyCompactList}\small\item\em Confirms if the value \char`\"{}v\char`\"{} is in the list. \end{DoxyCompactList}\item 
+void \hyperlink{classlist_a69b02d50b1ec180ca86003eefc427bef}{insert\-\_\-at\-\_\-beginning} (int v)
+\begin{DoxyCompactList}\small\item\em Inserts a new node with value \char`\"{}v\char`\"{} at beginning of the list. \end{DoxyCompactList}\item 
+void \hyperlink{classlist_a0aa6499aab860dccd290638f1db18148}{insert\-\_\-at\-\_\-end} (int v)
+\begin{DoxyCompactList}\small\item\em Inserts a new node at end of the list. \end{DoxyCompactList}\item 
+void \hyperlink{classlist_ac6ae86ceba69b3d9930925e826533fe6}{insert\-\_\-in\-\_\-position} (int v, int pos)
+\begin{DoxyCompactList}\small\item\em Inserts a new node with value \char`\"{}v\char`\"{} in the position \char`\"{}pos\char`\"{} of the list. \end{DoxyCompactList}\item 
+void \hyperlink{classlist_a9442b8d51977d2e334668c5af309b0a6}{delete\-\_\-first\-\_\-node} ()
+\begin{DoxyCompactList}\small\item\em Deletes the first node of the list. \end{DoxyCompactList}\item 
+void \hyperlink{classlist_a940e14191c9749919d81be840b1ce163}{delete\-\_\-last\-\_\-node} ()
+\begin{DoxyCompactList}\small\item\em Deletes the last node of the list. \end{DoxyCompactList}\item 
+void \hyperlink{classlist_aad82eb6c4ac56b4d52ceb292aef40232}{delete\-\_\-in\-\_\-position} (int pos)
+\begin{DoxyCompactList}\small\item\em Deletes the node in the position \char`\"{}pos\char`\"{}of the list. \end{DoxyCompactList}\item 
+void \hyperlink{classlist_ab11707b9d85a5c33d0bebf8944c0e857}{next\-\_\-node} ()
+\begin{DoxyCompactList}\small\item\em Set the current node in the next node of the list. \end{DoxyCompactList}\item 
+void \hyperlink{classlist_afb9c1a47eb001496eabd2d3ac37d283d}{go\-\_\-to\-\_\-first\-\_\-node} ()
+\begin{DoxyCompactList}\small\item\em Set the current node in the first node of the list. \end{DoxyCompactList}\item 
+void \hyperlink{classlist_a3d9c0dd74589893d2e8337f6b2fa78ac}{go\-\_\-to\-\_\-last\-\_\-node} ()
+\begin{DoxyCompactList}\small\item\em Set the current node in the last node of the list. \end{DoxyCompactList}\item 
+bool \hyperlink{classlist_af3be16d99b45856c9222dec685628122}{get\-\_\-current\-\_\-node} ()
+\begin{DoxyCompactList}\small\item\em Returns the current node, if this is not N\-U\-L\-L. \end{DoxyCompactList}\item 
+int \hyperlink{classlist_a4a401135cd9300328664b4295f8bcbb1}{current\-\_\-value} ()
+\begin{DoxyCompactList}\small\item\em Returns the value of the current node. \end{DoxyCompactList}\item 
+string \hyperlink{classlist_af9c57f43f632e0c885c2393dc375ccf9}{get\-Cadena} ()
+\item 
+void \hyperlink{classlist_a66002d493740d5c50137c428597b4f70}{begin\-\_\-tex} (string)
+\begin{DoxyCompactList}\small\item\em Writes the headers and required latex libraries and packages on the .tex file. \end{DoxyCompactList}\item 
+void \hyperlink{classlist_ad0581363cabe43d9524e27321bf19cc0}{end\-\_\-tex} ()
+\begin{DoxyCompactList}\small\item\em Writes the footers on the .tex file. \end{DoxyCompactList}\item 
+string \hyperlink{classlist_af38e18a21e1631f6f0e381aefe4262fe}{to\-\_\-string} (int v)
+\begin{DoxyCompactList}\small\item\em Convert an int \char`\"{}v\char`\"{} to string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classlist_a3b03adad0c0429bae9493667ff366dc2}{size}
+\begin{DoxyCompactList}\small\item\em Size of the list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classlist_a223ecca7c96ef287c1e647493a32fbf6}{\index{list@{list}!list@{list}}
+\index{list@{list}!list@{list}}
+\subsubsection[{list}]{\setlength{\rightskip}{0pt plus 5cm}list\-::list (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlist_a223ecca7c96ef287c1e647493a32fbf6}
+
+
+Default constructor. 
+
+\hypertarget{classlist_a72eaabb03a048506432f8d167db12524}{\index{list@{list}!$\sim$list@{$\sim$list}}
+\index{$\sim$list@{$\sim$list}!list@{list}}
+\subsubsection[{$\sim$list}]{\setlength{\rightskip}{0pt plus 5cm}list\-::$\sim$list (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlist_a72eaabb03a048506432f8d167db12524}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classlist_a66002d493740d5c50137c428597b4f70}{\index{list@{list}!begin\-\_\-tex@{begin\-\_\-tex}}
+\index{begin\-\_\-tex@{begin\-\_\-tex}!list@{list}}
+\subsubsection[{begin\-\_\-tex}]{\setlength{\rightskip}{0pt plus 5cm}void list\-::begin\-\_\-tex (
+\begin{DoxyParamCaption}
+\item[{string}]{nombre}
+\end{DoxyParamCaption}
+)}}\label{classlist_a66002d493740d5c50137c428597b4f70}
+
+
+Writes the headers and required latex libraries and packages on the .tex file. 
+
+\hypertarget{classlist_a4a401135cd9300328664b4295f8bcbb1}{\index{list@{list}!current\-\_\-value@{current\-\_\-value}}
+\index{current\-\_\-value@{current\-\_\-value}!list@{list}}
+\subsubsection[{current\-\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}int list\-::current\-\_\-value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlist_a4a401135cd9300328664b4295f8bcbb1}
+
+
+Returns the value of the current node. 
+
+\hypertarget{classlist_a9442b8d51977d2e334668c5af309b0a6}{\index{list@{list}!delete\-\_\-first\-\_\-node@{delete\-\_\-first\-\_\-node}}
+\index{delete\-\_\-first\-\_\-node@{delete\-\_\-first\-\_\-node}!list@{list}}
+\subsubsection[{delete\-\_\-first\-\_\-node}]{\setlength{\rightskip}{0pt plus 5cm}void list\-::delete\-\_\-first\-\_\-node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlist_a9442b8d51977d2e334668c5af309b0a6}
+
+
+Deletes the first node of the list. 
+
+\hypertarget{classlist_aad82eb6c4ac56b4d52ceb292aef40232}{\index{list@{list}!delete\-\_\-in\-\_\-position@{delete\-\_\-in\-\_\-position}}
+\index{delete\-\_\-in\-\_\-position@{delete\-\_\-in\-\_\-position}!list@{list}}
+\subsubsection[{delete\-\_\-in\-\_\-position}]{\setlength{\rightskip}{0pt plus 5cm}void list\-::delete\-\_\-in\-\_\-position (
+\begin{DoxyParamCaption}
+\item[{int}]{pos}
+\end{DoxyParamCaption}
+)}}\label{classlist_aad82eb6c4ac56b4d52ceb292aef40232}
+
+
+Deletes the node in the position \char`\"{}pos\char`\"{}of the list. 
+
+\hypertarget{classlist_a940e14191c9749919d81be840b1ce163}{\index{list@{list}!delete\-\_\-last\-\_\-node@{delete\-\_\-last\-\_\-node}}
+\index{delete\-\_\-last\-\_\-node@{delete\-\_\-last\-\_\-node}!list@{list}}
+\subsubsection[{delete\-\_\-last\-\_\-node}]{\setlength{\rightskip}{0pt plus 5cm}void list\-::delete\-\_\-last\-\_\-node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlist_a940e14191c9749919d81be840b1ce163}
+
+
+Deletes the last node of the list. 
+
+\hypertarget{classlist_ad0581363cabe43d9524e27321bf19cc0}{\index{list@{list}!end\-\_\-tex@{end\-\_\-tex}}
+\index{end\-\_\-tex@{end\-\_\-tex}!list@{list}}
+\subsubsection[{end\-\_\-tex}]{\setlength{\rightskip}{0pt plus 5cm}void list\-::end\-\_\-tex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlist_ad0581363cabe43d9524e27321bf19cc0}
+
+
+Writes the footers on the .tex file. 
+
+\hypertarget{classlist_af3be16d99b45856c9222dec685628122}{\index{list@{list}!get\-\_\-current\-\_\-node@{get\-\_\-current\-\_\-node}}
+\index{get\-\_\-current\-\_\-node@{get\-\_\-current\-\_\-node}!list@{list}}
+\subsubsection[{get\-\_\-current\-\_\-node}]{\setlength{\rightskip}{0pt plus 5cm}bool list\-::get\-\_\-current\-\_\-node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlist_af3be16d99b45856c9222dec685628122}
+
+
+Returns the current node, if this is not N\-U\-L\-L. 
+
+\hypertarget{classlist_af9c57f43f632e0c885c2393dc375ccf9}{\index{list@{list}!get\-Cadena@{get\-Cadena}}
+\index{get\-Cadena@{get\-Cadena}!list@{list}}
+\subsubsection[{get\-Cadena}]{\setlength{\rightskip}{0pt plus 5cm}string list\-::get\-Cadena (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classlist_af9c57f43f632e0c885c2393dc375ccf9}
+
+
+Reimplemented from \hyperlink{classlatex_a087cec6e7708a663c6de8fceb5028fa7}{latex}.
+
+\hypertarget{classlist_afb9c1a47eb001496eabd2d3ac37d283d}{\index{list@{list}!go\-\_\-to\-\_\-first\-\_\-node@{go\-\_\-to\-\_\-first\-\_\-node}}
+\index{go\-\_\-to\-\_\-first\-\_\-node@{go\-\_\-to\-\_\-first\-\_\-node}!list@{list}}
+\subsubsection[{go\-\_\-to\-\_\-first\-\_\-node}]{\setlength{\rightskip}{0pt plus 5cm}void list\-::go\-\_\-to\-\_\-first\-\_\-node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlist_afb9c1a47eb001496eabd2d3ac37d283d}
+
+
+Set the current node in the first node of the list. 
+
+\hypertarget{classlist_a3d9c0dd74589893d2e8337f6b2fa78ac}{\index{list@{list}!go\-\_\-to\-\_\-last\-\_\-node@{go\-\_\-to\-\_\-last\-\_\-node}}
+\index{go\-\_\-to\-\_\-last\-\_\-node@{go\-\_\-to\-\_\-last\-\_\-node}!list@{list}}
+\subsubsection[{go\-\_\-to\-\_\-last\-\_\-node}]{\setlength{\rightskip}{0pt plus 5cm}void list\-::go\-\_\-to\-\_\-last\-\_\-node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlist_a3d9c0dd74589893d2e8337f6b2fa78ac}
+
+
+Set the current node in the last node of the list. 
+
+\hypertarget{classlist_a69b02d50b1ec180ca86003eefc427bef}{\index{list@{list}!insert\-\_\-at\-\_\-beginning@{insert\-\_\-at\-\_\-beginning}}
+\index{insert\-\_\-at\-\_\-beginning@{insert\-\_\-at\-\_\-beginning}!list@{list}}
+\subsubsection[{insert\-\_\-at\-\_\-beginning}]{\setlength{\rightskip}{0pt plus 5cm}void list\-::insert\-\_\-at\-\_\-beginning (
+\begin{DoxyParamCaption}
+\item[{int}]{v}
+\end{DoxyParamCaption}
+)}}\label{classlist_a69b02d50b1ec180ca86003eefc427bef}
+
+
+Inserts a new node with value \char`\"{}v\char`\"{} at beginning of the list. 
+
+\hypertarget{classlist_a0aa6499aab860dccd290638f1db18148}{\index{list@{list}!insert\-\_\-at\-\_\-end@{insert\-\_\-at\-\_\-end}}
+\index{insert\-\_\-at\-\_\-end@{insert\-\_\-at\-\_\-end}!list@{list}}
+\subsubsection[{insert\-\_\-at\-\_\-end}]{\setlength{\rightskip}{0pt plus 5cm}void list\-::insert\-\_\-at\-\_\-end (
+\begin{DoxyParamCaption}
+\item[{int}]{v}
+\end{DoxyParamCaption}
+)}}\label{classlist_a0aa6499aab860dccd290638f1db18148}
+
+
+Inserts a new node at end of the list. 
+
+\hypertarget{classlist_ac6ae86ceba69b3d9930925e826533fe6}{\index{list@{list}!insert\-\_\-in\-\_\-position@{insert\-\_\-in\-\_\-position}}
+\index{insert\-\_\-in\-\_\-position@{insert\-\_\-in\-\_\-position}!list@{list}}
+\subsubsection[{insert\-\_\-in\-\_\-position}]{\setlength{\rightskip}{0pt plus 5cm}void list\-::insert\-\_\-in\-\_\-position (
+\begin{DoxyParamCaption}
+\item[{int}]{v, }
+\item[{int}]{pos}
+\end{DoxyParamCaption}
+)}}\label{classlist_ac6ae86ceba69b3d9930925e826533fe6}
+
+
+Inserts a new node with value \char`\"{}v\char`\"{} in the position \char`\"{}pos\char`\"{} of the list. 
+
+\hypertarget{classlist_ab11707b9d85a5c33d0bebf8944c0e857}{\index{list@{list}!next\-\_\-node@{next\-\_\-node}}
+\index{next\-\_\-node@{next\-\_\-node}!list@{list}}
+\subsubsection[{next\-\_\-node}]{\setlength{\rightskip}{0pt plus 5cm}void list\-::next\-\_\-node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classlist_ab11707b9d85a5c33d0bebf8944c0e857}
+
+
+Set the current node in the next node of the list. 
+
+\hypertarget{classlist_a7ad1d4788bef2d9ccb1827ed1576eb4e}{\index{list@{list}!search@{search}}
+\index{search@{search}!list@{list}}
+\subsubsection[{search}]{\setlength{\rightskip}{0pt plus 5cm}bool list\-::search (
+\begin{DoxyParamCaption}
+\item[{int}]{v}
+\end{DoxyParamCaption}
+)}}\label{classlist_a7ad1d4788bef2d9ccb1827ed1576eb4e}
+
+
+Confirms if the value \char`\"{}v\char`\"{} is in the list. 
+
+\hypertarget{classlist_af38e18a21e1631f6f0e381aefe4262fe}{\index{list@{list}!to\-\_\-string@{to\-\_\-string}}
+\index{to\-\_\-string@{to\-\_\-string}!list@{list}}
+\subsubsection[{to\-\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}string list\-::to\-\_\-string (
+\begin{DoxyParamCaption}
+\item[{int}]{v}
+\end{DoxyParamCaption}
+)}}\label{classlist_af38e18a21e1631f6f0e381aefe4262fe}
+
+
+Convert an int \char`\"{}v\char`\"{} to string. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classlist_a3b03adad0c0429bae9493667ff366dc2}{\index{list@{list}!size@{size}}
+\index{size@{size}!list@{list}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int list\-::size}}\label{classlist_a3b03adad0c0429bae9493667ff366dc2}
+
+
+Size of the list. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/mtorres/\-Dropbox/\-Universidad/\-Estructuras/\-Proyecto1/\-Fox\-Hound/src/\hyperlink{list_8h}{list.\-h}\item 
+/home/mtorres/\-Dropbox/\-Universidad/\-Estructuras/\-Proyecto1/\-Fox\-Hound/src/\hyperlink{list_8cpp}{list.\-cpp}\end{DoxyCompactItemize}
