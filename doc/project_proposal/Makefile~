@@ -1,7 +1,7 @@
 all:
-	pdflatex propuesta.tex
-	pdflatex propuesta.tex 
+	pdflatex *.tex
+	pdflatex *.tex 
 
 clean:
-	rm propuesta.pdf
+	rm *.pdf
 
